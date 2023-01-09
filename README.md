@@ -8,3 +8,6 @@ https://hackaday.io/project/176113-picarts-gpio-rom-carts/log/186621-controlling
 https://stackoverflow.com/questions/32064844/python-interact-with-dolphin-emulator
 https://gbdev.io/pandocs/The_Cartridge_Header.html
 https://www.inspiredpython.com/course/testing-with-hypothesis/testing-your-python-code-with-hypothesis
+
+
+I have ended up using https://github.com/Baekalfen/PyBoy/blob/master/README.md pyboy program.  This can allow me to make checks when I want.  And read states in the game.
