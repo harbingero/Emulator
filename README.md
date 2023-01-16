@@ -11,3 +11,5 @@ https://www.inspiredpython.com/course/testing-with-hypothesis/testing-your-pytho
 
 
 I have ended up using https://github.com/Baekalfen/PyBoy/blob/master/README.md pyboy program.  This can allow me to make checks when I want.  And read states in the game.
+
+Using https://datacrystal.romhacking.net/wiki/Pok%C3%A9mon_Red/Blue:RAM_map, this will help finding values in memory.  There'll be a section about half way down that will be useful to checking where we are in the run called Event Flags.  I can use this to tell it which set of instructions to give it.
