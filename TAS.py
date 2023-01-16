@@ -10,11 +10,14 @@ increment = 0
 game_start = "Game_Start.png"
 new_game = "New_Game.png"
 
-for i in range(2000):
+for i in range(14000):
     pyboy.tick()
     check = appended
     appended = ""
-    for j in range(16300, 16400):
+    # appended = str(pyboy.get_memory_value(42392))
+    # for j in range(16384, 17000):
+    #     appended += str(pyboy.get_memory_value(j)) + ": "
+    for j in range(42392, 42402):
         appended += str(pyboy.get_memory_value(j)) + ": "
     if check != appended:
         print(check, "\n" + Fore.GREEN + appended + Fore.RESET)
