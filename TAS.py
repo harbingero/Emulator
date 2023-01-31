@@ -11,7 +11,7 @@ appended = ""
 started = False
 named = False
 pathed_to_starters = False
-starters = ["charmander", "squirtle", "bulbasaur"]
+starters = ["Charmander", "Squirtle", "Bulbasaur"]
 play_time = 10000
 
 
@@ -138,6 +138,9 @@ def press_select():
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
     print("----------------------Select")
 
+# I can implement a spelling function later where I can create a list of a list of letters, then decide how many to the
+# right/left and how many up/down the cursor needs to go.
+
 
 def spell_Jesse():
     xi = 55  #55
@@ -225,6 +228,68 @@ def spell_Rival():
     tick_pass(xi)
 
 
+def name_starter():
+    xi = 55  # 55
+    press_right()  # at B
+    tick_pass(xi)
+    press_right()  # at C
+    tick_pass(xi)
+    press_right()  # at D
+    tick_pass(xi)
+    press_right()  # at E
+    tick_pass(xi)
+    press_right()  # at F
+    tick_pass(xi)
+    press_right()  # at G
+    tick_pass(xi)
+    press_a()  # G
+    tick_pass(xi)
+    press_select()  # Lowercase
+    tick_pass(xi)
+    press_down()    # at p
+    tick_pass(xi)
+    press_left()  # at o
+    tick_pass(xi)
+    press_a()  # o
+    tick_pass(xi)
+    press_a()  # o
+    tick_pass(xi)
+    press_left()  # at n
+    tick_pass(xi)
+    press_left()  # at m
+    tick_pass(xi)
+    press_up()  # at d
+    tick_pass(xi)
+    press_a()  # d
+    tick_pass(xi)
+    press_left()  # at c
+    tick_pass(xi)
+    press_left()  # at b
+    tick_pass(xi)
+    press_a()  # b
+    tick_pass(xi)
+    press_right()  # at c
+    tick_pass(xi)
+    press_right()  # at d
+    tick_pass(xi)
+    press_right()  # at e
+    tick_pass(xi)
+    press_right()  # at f
+    tick_pass(xi)
+    press_down()  # at o
+    tick_pass(xi)
+    press_a()  # o
+    tick_pass(xi)
+    press_down()  # at x
+    tick_pass(xi)
+    press_right()  # at y
+    tick_pass(xi)
+    press_a()  # y
+    tick_pass(xi)
+    press_start()  # Exit
+    tick_pass(xi)
+
+
 def naming(fun_named):
     xi = 120
     xj = 60
@@ -255,20 +320,31 @@ def to_starters():
     random_starter = random.randint(0, 2)
     tick_pass(250)
     hold_right(walk_speed * 2)
-    hold_up(walk_speed * 5)
+    hold_up(walk_speed * 4)
     hold_right(walk_speed * 2)
-    tick_pass(transition)
+    tick_pass(transition)  # Out of room
     hold_down(walk_speed * 5)
     hold_left(walk_speed * 4)
     hold_down(walk_speed)
-    tick_pass(transition)
+    tick_pass(transition)  # Out of house
     hold_right(walk_speed * 5)
     hold_up(walk_speed * 5)
-    for i in range(400):  #  This is the latest test area.  I'm not sure when to end this timer.  I am thinking of just having it press b until I get to move for starters.
+    for i in range(1250):  # In grass
         press_b()
         pyboy.tick()
-    tick_pass(oak_walk)
-    print(starters[random_starter])
+    # tick_pass(oak_walk)
+    hold_down(walk_speed - 5)
+    hold_right((walk_speed - 3) * (1 + random_starter))
+    hold_up(walk_speed)
+    press_a()
+    print(starters[random_starter], random_starter)
+    for i in range(350):  # Starter selected
+        press_a()
+        pyboy.tick()
+    name_starter()
+    for i in range(235):
+        press_a()
+        pyboy.tick()
 
 
 
@@ -297,7 +373,8 @@ for i in range(play_time):
     #     print(check, "\n" + Fore.GREEN + appended + Fore.RESET)
     # else:
     #     print("Same")
-    # appended = str(pyboy.get_memory_value(42392))  This section was used to find different memory values at the begining of the game.
+    # appended = str(pyboy.get_memory_value(42392))  This section was used to find different
+    # memory values at the beginning of the game.
     # for j in range(16384, 17000):
     #     appended += str(pyboy.get_memory_value(j)) + ": "
     # if i % 50 == 0:
