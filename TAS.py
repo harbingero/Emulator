@@ -12,7 +12,11 @@ started = False
 named = False
 pathed_to_starters = False
 starters = ["Charmander", "Squirtle", "Bulbasaur"]
-play_time = 10000
+play_time = 40000
+regain_control = False
+
+with open("debug.txt", "w") as f1:
+    f1.write("")
 
 
 def tick_pass(number):
@@ -342,10 +346,17 @@ def to_starters():
         press_a()
         pyboy.tick()
     name_starter()
-    for i in range(235):
+    for i in range(240):
         press_a()
         pyboy.tick()
 
+
+def save_values():
+    with open("debug.txt", "a") as f:
+        direction = pyboy.get_memory_value(193)
+        player_input = pyboy.get_input()
+        print("Direction:  " + Fore.GREEN + str(direction), "0: down, 4: up, 8: left, $c: right" + Fore.RESET + "\nPlayer input: " + Fore.GREEN + "", player_input, "" + Fore.RESET)
+        f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " + str(player_input))
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
@@ -364,6 +375,10 @@ for i in range(play_time):
     if named and started and pathed_to_starters is False:
         to_starters()
         pathed_to_starters = True
+    if named and started and pathed_to_starters:
+        regain_control = True
+    if regain_control:
+        save_values()
     pyboy.tick()
     check = appended
     appended = ""
