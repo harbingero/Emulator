@@ -1,0 +1,2016 @@
+Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56810>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABBD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABBF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABBF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>, <pyboy.utils.WindowEvent object at 0x000001F056D55750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>, <pyboy.utils.WindowEvent object at 0x000001F056D55590>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>, <pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54CF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54CF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55310>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55310>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>, <pyboy.utils.WindowEvent object at 0x000001F056D55170>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54350>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D548D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D546D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D546B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABE70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABD90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABCB0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABCB0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB990>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF10>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D540D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54170>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D547B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54870>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54B30>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54B30>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55070>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54290>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55370>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D543F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D554B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D554B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D554F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D556F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D556F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>, <pyboy.utils.WindowEvent object at 0x000001F056D55DF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55890>, <pyboy.utils.WindowEvent object at 0x000001F056D56290>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D564F0>, <pyboy.utils.WindowEvent object at 0x000001F056D56510>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56690>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56690>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56830>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56830>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56830>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56830>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54630>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54610>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>, <pyboy.utils.WindowEvent object at 0x000001F056AABA70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>, <pyboy.utils.WindowEvent object at 0x000001F056AABCF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56370>, <pyboy.utils.WindowEvent object at 0x000001F056D56A30>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56850>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56850>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>, <pyboy.utils.WindowEvent object at 0x000001F056D560F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55CD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55BF0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55CD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55CD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55CD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55790>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54150>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56A90>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55190>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D55330>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54B10>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54B10>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54AD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54AD0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54810>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54810>, <pyboy.utils.WindowEvent object at 0x000001F056D54950>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54810>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54810>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54810>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AAB9B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54450>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D548D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54C70>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>, <pyboy.utils.WindowEvent object at 0x000001F056D56230>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D569F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D569F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D569F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D569F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D569F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>, <pyboy.utils.WindowEvent object at 0x000001F056D56970>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56750>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056AABF70>, <pyboy.utils.WindowEvent object at 0x000001F056AABE50>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>, <pyboy.utils.WindowEvent object at 0x000001F056D54630>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56B30>, <pyboy.utils.WindowEvent object at 0x000001F056D545B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D54090>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56B30>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56B30>, <pyboy.utils.WindowEvent object at 0x000001F056D54690>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56B30>, <pyboy.utils.WindowEvent object at 0x000001F056D56370>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56B30>, <pyboy.utils.WindowEvent object at 0x000001F056D54990>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D568F0>, <pyboy.utils.WindowEvent object at 0x000001F056D56A10>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D568F0>, <pyboy.utils.WindowEvent object at 0x000001F056D56930>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D568F0>, <pyboy.utils.WindowEvent object at 0x000001F056D567D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D568F0>, <pyboy.utils.WindowEvent object at 0x000001F056D566F0>, <pyboy.utils.WindowEvent object at 0x000001F056D561D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D568F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D56710>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D56770>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D56730>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D565B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D564F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>, <pyboy.utils.WindowEvent object at 0x000001F056D562F0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D567B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56470>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56470>, <pyboy.utils.WindowEvent object at 0x000001F056D56310>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D56470>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>, <pyboy.utils.WindowEvent object at 0x000001F056D56470>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>, <pyboy.utils.WindowEvent object at 0x000001F056D56170>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>, <pyboy.utils.WindowEvent object at 0x000001F056D55890>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>, <pyboy.utils.WindowEvent object at 0x000001F056D56030>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D563D0>, <pyboy.utils.WindowEvent object at 0x000001F056D55FB0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: [<pyboy.utils.WindowEvent object at 0x000001F056D558B0>]Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []Direction: 0 0: down, 4: up, 8: left, $c: right
+Player input: []
