@@ -355,11 +355,15 @@ def to_starters():
 def save_values():
     with open("debug.txt", "a") as f:
         direction = pyboy.get_memory_value(49417)
-        player_input = pyboy.get_input()
+        player_input = []
         if len(pyboy.get_input()) > 0:
-            print(pyboy.get_input()[0])
-        print("Direction:  " + Fore.GREEN + str(direction), "0: down, 4: up, 8: left, $c: right" + Fore.RESET + "\nPlayer input: " + Fore.GREEN + "", player_input, "" + Fore.RESET)
-        f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " + str(player_input))
+            for i in range(len(pyboy.get_input())):
+                player_input.append(str(pyboy.get_input()[i]))
+                print(pyboy.get_input()[i])
+        print("Direction:  " + Fore.GREEN + str(direction), "0: down, 4: up, 8: left, $c: right" + Fore.RESET +
+              "\nPlayer input: " + Fore.GREEN + "", player_input, "" + Fore.RESET)
+        f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " +
+                str(player_input))
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
