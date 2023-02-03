@@ -232,20 +232,11 @@ def spell_Rival():
     tick_pass(xi)
 
 
-def name_starter():
-    xi = 55  # 55
-    press_right()  # at B
-    tick_pass(xi)
-    press_right()  # at C
-    tick_pass(xi)
-    press_right()  # at D
-    tick_pass(xi)
-    press_right()  # at E
-    tick_pass(xi)
-    press_right()  # at F
-    tick_pass(xi)
-    press_right()  # at G
-    tick_pass(xi)
+def spell_starter():
+    xi = 60  # 60
+    for i in range(6):  # B C D E F G
+        press_right()
+        tick_pass(xi)
     press_a()  # G
     tick_pass(xi)
     press_select()  # Lowercase
@@ -254,32 +245,42 @@ def name_starter():
     tick_pass(xi)
     press_left()  # at o
     tick_pass(xi)
-    press_a()  # o
-    tick_pass(xi)
-    press_a()  # o
-    tick_pass(xi)
-    press_left()  # at n
-    tick_pass(xi)
-    press_left()  # at m
-    tick_pass(xi)
+    for i in range(2):  # oo
+        press_a()
+        tick_pass(xi)
+    for i in range(2):  # n m
+        press_left()
+        tick_pass(xi)
     press_up()  # at d
     tick_pass(xi)
     press_a()  # d
     tick_pass(xi)
-    press_left()  # at c
+    for i in range(2):  # mv
+        press_down()
+        tick_pass(xi)
+    for i in range(5):  # w x y z [space]
+        press_right()
+        tick_pass(xi)
+    press_a()  #  [space]
     tick_pass(xi)
-    press_left()  # at b
+    for i in range(5):  # z y x w v
+        press_left()
+        tick_pass(xi)
+    for i in range(2):  # m d
+        press_up()
+        tick_pass(xi)
+    for i in range(2):  # c b
+        press_left()
+        tick_pass(xi)
+    press_select()  # Uppercase
     tick_pass(xi)
     press_a()  # b
     tick_pass(xi)
-    press_right()  # at c
+    press_select()  # Lowercase
     tick_pass(xi)
-    press_right()  # at d
-    tick_pass(xi)
-    press_right()  # at e
-    tick_pass(xi)
-    press_right()  # at f
-    tick_pass(xi)
+    for i in range(4):  # c d e f
+        press_right()
+        tick_pass(xi)
     press_down()  # at o
     tick_pass(xi)
     press_a()  # o
@@ -345,16 +346,18 @@ def to_starters():
     for i in range(350):  # Starter selected
         press_a()
         pyboy.tick()
-    name_starter()
-    for i in range(240):
+    spell_starter()
+    for i in range(280):
         press_a()
         pyboy.tick()
 
 
 def save_values():
     with open("debug.txt", "a") as f:
-        direction = pyboy.get_memory_value(193)
+        direction = pyboy.get_memory_value(49417)
         player_input = pyboy.get_input()
+        if len(pyboy.get_input()) > 0:
+            print(pyboy.get_input()[0])
         print("Direction:  " + Fore.GREEN + str(direction), "0: down, 4: up, 8: left, $c: right" + Fore.RESET + "\nPlayer input: " + Fore.GREEN + "", player_input, "" + Fore.RESET)
         f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " + str(player_input))
 
