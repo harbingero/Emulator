@@ -7,6 +7,7 @@ from pyboy import botsupport
 from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
+
 appended = ""
 started = False
 named = False
@@ -14,9 +15,11 @@ pathed_to_starters = False
 starters = ["Charmander", "Squirtle", "Bulbasaur"]
 play_time = 40000
 regain_control = False
+overwrite = True
 
-with open("debug.txt", "w") as f1:
-    f1.write("")
+if overwrite:
+    with open("debug.txt", "w") as f1:
+        f1.write("")
 
 
 def tick_pass(number):
@@ -355,15 +358,22 @@ def to_starters():
 def save_values():
     with open("debug.txt", "a") as f:
         direction = pyboy.get_memory_value(49417)
+        grass = pyboy.get_memory_value(49671)
+        battle_turn = pyboy.get_memory_value(52437)
+        battle_type = pyboy.get_memory_value(53338)
         player_input = []
         if len(pyboy.get_input()) > 0:
             for i in range(len(pyboy.get_input())):
                 player_input.append(str(pyboy.get_input()[i]))
-                print(pyboy.get_input()[i])
-        print("Direction:  " + Fore.GREEN + str(direction), "0: down, 4: up, 8: left, $c: right" + Fore.RESET +
-              "\nPlayer input: " + Fore.GREEN + "", player_input, "" + Fore.RESET)
+        print("Grass: ", grass, "128 while in, 0 while not")
+        print(Fore.GREEN + "Battle_Turn: ", str(battle_turn) + Fore.RESET)
+        print("Battle_Type: ", battle_type)
         f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " +
                 str(player_input))
+        f.write("Player in grass: " + str(grass) + " 128 while in, 0 while not")
+        f.write("Battle turn #:  " + str(battle_turn))  # Test this value after running
+# as the first action
+
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
