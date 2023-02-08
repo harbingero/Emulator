@@ -1,3 +1,10 @@
+# TO DO:
+# Implement a name path creation function
+# create a list of all map location numbers
+# create battle decision function
+# flesh out battle values function
+# determine if I need to go back and heal after battle
+# figure out if after a level up, if a Pokémon is learning a new move
 import struct
 import colorama
 from colorama import Fore
@@ -12,10 +19,12 @@ appended = ""
 started = False
 named = False
 pathed_to_starters = False
+map_number_name = ["Pallet Town"]
 starters = ["Charmander", "Squirtle", "Bulbasaur"]
 play_time = 40000
 regain_control = False
 overwrite = True
+controlled_ticks = 0
 
 if overwrite:
     with open("debug.txt", "w") as f1:
@@ -266,13 +275,10 @@ def spell_starter():
         tick_pass(xi)
     press_a()  #  [space]
     tick_pass(xi)
-    for i in range(5):  # z y x w v
-        press_left()
-        tick_pass(xi)
-    for i in range(2):  # m d
+    for i in range(2):  # r i
         press_up()
         tick_pass(xi)
-    for i in range(2):  # c b
+    for i in range(7):  # h g f e d c b
         press_left()
         tick_pass(xi)
     press_select()  # Uppercase
@@ -345,9 +351,11 @@ def to_starters():
     hold_right((walk_speed - 3) * (1 + random_starter))
     hold_up(walk_speed)
     press_a()
-    print(starters[random_starter], random_starter)
     for i in range(350):  # Starter selected
         press_a()
+        pyboy.tick()
+    for i in range(20):
+        press_b()
         pyboy.tick()
     spell_starter()
     for i in range(280):
@@ -355,28 +363,61 @@ def to_starters():
         pyboy.tick()
 
 
-def save_values():
+def save_values(tick_number):
     with open("debug.txt", "a") as f:
+        other_battle_type = pyboy.get_memory_value(53335)
+        battle_type = pyboy.get_memory_value(53338)
         direction = pyboy.get_memory_value(49417)
         grass = pyboy.get_memory_value(49671)
-        battle_turn = pyboy.get_memory_value(52437)
-        battle_type = pyboy.get_memory_value(53338)
+        badges = pyboy.get_memory_value(54102)
+        map_number = pyboy.get_memory_value(54110)
         player_input = []
         if len(pyboy.get_input()) > 0:
             for i in range(len(pyboy.get_input())):
                 player_input.append(str(pyboy.get_input()[i]))
         print("Grass: ", grass, "128 while in, 0 while not")
-        print(Fore.GREEN + "Battle_Turn: ", str(battle_turn) + Fore.RESET)
-        print("Battle_Type: ", battle_type)
-        f.write("Direction: " + str(direction) + " 0: down, 4: up, 8: left, $c: right\nPlayer input: " +
+        print(Fore.GREEN + "Map number:  ", str(map_number) + Fore.RESET)
+        print("_________________________"
+              "Number of ticks in over world in control " + str(tick_number) +
+              "_________________________")
+        f.write("Direction: " + str(direction) + "\t\t| 0: down, 4: up, 8: left, $c: right\nPlayer input: " +
                 str(player_input))
-        f.write("Player in grass: " + str(grass) + " 128 while in, 0 while not")
-        f.write("Battle turn #:  " + str(battle_turn))  # Test this value after running
-# as the first action
+        f.write("\nPlayer in grass: " + str(grass) + "\t| 128 while in, 0 while not\n")
+        f.write("Badges:  " + str(badges) + "\t\t| Binary values\n")
+        f.write("Battle Type:  " + str(other_battle_type) + "\t\t| 0 not in battle, 1 wild PKMN, 2 Trainer\n")
+        f.write("\n_________________________"
+                "^Number of ticks in over world in control " + str(tick_number) +
+                "^_________________________\n\n")
+        tick_number += 1
+        return tick_number
+
+
+def battle_values():
+    with open("debug.txt") as f1:
+        other_battle_type = pyboy.get_memory_value(53335)
+        battle_type = pyboy.get_memory_value(53338)
+        battle_turn = pyboy.get_memory_value(52437)
+        party_quantity = pyboy.get_memory_value(53603)
+        party1 = pyboy.get_memory_value(53603)
+        party2 = pyboy.get_memory_value(53603)
+        party3 = pyboy.get_memory_value(53603)
+        party4 = pyboy.get_memory_value(53603)
+        party5 = pyboy.get_memory_value(53603)
+        party6 = pyboy.get_memory_value(53603)
+        player_input = []
+        print("Battle_Type: ", battle_type, "Other battle type: ",  other_battle_type)
+        if len(pyboy.get_input()) > 0:
+            for i in range(len(pyboy.get_input())):
+                player_input.append(str(pyboy.get_input()[i]))
+        f1.write("Battle turn #:  " + str(battle_turn))  # This number does not count up or change just because
+        # you run first turn.
+        f1.write("\n_________________________^Number of turns in battle under your control " + str(battle_turn) +
+                 "^_________________________\n\n")
 
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
+in_battle = pyboy.get_memory_value(53335)
 increment = 0
 for i in range(play_time):
     manager = pyboy.botsupport_manager()
@@ -394,8 +435,10 @@ for i in range(play_time):
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
-    if regain_control:
-        save_values()
+    if regain_control and in_battle == 0:
+        controlled_ticks = save_values(controlled_ticks)
+    if regain_control and in_battle != 0:
+        battle_values()
     pyboy.tick()
     check = appended
     appended = ""
