@@ -70,6 +70,9 @@ letter_axis = {"a": "00",
                ".": "64",
                ",": "74",
                "*": "84"}  # (#)=pk, ($)=mn, (^)=♂, (%)=♀, (*)=End
+player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash"]
+rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary"]
+pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
 
 if overwrite:
     with open("debug.txt", "w") as f1:
@@ -204,153 +207,58 @@ def press_select():
 
 
 def spell_name(name):
-    for letter in name:
-        print(letter)
-
-
-def spell_Jesse():
-    xi = 55  #55
-    press_down()  # at J
-    tick_pass(xi)
-    press_a()  # J
-    tick_pass(xi)
-    press_select()  # Lower case
-    tick_pass(xi)
-    press_right()  # at k
-    tick_pass(xi)
-    press_right()  # at l
-    tick_pass(xi)
-    press_right()  # at m
-    tick_pass(xi)
-    press_right()  # at n
-    tick_pass(xi)
-    press_up()  # at e
-    tick_pass(xi)
-    press_a()  # e
-    tick_pass(xi)
-    press_down()  # at n
-    tick_pass(xi)
-    press_down()  # at w
-    tick_pass(xi)
-    press_left()  # at v
-    tick_pass(xi)
-    press_left()  # at u
-    tick_pass(xi)
-    press_left()  # at t
-    tick_pass(xi)
-    press_left()  # at s
-    tick_pass(xi)
-    press_a()  # s
-    tick_pass(xi)
-    press_a()  # s
-    tick_pass(xi)
-    press_right()  # at t
-    tick_pass(xi)
-    press_right()  # at u
-    tick_pass(xi)
-    press_right()  # at v
-    tick_pass(xi)
-    press_right()  # at w
-    tick_pass(xi)
-    press_up()  # at n
-    tick_pass(xi)
-    press_up()  # at e
-    tick_pass(xi)
-    press_a()  # e
-    tick_pass(xi)
-    press_start()  # Exit
-    tick_pass(xi)
-
-
-def spell_Rival():
-    xi = 55  # 55
-    press_right()  # at B
-    tick_pass(xi)
-    press_a()  # B
-    tick_pass(xi)
-    press_select()  # Lowercase
-    tick_pass(xi)
-    press_down()    # at k
-    tick_pass(xi)
-    press_right()  # at l
-    tick_pass(xi)
-    press_a()  # l
-    tick_pass(xi)
-    press_down()  # at u
-    tick_pass(xi)
-    press_a()  # u
-    tick_pass(xi)
-    press_up()  # at l
-    tick_pass(xi)
-    press_up()  # at c
-    tick_pass(xi)
-    press_right()  # at d
-    tick_pass(xi)
-    press_right()  # at e
-    tick_pass(xi)
-    press_a()  # e
-    tick_pass(xi)
-    press_start()  # Exit
-    tick_pass(xi)
-
-
-def spell_starter():
-    xi = 60  # 60
-    for i in range(6):  # B C D E F G
-        press_right()
+    xi = 55
+    for i in range(1):
+        press_b()
         tick_pass(xi)
-    press_a()  # G
-    tick_pass(xi)
-    press_select()  # Lowercase
-    tick_pass(xi)
-    press_down()    # at p
-    tick_pass(xi)
-    press_left()  # at o
-    tick_pass(xi)
-    for i in range(2):  # oo
+    x = 0
+    y = 0
+    caps = True
+    for letter in name:
+        x_true = False
+        y_true = False
+        while x_true is False and y_true is False:
+            destination = letter_axis[letter.lower()]
+            delta_x = int(destination[0]) - x
+            delta_y = int(destination[1]) - y
+            if delta_x == 0:
+                x_true = True
+            if delta_y == 0:
+                y_true = True
+            if delta_x > 0:
+                for i in range(delta_x):
+                    press_right()
+                    tick_pass(xi)
+                    x = x + 1
+            if delta_x < 0:
+                delta_x = delta_x * (-1)
+                for i in range(delta_x):
+                    press_left()
+                    tick_pass(xi)
+                    x = x - 1
+            if delta_y > 0:
+                for i in range(delta_y):
+                    press_down()
+                    tick_pass(xi)
+                    y = y + 1
+            if delta_y < 0:
+                delta_y = delta_y * (-1)
+                for i in range(delta_y):
+                    press_up()
+                    tick_pass(xi)
+                    y = y - 1
         press_a()
         tick_pass(xi)
-    for i in range(2):  # n m
-        press_left()
-        tick_pass(xi)
-    press_up()  # at d
-    tick_pass(xi)
-    press_a()  # d
-    tick_pass(xi)
-    for i in range(2):  # mv
-        press_down()
-        tick_pass(xi)
-    for i in range(5):  # w x y z [space]
-        press_right()
-        tick_pass(xi)
-    press_a()  #  [space]
-    tick_pass(xi)
-    for i in range(2):  # r i
-        press_up()
-        tick_pass(xi)
-    for i in range(7):  # h g f e d c b
-        press_left()
-        tick_pass(xi)
-    press_select()  # Uppercase
-    tick_pass(xi)
-    press_a()  # b
-    tick_pass(xi)
-    press_select()  # Lowercase
-    tick_pass(xi)
-    for i in range(4):  # c d e f
-        press_right()
-        tick_pass(xi)
-    press_down()  # at o
-    tick_pass(xi)
-    press_a()  # o
-    tick_pass(xi)
-    press_down()  # at x
-    tick_pass(xi)
-    press_right()  # at y
-    tick_pass(xi)
-    press_a()  # y
-    tick_pass(xi)
-    press_start()  # Exit
+        print(caps)
+        if caps:
+            press_select()
+            tick_pass(xi)
+            caps = False
+        if letter == " ":
+            press_select()
+            tick_pass(xi)
+            caps = True
+    press_start()
     tick_pass(xi)
 
 
@@ -363,14 +271,13 @@ def naming(fun_named):
     press_a()
     tick_pass(xi)
     spell_name("Jesse")
-    spell_Jesse()  # Spell Jesse
     for k in range(11):  # 11
         press_b()
         tick_pass(xj)
     tick_pass(xi)
     press_a()
     tick_pass(xi)
-    spell_Rival()  # Spell Rival
+    spell_name("Blue")
     for c in range(12):  # 12
         press_b()
         tick_pass(xj)
@@ -408,7 +315,7 @@ def to_starters():
     for i in range(20):
         press_b()
         pyboy.tick()
-    spell_starter()
+    spell_name(pokemon_name[random.randint(range(len(pokemon_name)))])
     for i in range(280):
         press_a()
         pyboy.tick()
