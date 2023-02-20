@@ -1,5 +1,4 @@
 # TO DO:
-# Refactor name creation function, as to be able to give it different names
 # create a list of all map location numbers
 # create battle decision function
 # flesh out battle values function
@@ -270,14 +269,14 @@ def naming(fun_named):
         tick_pass(xj)
     press_a()
     tick_pass(xi)
-    spell_name("Jesse")
+    spell_name(player_name[random.randint(0, len(player_name) - 1)])
     for k in range(11):  # 11
         press_b()
         tick_pass(xj)
     tick_pass(xi)
     press_a()
     tick_pass(xi)
-    spell_name("Blue")
+    spell_name(rival_name[random.randint(0, len(rival_name) - 1)])
     for c in range(12):  # 12
         press_b()
         tick_pass(xj)
@@ -285,7 +284,7 @@ def naming(fun_named):
     return fun_named
 
 
-def to_starters():
+def to_starters(name):
     walk_speed = 21
     transition = 40
     oak_walk = 500
@@ -315,7 +314,7 @@ def to_starters():
     for i in range(20):
         press_b()
         pyboy.tick()
-    spell_name(pokemon_name[random.randint(range(len(pokemon_name)))])
+    spell_name(name)
     for i in range(280):
         press_a()
         pyboy.tick()
@@ -370,13 +369,13 @@ def battle_values():
             for i in range(len(pyboy.get_input())):
                 player_input.append(str(pyboy.get_input()[i]))
         f0.write("Battle turn #:  " + str(battle_turn))
-        f0.write("Party quantity:  " + str(party_quantity))
-        f0.write("Lead Pokemon:  " + str(party1))
-        f0.write("Party 2:  " + str(party2))
-        f0.write("Party 3:  " + str(party3))
-        f0.write("Party 4:  " + str(party4))
-        f0.write("Party 5:  " + str(party5))
-        f0.write("Party 6:  " + str(party6))
+        f0.write("\nParty quantity:  " + str(party_quantity))
+        f0.write("\nLead Pokemon:  " + str(party1))
+        f0.write("\nParty 2:  " + str(party2))
+        f0.write("\nParty 3:  " + str(party3))
+        f0.write("\nParty 4:  " + str(party4))
+        f0.write("\nParty 5:  " + str(party5))
+        f0.write("\nParty 6:  " + str(party6))
         f0.write("\n_________________________^Number of turns in battle under your control " + str(battle_turn) +
                  "^_________________________\n\n")
 
@@ -403,7 +402,8 @@ for i in range(play_time):
     if named is False and started:
         named = naming(named)
     if named and started and pathed_to_starters is False:
-        to_starters()
+        starter_name = pokemon_name[random.randint(0, len(pokemon_name)-1)]
+        to_starters(starter_name)
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
