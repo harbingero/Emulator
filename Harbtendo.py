@@ -2,7 +2,7 @@
 # create a list of all map location numbers
 # create battle decision function
 # flesh out battle values function
-# determine if I need to go back and heal after battle
+# determine if I need to go back and heal after battle (Poison, low HP, etc.)
 # figure out if after a level up, if a Pokémon is learning a new move
 import struct
 import colorama
@@ -18,7 +18,72 @@ appended = ""
 started = False
 named = False
 pathed_to_starters = False
-map_number_name = ["Pallet Town"]
+map_number_name = ["Pallet Town",
+                   "Viridian City",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "Route 1",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "Mom's Room",
+                   "Bedroom",
+                   "Gary's House",
+                   "Oak's Lab",
+                   "Viridian City Pokecenter",
+                   "Viridian City Pokemart",
+                   "Viridian City South House",
+                   "Viridian City North House",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "",
+                   ""]
 starters = ["Charmander", "Squirtle", "Bulbasaur"]
 play_time = 50000
 regain_control = False
@@ -51,7 +116,7 @@ letter_axis = {"a": "00",
                "y": "62",
                "z": "72",
                " ": "82",
-               "ex": "03",
+               "*": "03",
                "(": "13",
                ")": "23",
                ":": "33",
@@ -68,10 +133,22 @@ letter_axis = {"a": "00",
                "/": "54",
                ".": "64",
                ",": "74",
-               "*": "84"}  # (#)=pk, ($)=mn, (^)=♂, (%)=♀, (*)=End
-player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash"]
-rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary"]
+               "&": "84"}  # (*)=x,  (#)=pk, ($)=mn, (^)=♂, (%)=♀, (&)=End
+player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
+rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
 pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
+#  0 Pallet Town
+#  1 Viridian City
+#  12 Route 1
+#  33 Left of Viridian City
+#  37 Downstairs home
+#  38 Bedroom
+#  39 Gary's house
+#  40 Oak's lab
+#  41 Viridian City Pokemon Center
+#  42 Viridian City Pokemart
+#  43 Viridian City House
+#  44 Viridian City House
 
 if overwrite:
     with open("debug.txt", "w") as f1:
