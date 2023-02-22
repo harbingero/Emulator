@@ -137,6 +137,10 @@ letter_axis = {"a": "00",
 player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
 rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
 pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
+map_no_paths = {"Bedroom": ["00", "05", "06", "33", "34", "65", "66"],
+                "Mom's Room": ["00", "01", "30", "33", "34", "43", "44", "53"]}
+map_destinations = {"Bedroom": ["70"],
+                    "Mom's Room": ["27", "37", "70"]}
 #  0 Pallet Town
 #  1 Viridian City
 #  12 Route 1
@@ -361,15 +365,35 @@ def naming(fun_named):
     return fun_named
 
 
+def overworld_move(map_number, x, y):
+    print(map_number)
+    map_name = map_number_name[map_number]
+    no_paths = map_no_paths[map_name]
+    if len(map_destinations[map_name]) < 2:
+        random_destination = random.randint(0, len(map_destinations[map_name]) - 1)
+    else:
+        random_destination = 0
+    destination = map_destinations[map_name][random_destination]
+    print(destination)
+    print(no_paths)
+    while x != int(destination[0]) and y != int(destination[1]):
+        print(destination[0], destination[1])
+        vert_or_hori = random.randint(0, 1)   #  Leaving off, I am randomly choosing left/right, and up/down.  To continue I need to go left/right and determine if I can go into the next square
+    return x, y  #  Once this function is done, I need to delete the while loop under where this is being implimented in to_starters and impliment this in Mom's room as well.
+
+
 def to_starters(name):
     walk_speed = 21
     transition = 40
     oak_walk = 500
     random_starter = random.randint(0, 2)
+    x = 3
+    y = 5
     tick_pass(250)
-    hold_right(walk_speed * 2)
-    hold_up(walk_speed * 4)
-    hold_right(walk_speed * 2)
+    x, y = overworld_move(pyboy.get_memory_value(54110), x, y)
+    while pyboy.get_memory_value(54110) == 38:
+        hold_right(walk_speed * 1)
+        hold_up(walk_speed * 1)
     tick_pass(transition)  # Out of room
     hold_down(walk_speed * 5)
     hold_left(walk_speed * 4)
@@ -459,9 +483,7 @@ def battle_values():
 
 # I can create a function that checks the map number value compared to the previous map number value you leave from
 # and determine delta x and delta y between entrance x and y to destination x and y.
-# Other finessing potential is checking if there is a direction you can go vs cannot,
-# checking if you're in grass, etc.
-
+# Other finessing potential is checking if there is a direction you can go vs cannot
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
