@@ -164,6 +164,7 @@ def tick_pass(number):
     if number <= 0:
         return None
     while number > 0:
+        save_values(9999999)
         pyboy.tick()
         number -= 1
     print("----------------------------", printer_number)
@@ -365,21 +366,52 @@ def naming(fun_named):
     return fun_named
 
 
-def overworld_move(map_number, x, y):
-    print(map_number)
-    map_name = map_number_name[map_number]
-    no_paths = map_no_paths[map_name]
-    if len(map_destinations[map_name]) < 2:
-        random_destination = random.randint(0, len(map_destinations[map_name]) - 1)
-    else:
-        random_destination = 0
-    destination = map_destinations[map_name][random_destination]
-    print(destination)
-    print(no_paths)
-    while x != int(destination[0]) and y != int(destination[1]):
-        print(destination[0], destination[1])
-        vert_or_hori = random.randint(0, 1)   #  Leaving off, I am randomly choosing left/right, and up/down.  To continue I need to go left/right and determine if I can go into the next square
-    return x, y  #  Once this function is done, I need to delete the while loop under where this is being implimented in to_starters and impliment this in Mom's room as well.
+# def overworld_move(map_number, x, y):
+#     print(map_number)
+#     map_name = map_number_name[map_number]
+#     no_paths = map_no_paths[map_name]
+#     if len(map_destinations[map_name]) < 2:
+#         random_destination = random.randint(0, len(map_destinations[map_name]) - 1)
+#     else:
+#         random_destination = 0
+#     destination = map_destinations[map_name][random_destination]
+#     print(destination)
+#     print(no_paths)
+#     while x != int(destination[0]) and y != int(destination[1]):
+#         try_left = True
+#         try_right = True
+#         try_up = True
+#         try_down = True
+#         print(destination[0], destination[1])
+#         delta_x = int(destination[0]) - x
+#         delta_y = int(destination[1]) - y
+#         if delta_x > 0:  # Try right
+#             trying = str(int(x+1)) + y
+#             for position in no_paths:
+#                 if trying in position:
+#                     try_right = False
+#         if delta_x < 0:  # Try left
+#             trying = str(int(x-1)) + y
+#             for position in no_paths:
+#                 if trying in position:
+#                     try_left = False
+#         if delta_y > 0:  # Try down
+#             trying = x + str(int(y+1))
+#             for position in no_paths:
+#                 if trying in position:
+#                     try_down = False
+#         if delta_y < 0:  # Try up
+#             trying = x + str(int(y-1))
+#             for position in no_paths:
+#                 if trying in position:
+#                     try_up = False
+#         print("UP: ", try_up, "\nDOWN: ", try_down, "\nLEFT: ", try_left, "\nRIGHT: ", try_right)
+#         vert_or_hori = random.randint(0, 1)   #  0=vertical 1=horizontal
+#         if vert_or_hori == 0
+#         riup_or_ledo = random.randint(0, 4)  # 0,1,2=towards direction 3=opposite direction
+#               #  To continue I need to go left/right and determine if I can go into the next square
+#     return x, y  #  Once this function is done, I need to delete the while loop under where this is being implimented in to_starters and impliment this in Mom's room as well.xi = 55
+
 
 
 def to_starters(name):
@@ -390,7 +422,7 @@ def to_starters(name):
     x = 3
     y = 5
     tick_pass(250)
-    x, y = overworld_move(pyboy.get_memory_value(54110), x, y)
+    # x, y = overworld_move(pyboy.get_memory_value(54110), x, y)
     while pyboy.get_memory_value(54110) == 38:
         hold_right(walk_speed * 1)
         hold_up(walk_speed * 1)
@@ -433,23 +465,62 @@ def save_values(tick_number):
         grass = pyboy.get_memory_value(49671)
         badges = pyboy.get_memory_value(54102)
         map_number = pyboy.get_memory_value(54110)
+        sprite_walk = pyboy.get_memory_value(49664)
+        sprite_x_pos = pyboy.get_memory_value(49669)
+        sprite_x_pos_delta = pyboy.get_memory_value(49667)
+        sprite_y_pos = pyboy.get_memory_value(49668)
+        sprite_y_pos_delta = pyboy.get_memory_value(49666)
+        sprite_move_check = pyboy.get_memory_value(49672)
+        move_status = pyboy.get_memory_value(49409)
+        image_index = pyboy.get_memory_value(49410)
+        animation_frame_counter = pyboy.get_memory_value(49416)
+        undocumented = []
+        for i in range(49418, 49423):
+            undocumented.append(i)
+        undocumented_appended = []
+        for i in undocumented:
+            undocumented_appended.append(pyboy.get_memory_value(i))
+
         player_input = []
         if len(pyboy.get_input()) > 0:
             for i in range(len(pyboy.get_input())):
                 player_input.append(str(pyboy.get_input()[i]))
         print("Grass: ", grass, "128 while in, 0 while not")
+        print(Fore.BLUE + "Move status: ", move_status)
+        print("Image index: ", image_index)
+        print("Animation Frame Counter: ", animation_frame_counter)
+        print("Undocumented values: ", undocumented_appended)
         print(Fore.GREEN + "Map number:  ", str(map_number) + Fore.RESET)
         print("_________________________"
               "Number of ticks in over world in control " + str(tick_number) +
               "_________________________")
-        f.write("Direction: " + str(direction) + "\t\t| 0: down, 4: up, 8: left, $c: right\nPlayer input: " +
+        f.write("Direction: " + str(direction) + "\t\t| 0: down, 4: up, 8: left, 12: right\nPlayer input: " +
                 str(player_input))
+        f.write("\nReady to move:  " + str(sprite_move_check) + "\t| 0=ready to move")
+        f.write("\nMovement:  " + str(sprite_walk) + "\t\t| Countdown")
+        f.write("\nPossition X:  " + str(sprite_x_pos) + "\nDelta X:  " + str(sprite_x_pos_delta) +
+                "\nPossition Y:  " + str(sprite_y_pos) + "\nDelta Y:  " + str(sprite_y_pos_delta))
         f.write("\nPlayer in grass: " + str(grass) + "\t| 128 while in, 0 while not\n")
         f.write("Badges:  " + str(badges) + "\t\t| Binary values\n")
-        f.write("Battle Type:  " + str(other_battle_type) + "\t\t| 0 not in battle, 1 wild PKMN, 2 Trainer\n")
+        # f.write("Battle Type:  " + str(other_battle_type) + "\t\t| 0 not in battle, 1 wild PKMN, 2 Trainer\n")
         f.write("\n_________________________"
                 "^Number of ticks in over world in control " + str(tick_number) +
                 "^_________________________\n\n")
+
+
+#     49408: picture ID (fixed, loaded at map init)
+#     49409: movement status (0: uninitialized, 1: ready, 2: delayed, 3: moving)
+#     49410: sprite image index (changed on update, $ff if off screen, includes facing direction,
+#           progress in walking animation and a sprite-specific offset)
+#     49411: Y screen position delta (-1,0 or 1; added to 49412 on each walking animation update)
+#     49412: Y screen position (in pixels, always 4 pixels above grid which makes sprites
+#           appear to be in the center of a tile)
+#     49413: X screen position delta (-1,0 or 1; added to 49414 on each walking animation update)
+#     49414: X screen position (in pixels, snaps to grid if not currently walking)
+#     49415: intra-animation-frame counter (counting upwards to 4 until 49416 is incremented)
+#     49416: animation frame counter (increased every 4 updates, hold four states (totalling to 16 walking frames)
+#     49417: facing direction (0: down, 4: up, 8: left, $c: right)
+#     49418 to 49423 are unudocumented (if used)
 
 
 def battle_values():
