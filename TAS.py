@@ -154,9 +154,6 @@ def press_select():
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
     print("----------------------Select")
 
-# I can implement a spelling function later where I can create a list of a list of letters, then decide how many to the
-# right/left and how many up/down the cursor needs to go.
-
 
 def spell_Jesse():
     xi = 55  #55
@@ -417,33 +414,33 @@ def battle_values():
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
-in_battle = pyboy.get_memory_value(53335)
-increment = 0
-for i in range(play_time):
-    manager = pyboy.botsupport_manager()
-    sprite0 = manager.sprite(0)
-    if manager.sprite(0).on_screen and started is False:
-        while started is False and sprite0.on_screen:
-            sprite0 = manager.sprite(0)
-            press_start()
-            tick_pass(110)
-        started = True
-    if named is False and started:
-        named = naming(named)
-    if named and started and pathed_to_starters is False:
-        to_starters()
-        pathed_to_starters = True
-    if named and started and pathed_to_starters:
-        regain_control = True
-    if regain_control and in_battle == 0:
-        controlled_ticks = save_values(controlled_ticks)
-    if regain_control and in_battle != 0:
-        battle_values()
-    pyboy.tick()
-    check = appended
-    appended = ""
-    # for j in range(42392, 42402):
-    #     appended += str(pyboy.get_memory_value(j)) + ": "
+# in_battle = pyboy.get_memory_value(53335)
+# increment = 0
+# for i in range(play_time):
+#     manager = pyboy.botsupport_manager()
+#     sprite0 = manager.sprite(0)
+#     if manager.sprite(0).on_screen and started is False:
+#         while started is False and sprite0.on_screen:
+#             sprite0 = manager.sprite(0)
+#             press_start()
+#             tick_pass(110)
+#         started = True
+#     if named is False and started:
+#         named = naming(named)
+#     if named and started and pathed_to_starters is False:
+#         to_starters()
+#         pathed_to_starters = True
+#     if named and started and pathed_to_starters:
+#         regain_control = True
+#     if regain_control and in_battle == 0:
+#         controlled_ticks = save_values(controlled_ticks)
+#     if regain_control and in_battle != 0:
+#         battle_values()
+#     pyboy.tick()
+#     check = appended
+#     appended = ""
+#     # for j in range(42392, 42402):
+#     #     appended += str(pyboy.get_memory_value(j)) + ": "
     # if check != appended:
     #     print(check, "\n" + Fore.GREEN + appended + Fore.RESET)
     # else:
@@ -460,8 +457,8 @@ for i in range(play_time):
     # print(manager.tilemap_background())
     # for j in range(24):
     #     print(manager.sprite(j), "\n", manager.sprite(j).tiles)
-else:
-    pyboy.stop(save=False)
+# else:
+#     pyboy.stop(save=False)
     # pyboy.send_input(WindowEvent.PRESS_BUTTON_START)
     # pyboy.tick()
     # pyboy.send_input(WindowEvent.RELEASE_BUTTON_START)
@@ -470,3 +467,10 @@ else:
 # pyboy.stop(save=False)
 #
 #
+def main(argv):
+    list_of_actions=[hold_a, hold_up, hold_down, hold_left, hold_right]
+    while not pyboy.tick():
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    pyboy.stop()
+    
+main(None)
