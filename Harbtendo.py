@@ -18,6 +18,61 @@ appended = ""
 started = False
 named = False
 pathed_to_starters = False
+starters = ["Charmander", "Squirtle", "Bulbasaur"]
+play_time = 50000
+regain_control = False
+overwrite = True
+controlled_ticks = 0
+letter_axis = {"a": "00",
+               "b": "10",
+               "c": "20",
+               "d": "30",
+               "e": "40",
+               "f": "50",
+               "g": "60",
+               "h": "70",
+               "i": "80",
+               "j": "01",
+               "k": "11",
+               "l": "21",
+               "m": "31",
+               "n": "41",
+               "o": "51",
+               "p": "61",
+               "q": "71",
+               "r": "81",
+               "s": "02",
+               "t": "12",
+               "u": "22",
+               "v": "32",
+               "w": "42",
+               "x": "52",
+               "y": "62",
+               "z": "72",
+               " ": "82",
+               "*": "03",
+               "(": "13",
+               ")": "23",
+               ":": "33",
+               ";": "43",
+               "[": "53",
+               "]": "63",
+               "#": "73",  # pk
+               "$": "83",  # mn
+               "-": "04",
+               "?": "14",
+               "!": "24",
+               "^": "34",  # ♂
+               "%": "44",  # ♀
+               "/": "54",
+               ".": "64",
+               ",": "74",
+               "&": "84"}  # (*)=x,  (#)=pk, ($)=mn, (^)=♂, (%)=♀, (&)=End
+player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
+rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
+pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
+
+
 map_number_name = ["Pallet Town",
                    "Viridian City",
                    "",
@@ -84,63 +139,99 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    ""]
-starters = ["Charmander", "Squirtle", "Bulbasaur"]
-play_time = 50000
-regain_control = False
-overwrite = True
-controlled_ticks = 0
-letter_axis = {"a": "00",
-               "b": "10",
-               "c": "20",
-               "d": "30",
-               "e": "40",
-               "f": "50",
-               "g": "60",
-               "h": "70",
-               "i": "80",
-               "j": "01",
-               "k": "11",
-               "l": "21",
-               "m": "31",
-               "n": "41",
-               "o": "51",
-               "p": "61",
-               "q": "71",
-               "r": "81",
-               "s": "02",
-               "t": "12",
-               "u": "22",
-               "v": "32",
-               "w": "42",
-               "x": "52",
-               "y": "62",
-               "z": "72",
-               " ": "82",
-               "*": "03",
-               "(": "13",
-               ")": "23",
-               ":": "33",
-               ";": "43",
-               "[": "53",
-               "]": "63",
-               "#": "73",  # pk
-               "$": "83",  # mn
-               "-": "04",
-               "?": "14",
-               "!": "24",
-               "^": "34",  # ♂
-               "%": "44",  # ♀
-               "/": "54",
-               ".": "64",
-               ",": "74",
-               "&": "84"}  # (*)=x,  (#)=pk, ($)=mn, (^)=♂, (%)=♀, (&)=End
-player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
-rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
-pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
 map_no_paths = {"Bedroom": ["00", "05", "06", "33", "34", "65", "66"],
                 "Mom's Room": ["00", "01", "30", "33", "34", "43", "44", "53"]}
 map_destinations = {"Bedroom": ["70"],
                     "Mom's Room": ["27", "37", "70"]}
+move_number = ["No Move",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Scratch",  # 10
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 20
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 30
+               "",
+               "",
+               "Tackle",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Tail Whip",
+               "",  # 40
+               "",
+               "",
+               "",
+               "",
+               "Growl",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""]
+status_move = ["Growl",
+               "Tail Whip",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""]
+damage_move = ["Scratch",
+               "Tackle",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""]
+
+
+
 #  0 Pallet Town
 #  1 Viridian City
 #  12 Route 1
@@ -164,7 +255,6 @@ def tick_pass(number):
     if number <= 0:
         return None
     while number > 0:
-        save_values(9999999)
         pyboy.tick()
         number -= 1
     print("----------------------------", printer_number)
@@ -176,6 +266,7 @@ def hold_up(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_UP)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_UP)
+    pyboy.tick()
     print("Up--------------------------", x)
 
 
@@ -183,6 +274,7 @@ def hold_down(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_DOWN)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_DOWN)
+    pyboy.tick()
     print("--Down----------------------", x)
 
 
@@ -190,6 +282,7 @@ def hold_left(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_LEFT)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_LEFT)
+    pyboy.tick()
     print("------Left------------------", x)
 
 
@@ -197,6 +290,7 @@ def hold_right(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_RIGHT)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_RIGHT)
+    pyboy.tick()
     print("----------Right-------------", x)
 
 
@@ -204,6 +298,7 @@ def hold_a(x):
     pyboy.send_input(WindowEvent.PRESS_BUTTON_A)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_A)
+    pyboy.tick()
     print("---------------A------------", x)
 
 
@@ -211,6 +306,7 @@ def hold_b(x):
     pyboy.send_input(WindowEvent.PRESS_BUTTON_B)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_B)
+    pyboy.tick()
     print("----------------B-----------", x)
 
 
@@ -218,6 +314,7 @@ def hold_start(x):
     pyboy.send_input(WindowEvent.PRESS_BUTTON_START)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_START)
+    pyboy.tick()
     print("-----------------Start------", x)
 
 
@@ -225,6 +322,7 @@ def hold_select(x):
     pyboy.send_input(WindowEvent.PRESS_BUTTON_SELECT)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
+    pyboy.tick()
     print("----------------------Select", x)
 
 
@@ -232,6 +330,7 @@ def press_up():
     pyboy.send_input(WindowEvent.PRESS_ARROW_UP)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_UP)
+    pyboy.tick()
     print("Up--------------------------")
 
 
@@ -239,6 +338,7 @@ def press_down():
     pyboy.send_input(WindowEvent.PRESS_ARROW_DOWN)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_DOWN)
+    pyboy.tick()
     print("--Down----------------------")
 
 
@@ -246,6 +346,7 @@ def press_left():
     pyboy.send_input(WindowEvent.PRESS_ARROW_LEFT)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_LEFT)
+    pyboy.tick()
     print("------Left------------------")
 
 
@@ -253,6 +354,7 @@ def press_right():
     pyboy.send_input(WindowEvent.PRESS_ARROW_RIGHT)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_RIGHT)
+    pyboy.tick()
     print("----------Right-------------")
 
 
@@ -260,6 +362,7 @@ def press_a():
     pyboy.send_input(WindowEvent.PRESS_BUTTON_A)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_A)
+    pyboy.tick()
     print("---------------A------------")
 
 
@@ -267,6 +370,7 @@ def press_b():
     pyboy.send_input(WindowEvent.PRESS_BUTTON_B)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_B)
+    pyboy.tick()
     print("----------------B-----------")
 
 
@@ -274,6 +378,7 @@ def press_start():
     pyboy.send_input(WindowEvent.PRESS_BUTTON_START)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_START)
+    pyboy.tick()
     print("-----------------Start------")
 
 
@@ -281,6 +386,7 @@ def press_select():
     pyboy.send_input(WindowEvent.PRESS_BUTTON_SELECT)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
+    pyboy.tick()
     print("----------------------Select")
 
 # An attempt to refactor the naming function can be as easy as creating a dictionary with each potential character
@@ -459,6 +565,8 @@ def to_rival_battle1():
 
 def save_values(tick_number):
     with open("debug.txt", "a") as f:
+        testing = True
+        add_test = False
         other_battle_type = pyboy.get_memory_value(53335)
         battle_type = pyboy.get_memory_value(53338)
         direction = pyboy.get_memory_value(49417)
@@ -466,15 +574,43 @@ def save_values(tick_number):
         badges = pyboy.get_memory_value(54102)
         map_number = pyboy.get_memory_value(54110)
         sprite_walk = pyboy.get_memory_value(49664)
-        sprite_x_pos = pyboy.get_memory_value(49669)
-        sprite_x_pos_delta = pyboy.get_memory_value(49667)
-        sprite_y_pos = pyboy.get_memory_value(49668)
-        sprite_y_pos_delta = pyboy.get_memory_value(49666)
+        secondY = pyboy.get_memory_value(9741)
+        secondX = pyboy.get_memory_value(9742)
+        second_delta_X = pyboy.get_memory_value(9744)
+        second_delta_Y = pyboy.get_memory_value(9743)
+        sprite_x_pos = pyboy.get_memory_value(49414)
+        sprite_x_pos_delta = pyboy.get_memory_value(49413)
+        sprite_y_pos = pyboy.get_memory_value(49412)
+        sprite_y_pos_delta = pyboy.get_memory_value(49411)
         sprite_move_check = pyboy.get_memory_value(49672)
         move_status = pyboy.get_memory_value(49409)
         image_index = pyboy.get_memory_value(49410)
         animation_frame_counter = pyboy.get_memory_value(49416)
+        have_map = pyboy.get_memory_value(54771)
+        have_parcel = pyboy.get_memory_value(54797)
+        gio_fight = pyboy.get_memory_value(55121)
+        brock_fight = pyboy.get_memory_value(55125)
+        misty_fight = pyboy.get_memory_value(55134)
+        surge_fight = pyboy.get_memory_value(55155)
+        erika_fight = pyboy.get_memory_value(55164)
+        koga_fight = pyboy.get_memory_value(55186)
+        blaine_fight = pyboy.get_memory_value(55194)
+        sabrina_fight = pyboy.get_memory_value(55219)
+        v_snorlax_fight = pyboy.get_memory_value(55256)
+        c_snorlax_fight = pyboy.get_memory_value(55264)
+        map_height = pyboy.get_memory_value(9748)
+        map_width = pyboy.get_memory_value(9749)
+        walking = pyboy.get_memory_value(10668)
+        # map_script = pyboy.get_memory_value(11493)
         undocumented = []
+        if direction == 0:
+            word_direction = "Down"
+        elif direction == 4:
+            word_direction = "Up"
+        elif direction == 8:
+            word_direction = "Left"
+        elif direction == 12:
+            word_direction = "Right"
         for i in range(49418, 49423):
             undocumented.append(i)
         undocumented_appended = []
@@ -490,18 +626,40 @@ def save_values(tick_number):
         print("Image index: ", image_index)
         print("Animation Frame Counter: ", animation_frame_counter)
         print("Undocumented values: ", undocumented_appended)
-        print(Fore.GREEN + "Map number:  ", str(map_number) + Fore.RESET)
+        print("X =", sprite_x_pos, "\nY =", sprite_y_pos, "\nDeltaX =",
+              sprite_x_pos_delta, "\nDeltaY =", sprite_y_pos_delta)
+        print(Fore.GREEN + "Map number:  ", str(map_number) + "\t" + str(map_number_name[map_number]) + Fore.RESET)
+        if testing:
+            f.write("Map value\t\t" + str(map_number) + " " + str(map_number_name[map_number]))
+            f.write("\nMove Status:\t\t" + str(move_status))
+            f.write("\nImage index:\t\t" + str(image_index))
+            f.write("\nAnimation Frame Counter:" + str(animation_frame_counter))
+            f.write("\nUndocumented Valuse:\t" + str(undocumented_appended))
+            if add_test:
+                for i in range(49408, 49470):
+                    if i % 10 == 0:
+                        print(Fore.LIGHTGREEN_EX + str(i) + "=", pyboy.get_memory_value(i))
+                    else:
+                        print(Fore.LIGHTGREEN_EX + str(i) + "=", pyboy.get_memory_value(i), end=", ")
+                    f.write("\n" + str(i) + "\n" + str(pyboy.get_memory_value(i)))
+        print(Fore.RESET)
         print("_________________________"
               "Number of ticks in over world in control " + str(tick_number) +
               "_________________________")
-        f.write("Direction: " + str(direction) + "\t\t| 0: down, 4: up, 8: left, 12: right\nPlayer input: " +
-                str(player_input))
+        f.write("\nDirection: " + word_direction + " " + str(direction) +
+                "\t\t| 0: down, 4: up, 8: left, 12: right\nPlayer input: " + str(player_input))
         f.write("\nReady to move:  " + str(sprite_move_check) + "\t| 0=ready to move")
         f.write("\nMovement:  " + str(sprite_walk) + "\t\t| Countdown")
-        f.write("\nPossition X:  " + str(sprite_x_pos) + "\nDelta X:  " + str(sprite_x_pos_delta) +
+        f.write("\n\nPossition X:  " + str(sprite_x_pos) + "\nDelta X:  " + str(sprite_x_pos_delta) +
                 "\nPossition Y:  " + str(sprite_y_pos) + "\nDelta Y:  " + str(sprite_y_pos_delta))
+        f.write("\nHeight:  " + str(map_height) +
+                "\nWidth:  " + str(map_width))
+        f.write("\nSecond X:  " + str(secondX) + "\nDelta X:  " + str(second_delta_X) +
+                "\nSecond Y:  " + str(secondY) + "\nDelta Y:  " + str(second_delta_Y))
         f.write("\nPlayer in grass: " + str(grass) + "\t| 128 while in, 0 while not\n")
-        f.write("Badges:  " + str(badges) + "\t\t| Binary values\n")
+        f.write("Have the map:\t" + str(have_map))
+        f.write("\nHave parcel:\t" + str(have_parcel))
+        f.write("\nBadges:  " + str(badges) + "\t\t| Binary values\n")
         # f.write("Battle Type:  " + str(other_battle_type) + "\t\t| 0 not in battle, 1 wild PKMN, 2 Trainer\n")
         f.write("\n_________________________"
                 "^Number of ticks in over world in control " + str(tick_number) +
@@ -529,6 +687,10 @@ def battle_values():
         battle_type = pyboy.get_memory_value(53338)
         battle_turn = pyboy.get_memory_value(52437)
         party_quantity = pyboy.get_memory_value(53603)
+        move1 = pyboy.get_memory_value(53276)
+        move2 = pyboy.get_memory_value(53277)
+        move3 = pyboy.get_memory_value(53278)
+        move4 = pyboy.get_memory_value(53279)
         party1 = pyboy.get_memory_value(53603)
         party2 = pyboy.get_memory_value(53603)
         party3 = pyboy.get_memory_value(53603)
@@ -542,7 +704,11 @@ def battle_values():
                 player_input.append(str(pyboy.get_input()[i]))
         f0.write("Battle turn #:  " + str(battle_turn))
         f0.write("\nParty quantity:  " + str(party_quantity))
-        f0.write("\nLead Pokemon:  " + str(party1))
+        f0.write("\nLead Pokemon:  " + str(party1) +
+                 "\nMove 1:  " + str(move1) +
+                 "\nMove 2:  " + str(move2) +
+                 "\nMove 3:  " + str(move3) +
+                 "\nMove 4:  " + str(move4))
         f0.write("\nParty 2:  " + str(party2))
         f0.write("\nParty 3:  " + str(party3))
         f0.write("\nParty 4:  " + str(party4))
@@ -550,6 +716,50 @@ def battle_values():
         f0.write("\nParty 6:  " + str(party6))
         f0.write("\n_________________________^Number of turns in battle under your control " + str(battle_turn) +
                  "^_________________________\n\n")
+
+
+def battle_decision():  # To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested
+    decided = 0
+    battle_turn = pyboy.get_memory_value(52437)
+    move1 = pyboy.get_memory_value(53276)
+    move2 = pyboy.get_memory_value(53277)
+    move3 = pyboy.get_memory_value(53278)
+    move4 = pyboy.get_memory_value(53279)
+    move_pool = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
+    move_type = [0, 1]  # 0=status, 1=damage
+    for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
+        move_type.append(1)
+    type_decided = random.randint(0, len(move_type) - 1)  # Decide status/damage
+    damage_pool = []
+    status_pool = []
+    move_position = 0  # Used to determine where in the list of moves the move is
+    moves = []  # Appended moves position in line 0=top 1=second 2=third 3=fourth
+    for move in move_pool:
+        if len(move_number[move]) < 1:
+            break
+        elif move_number[move] in damage_move:  # and len(move_number[move]) > 0
+            damage_pool.append(move)
+            moves.append(move_position)
+        elif move_number[move] in status_move:  # and len(move_number[move]) > 0
+            status_pool.append(move)
+            moves.append(move_position)
+        move_position += 1
+    if type_decided:  # if damage
+        decided = random.randint(0, len(damage_pool) - 1)
+    if type_decided == 0:
+        decided = random.randint(0, len(status_pool) - 1)
+    xi = 10
+    xj = 6
+    xk = 10
+    for i in range(0, xj):
+        press_a()
+        tick_pass(xi)
+    for i in range(0, moves[decided]):
+        press_down()
+        tick_pass(xi)
+    for i in range(0, xk):
+        press_a()
+        tick_pass(xi)
 
 
 # I can create a function that checks the map number value compared to the previous map number value you leave from
@@ -577,10 +787,14 @@ for i in range(play_time):
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
-    if regain_control and in_battle == 0:
-        save_values(controlled_ticks)
-    if regain_control and in_battle != 0:
+    if regain_control and in_battle:
+        battle_decision()
+        # list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
+        # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+        # save_values(controlled_ticks)
+    if regain_control and not in_battle:
         battle_values()
+        press_a()
     pyboy.tick()
     check = appended
     appended = ""
