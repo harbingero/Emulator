@@ -14,6 +14,7 @@ from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
 
+turn_counter = []
 appended = ""
 started = False
 named = False
@@ -143,7 +144,7 @@ map_no_paths = {"Bedroom": ["00", "05", "06", "33", "34", "65", "66"],
                 "Mom's Room": ["00", "01", "30", "33", "34", "43", "44", "53"]}
 map_destinations = {"Bedroom": ["70"],
                     "Mom's Room": ["27", "37", "70"]}
-move_number = ["No Move",
+move_number = ["",  # No Move 0
                "",
                "",
                "",
@@ -436,7 +437,6 @@ def spell_name(name):
                     y = y - 1
         press_a()
         tick_pass(xi)
-        print(caps)
         if caps:
             press_select()
             tick_pass(xi)
@@ -539,22 +539,22 @@ def to_starters(name):
     tick_pass(transition)  # Out of house
     hold_right(walk_speed * 5)
     hold_up(walk_speed * 5)
-    for i in range(1250):  # In grass
+    for i in range(1000):  # 1250 In grass
         press_b()
         pyboy.tick()
     # tick_pass(oak_walk)
     hold_down(walk_speed - 5)
-    hold_right((walk_speed - 3) * (1 + random_starter))
+    hold_right((walk_speed - 5) * (1 + random_starter))
     hold_up(walk_speed)
     press_a()
-    for i in range(350):  # Starter selected
+    for i in range(270):  # 350/270 Starter selected
         press_a()
         pyboy.tick()
     for i in range(20):
         press_b()
         pyboy.tick()
     spell_name(name)
-    for i in range(280):
+    for i in range(280):  # 280
         press_a()
         pyboy.tick()
 
@@ -718,7 +718,7 @@ def battle_values():
                  "^_________________________\n\n")
 
 
-def battle_decision():  # To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested
+def battle_decision(turns):  # To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested
     decided = 0
     battle_turn = pyboy.get_memory_value(52437)
     move1 = pyboy.get_memory_value(53276)
@@ -726,40 +726,65 @@ def battle_decision():  # To be tested    To be tested    To be tested    To be 
     move3 = pyboy.get_memory_value(53278)
     move4 = pyboy.get_memory_value(53279)
     move_pool = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
-    move_type = [0, 1]  # 0=status, 1=damage
+    move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
     for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
-        move_type.append(1)
-    type_decided = random.randint(0, len(move_type) - 1)  # Decide status/damage
+        move_type.append(0)                                     # Replace a 0 with a 1
+    type_decided = move_type[random.randint(0, len(move_type) - 1)]  # Decide status/damage
     damage_pool = []
     status_pool = []
     move_position = 0  # Used to determine where in the list of moves the move is
     moves = []  # Appended moves position in line 0=top 1=second 2=third 3=fourth
-    for move in move_pool:
-        if len(move_number[move]) < 1:
-            break
-        elif move_number[move] in damage_move:  # and len(move_number[move]) > 0
-            damage_pool.append(move)
-            moves.append(move_position)
-        elif move_number[move] in status_move:  # and len(move_number[move]) > 0
-            status_pool.append(move)
-            moves.append(move_position)
-        move_position += 1
-    if type_decided:  # if damage
-        decided = random.randint(0, len(damage_pool) - 1)
-    if type_decided == 0:
-        decided = random.randint(0, len(status_pool) - 1)
+    d_moves = []
+    s_moves = []
+    if battle_turn not in turns:  # Attempt anything below this line in this function at your own risk
+        for move in move_pool:
+            if len(move_number[move]) < 1:
+                break
+            elif move_number[move] in damage_move:  # and len(move_number[move]) > 0
+                print("Damage move: ", move, move_number[move])
+                damage_pool.append(move)
+                d_moves.append(move_position)
+            elif move_number[move] in status_move:  # and len(move_number[move]) > 0
+                print("Status move: ", move, move_number[move])
+                status_pool.append(move)
+                s_moves.append(move_position)
+            print(move_position)
+            move_position += 1
+        if type_decided and len(damage_pool) > 0:  # if damage
+            decision = random.randint(0, len(damage_pool) - 1)
+            tell = 0
+            for mov in d_moves:
+                if decision == tell:
+                    decided = mov
+                    moves.append(move_pool[mov])
+        if type_decided == 0 and len(status_pool) > 0:
+            decision = random.randint(0, len(status_pool) - 1)
+            tell = 0
+            for mov in s_moves:
+                if decision == tell:
+                    decided = mov
+                    moves.append(move_pool[mov])
+        turns.append(battle_turn)
+        print("Turns: ", turns, "Decided: ", decided)
     xi = 10
     xj = 6
     xk = 10
-    for i in range(0, xj):
+    print(moves)
+    if len(moves) > 0:
+        for i in range(0, xj):
+            print("First\n", i)
+            press_a()
+            tick_pass(xi)
+        for i in range(0, decided * xj):
+            print("Second\n", i, decided)
+            press_down()
+            tick_pass(xi)
+        for i in range(0, xk):
+            print("Third\n", i)
+            press_a()
+            tick_pass(xi)
+    else:
         press_a()
-        tick_pass(xi)
-    for i in range(0, moves[decided]):
-        press_down()
-        tick_pass(xi)
-    for i in range(0, xk):
-        press_a()
-        tick_pass(xi)
 
 
 # I can create a function that checks the map number value compared to the previous map number value you leave from
@@ -787,14 +812,16 @@ for i in range(play_time):
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
-    if regain_control and in_battle:
-        battle_decision()
+    if regain_control and not in_battle:
+        turns = []
         # list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
         # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
         # save_values(controlled_ticks)
-    if regain_control and not in_battle:
-        battle_values()
-        press_a()
+        pass
+    if regain_control and in_battle:
+        battle_decision(turn_counter)
+        # battle_values()
+        # press_a()
     pyboy.tick()
     check = appended
     appended = ""
