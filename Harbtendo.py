@@ -20,7 +20,7 @@ started = False
 named = False
 pathed_to_starters = False
 starters = ["Charmander", "Squirtle", "Bulbasaur"]
-play_time = 50000
+play_time = 5000000
 regain_control = False
 overwrite = True
 controlled_ticks = 0
@@ -189,13 +189,133 @@ move_number = ["",  # No Move 0
                "",
                "",
                "",
-               "Growl",
+               "Growl", # 45
+               "",
+               "",
+               "",
+               "",
+               "",  # 50
                "",
                "",
                "",
                "",
                "",
-               ""]
+               "",
+               "",
+               "",
+               "",
+               "",  # 60
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 70
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 80
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 90
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 100
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 110
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 120
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 130
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 140
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 150
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 160
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 170
+               "" ]
 status_move = ["Growl",
                "Tail Whip",
                "",
@@ -389,9 +509,6 @@ def press_select():
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
     pyboy.tick()
     print("----------------------Select")
-
-# An attempt to refactor the naming function can be as easy as creating a dictionary with each potential character
-# and a value of x and y coordinates.  Then figure out the delta x, and delta y.  Move accordingly
 
 
 def spell_name(name):
@@ -719,58 +836,76 @@ def battle_values():
 
 
 def battle_decision(turns):  # To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested
-    decided = 0
+    move1_pp = pyboy.get_memory_value(53293)
+    move2_pp = pyboy.get_memory_value(53294)
+    move3_pp = pyboy.get_memory_value(53295)
+    move4_pp = pyboy.get_memory_value(53296)
     battle_turn = pyboy.get_memory_value(52437)
     move1 = pyboy.get_memory_value(53276)
     move2 = pyboy.get_memory_value(53277)
     move3 = pyboy.get_memory_value(53278)
     move4 = pyboy.get_memory_value(53279)
-    move_pool = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
-    move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
-    for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
-        move_type.append(0)                                     # Replace a 0 with a 1
-    type_decided = move_type[random.randint(0, len(move_type) - 1)]  # Decide status/damage
-    damage_pool = []
-    status_pool = []
-    move_position = 0  # Used to determine where in the list of moves the move is
-    moves = []  # Appended moves position in line 0=top 1=second 2=third 3=fourth
-    d_moves = []
-    s_moves = []
-    if battle_turn not in turns:  # Attempt anything below this line in this function at your own risk
-        for move in move_pool:
-            if len(move_number[move]) < 1:
-                break
-            elif move_number[move] in damage_move:  # and len(move_number[move]) > 0
-                print("Damage move: ", move, move_number[move])
-                damage_pool.append(move)
-                d_moves.append(move_position)
-            elif move_number[move] in status_move:  # and len(move_number[move]) > 0
-                print("Status move: ", move, move_number[move])
-                status_pool.append(move)
-                s_moves.append(move_position)
-            print(move_position)
-            move_position += 1
-        if type_decided and len(damage_pool) > 0:  # if damage
-            decision = random.randint(0, len(damage_pool) - 1)
-            tell = 0
-            for mov in d_moves:
-                if decision == tell:
-                    decided = mov
-                    moves.append(move_pool[mov])
-        if type_decided == 0 and len(status_pool) > 0:
-            decision = random.randint(0, len(status_pool) - 1)
-            tell = 0
-            for mov in s_moves:
-                if decision == tell:
-                    decided = mov
-                    moves.append(move_pool[mov])
-        turns.append(battle_turn)
-        print("Turns: ", turns, "Decided: ", decided)
-    xi = 10
-    xj = 6
-    xk = 10
-    print(moves)
-    if len(moves) > 0:
+    move_pool = []
+    if move1_pp > 0:
+        decided = 0
+    elif move2_pp > 0:
+        decided = 1
+    elif move3_pp > 0:
+        decided = 2
+    else:
+        decided = 3
+    print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
+          move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
+    moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
+    for move in moves:
+        if len(move_number[move]) > 0:
+            move_pool.append(move)
+
+    # move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
+    # for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
+    #     move_type.append(0)                                     # Replace a 0 with a 1
+    # type_decided = move_type[random.randint(0, len(move_type) - 1)]  # Decide status/damage
+    # damage_pool = []
+    # status_pool = []
+    # move_position = 0  # Used to determine where in the list of moves the move is
+    # moves = []  # Appended moves position in line 0=top 1=second 2=third 3=fourth
+    # d_moves = []
+    # s_moves = []
+    # if battle_turn not in turns:  # Attempt anything below this line in this function at your own risk
+    #     for move in move_pool:
+    #         if len(move_number[move]) < 1:
+    #             break
+    #         elif move_number[move] in damage_move:  # and len(move_number[move]) > 0
+    #             print("Damage move: ", move, move_number[move])
+    #             damage_pool.append(move)
+    #             d_moves.append(move_position)
+    #         elif move_number[move] in status_move:  # and len(move_number[move]) > 0
+    #             print("Status move: ", move, move_number[move])
+    #             status_pool.append(move)
+    #             s_moves.append(move_position)
+    #         print(move_position)
+    #         move_position += 1
+    #     if type_decided and len(damage_pool) > 0:  # if damage
+    #         decision = random.randint(0, len(damage_pool) - 1)
+    #         tell = 0
+    #         for mov in d_moves:
+    #             if decision == tell:
+    #                 decided = mov
+    #                 moves.append(move_pool[mov])
+    #     if type_decided == 0 and len(status_pool) > 0:
+    #         decision = random.randint(0, len(status_pool) - 1)
+    #         tell = 0
+    #         for mov in s_moves:
+    #             if decision == tell:
+    #                 decided = mov
+    #                 moves.append(move_pool[mov])
+    #     turns.append(battle_turn)
+    #     print("Turns: ", turns, "Decided: ", decided)
+    xi = 100
+    xj = 1
+    xk = 1
+    print(move_pool)
+    if len(move_pool) > 0:
         for i in range(0, xj):
             print("First\n", i)
             press_a()
@@ -796,6 +931,10 @@ pyboy = PyBoy('Roms/Pokemon Red.gb')
 increment = 0
 for i in range(play_time):
     in_battle = pyboy.get_memory_value(53335)
+    move1 = pyboy.get_memory_value(53276)
+    move2 = pyboy.get_memory_value(53277)
+    move3 = pyboy.get_memory_value(53278)
+    move4 = pyboy.get_memory_value(53279)
     manager = pyboy.botsupport_manager()
     sprite0 = manager.sprite(0)
     if manager.sprite(0).on_screen and started is False:
@@ -819,9 +958,13 @@ for i in range(play_time):
         # save_values(controlled_ticks)
         pass
     if regain_control and in_battle:
-        battle_decision(turn_counter)
-        # battle_values()
-        # press_a()
+        # battle_decision(turn_counter)
+        if pyboy.get_memory_value(53293) > 0:
+            print("Moves:  ", move1, move2, move3, move4)
+            battle_values()
+            press_a()
+        else:
+            battle_decision(turn_counter)
     pyboy.tick()
     check = appended
     appended = ""

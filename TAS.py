@@ -5,6 +5,181 @@ from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
 
+
+move_number = ["",  # No Move 0
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Scratch",  # 10
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 20
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 30
+               "",
+               "",
+               "Tackle",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Tail Whip",
+               "",  # 40
+               "",
+               "",
+               "",
+               "",
+               "Growl", # 45
+               "",
+               "",
+               "",
+               "",
+               "",  # 50
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 60
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 70
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 80
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 90
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 100
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 110
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 120
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 130
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 140
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 150
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 160
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",  # 170
+               "" ]
+
+
 def tick_pass(number):
     printer_number = number
     if number <= 0:
@@ -23,6 +198,7 @@ def hold_up(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_UP)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_UP)
+    pyboy.tick()
     print("Up--------------------------", x)
 
 
@@ -30,6 +206,7 @@ def hold_down(x):
     pyboy.send_input(WindowEvent.PRESS_ARROW_DOWN)
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_DOWN)
+    pyboy.tick()
     print("--Down----------------------", x)
 
 
@@ -38,6 +215,7 @@ def hold_left(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_LEFT)
     print("------Left------------------", x)
+    pyboy.tick()
 
 
 def hold_right(x):
@@ -45,6 +223,7 @@ def hold_right(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_ARROW_RIGHT)
     print("----------Right-------------", x)
+    pyboy.tick()
 
 
 def hold_a(x):
@@ -52,6 +231,7 @@ def hold_a(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_A)
     print("---------------A------------", x)
+    pyboy.tick()
 
 
 def hold_b(x):
@@ -59,6 +239,7 @@ def hold_b(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_B)
     print("----------------B-----------", x)
+    pyboy.tick()
 
 
 def hold_start(x):
@@ -66,6 +247,7 @@ def hold_start(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_START)
     print("-----------------Start------", x)
+    pyboy.tick()
 
 
 def hold_select(x):
@@ -73,6 +255,7 @@ def hold_select(x):
     tick_pass(x)
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
     print("----------------------Select", x)
+    pyboy.tick()
 
 
 def press_up():
@@ -80,6 +263,7 @@ def press_up():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_UP)
     print("Up--------------------------")
+    pyboy.tick()
 
 
 def press_down():
@@ -87,6 +271,7 @@ def press_down():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_DOWN)
     print("--Down----------------------")
+    pyboy.tick()
 
 
 def press_left():
@@ -94,6 +279,7 @@ def press_left():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_LEFT)
     print("------Left------------------")
+    pyboy.tick()
 
 
 def press_right():
@@ -101,12 +287,14 @@ def press_right():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_ARROW_RIGHT)
     print("----------Right-------------")
+    pyboy.tick()
 
 
 def press_a():
     pyboy.send_input(WindowEvent.PRESS_BUTTON_A)
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_A)
+    pyboy.tick()
     print("---------------A------------")
 
 
@@ -115,6 +303,7 @@ def press_b():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_B)
     print("----------------B-----------")
+    pyboy.tick()
 
 
 def press_start():
@@ -122,6 +311,7 @@ def press_start():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_START)
     print("-----------------Start------")
+    pyboy.tick()
 
 
 def press_select():
@@ -129,6 +319,37 @@ def press_select():
     pyboy.tick()
     pyboy.send_input(WindowEvent.RELEASE_BUTTON_SELECT)
     print("----------------------Select")
+    pyboy.tick()
+
+
+def battle_decision(turns):
+    list_of_actions = [hold_a, hold_up, hold_down, hold_b]
+    move1_pp = pyboy.get_memory_value(53293)
+    move2_pp = pyboy.get_memory_value(53294)
+    move3_pp = pyboy.get_memory_value(53295)
+    move4_pp = pyboy.get_memory_value(53296)
+    battle_turn = pyboy.get_memory_value(52437)
+    move1 = pyboy.get_memory_value(53276)
+    move2 = pyboy.get_memory_value(53277)
+    move3 = pyboy.get_memory_value(53278)
+    move4 = pyboy.get_memory_value(53279)
+    move_pool = []
+    if move1_pp > 0:
+        decided = 0
+    elif move2_pp > 0:
+        decided = 1
+    elif move3_pp > 0:
+        decided = 2
+    else:
+        decided = 3
+    print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
+          move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
+    moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
+    for move in moves:
+        if len(move_number[move]) > 0:
+            move_pool.append(move)
+    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
@@ -137,10 +358,15 @@ pyboy = PyBoy('Roms/Pokemon Red.gb')
 def main(argv):
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
     while not pyboy.tick():
+        turn_count = []
         in_battle = pyboy.get_memory_value(53335)
         while in_battle:
-            hold_a(10)
-            tick_pass(10)
+            if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
+                press_a()
+            else:
+                press_down()
+            press_a()
+            battle_decision(turn_count)
             in_battle = pyboy.get_memory_value(53335)
         list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
     pyboy.stop()
