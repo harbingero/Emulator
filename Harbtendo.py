@@ -73,7 +73,6 @@ player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
 rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
 pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
 
-
 map_number_name = ["Pallet Town",
                    "Viridian City",
                    "",
@@ -189,7 +188,7 @@ move_number = ["",  # No Move 0
                "",
                "",
                "",
-               "Growl", # 45
+               "Growl",  # 45
                "",
                "",
                "",
@@ -315,7 +314,7 @@ move_number = ["",  # No Move 0
                "",
                "",
                "",  # 170
-               "" ]
+               ""]
 status_move = ["Growl",
                "Tail Whip",
                "",
@@ -351,8 +350,6 @@ damage_move = ["Scratch",
                "",
                ""]
 
-
-
 #  0 Pallet Town
 #  1 Viridian City
 #  12 Route 1
@@ -379,6 +376,8 @@ def tick_pass(number):
         pyboy.tick()
         number -= 1
     print("----------------------------", printer_number)
+
+
 #  A future potential improvement on the code would be to append button presses to show what inputs it's getting.
 #  I'm sure I would have to modify each of these functions to tick elsewhere.  This would allow multiple inputs at once.
 
@@ -589,7 +588,26 @@ def naming(fun_named):
     return fun_named
 
 
-# def overworld_move(map_number, x, y):
+def overworld_move():
+    parcel = pyboy.get_memory_value(54797)
+    map_number = pyboy.get_memory_value(54110)
+    map_name = map_number_name[map_number]
+    print(parcel)
+    list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
+    if map_name is "Pallet Town" and not parcel:
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_up)
+    if not parcel and map_name is "Oak's Lab" or "Mom's Room" or "Gary's House":
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_down)
+    if map_name is "Route 1" and not parcel:
+        list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
+    if map_name is "Bedroom":
+        list_of_actions = [hold_right, hold_up]
+    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+
+
+
 #     print(map_number)
 #     map_name = map_number_name[map_number]
 #     no_paths = map_no_paths[map_name]
@@ -634,7 +652,6 @@ def naming(fun_named):
 #         riup_or_ledo = random.randint(0, 4)  # 0,1,2=towards direction 3=opposite direction
 #               #  To continue I need to go left/right and determine if I can go into the next square
 #     return x, y  #  Once this function is done, I need to delete the while loop under where this is being implimented in to_starters and impliment this in Mom's room as well.xi = 55
-
 
 
 def to_starters(name):
@@ -815,7 +832,7 @@ def battle_values():
         party5 = pyboy.get_memory_value(53603)
         party6 = pyboy.get_memory_value(53603)
         player_input = []
-        print("Battle type: ",  other_battle_type)
+        print("Battle type: ", other_battle_type)
         if len(pyboy.get_input()) > 0:
             for i in range(len(pyboy.get_input())):
                 player_input.append(str(pyboy.get_input()[i]))
@@ -835,7 +852,8 @@ def battle_values():
                  "^_________________________\n\n")
 
 
-def battle_decision(turns):  # To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested    To be tested
+def battle_decision(turns):
+    list_of_actions = [hold_a, hold_a, hold_a, hold_up, hold_down]
     move1_pp = pyboy.get_memory_value(53293)
     move2_pp = pyboy.get_memory_value(53294)
     move3_pp = pyboy.get_memory_value(53295)
@@ -857,9 +875,11 @@ def battle_decision(turns):  # To be tested    To be tested    To be tested    T
     print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
           move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
+    print(moves)
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
+    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
     # move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
     # for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
@@ -930,6 +950,7 @@ def battle_decision(turns):  # To be tested    To be tested    To be tested    T
 pyboy = PyBoy('Roms/Pokemon Red.gb')
 increment = 0
 for i in range(play_time):
+    turn_count = []
     in_battle = pyboy.get_memory_value(53335)
     move1 = pyboy.get_memory_value(53276)
     move2 = pyboy.get_memory_value(53277)
@@ -946,7 +967,7 @@ for i in range(play_time):
     if named is False and started:
         named = naming(named)
     if named and started and pathed_to_starters is False:
-        starter_name = pokemon_name[random.randint(0, len(pokemon_name)-1)]
+        starter_name = pokemon_name[random.randint(0, len(pokemon_name) - 1)]
         to_starters(starter_name)
         pathed_to_starters = True
     if named and started and pathed_to_starters:
@@ -956,15 +977,24 @@ for i in range(play_time):
         # list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
         # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
         # save_values(controlled_ticks)
+        overworld_move()
         pass
-    if regain_control and in_battle:
-        # battle_decision(turn_counter)
-        if pyboy.get_memory_value(53293) > 0:
-            print("Moves:  ", move1, move2, move3, move4)
-            battle_values()
+    while in_battle:
+        if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
             press_a()
         else:
-            battle_decision(turn_counter)
+            press_down()
+        press_a()
+        battle_decision(turn_count)
+        in_battle = pyboy.get_memory_value(53335)
+    # if regain_control and in_battle:
+    #     # battle_decision(turn_counter)
+    #     if pyboy.get_memory_value(53293) > 0:
+    #         print("Moves:  ", move1, move2, move3, move4)
+    #         battle_values()
+    #         press_a()
+    #     else:
+    #         battle_decision(turn_counter)
     pyboy.tick()
     check = appended
     appended = ""
