@@ -410,6 +410,7 @@ def battle_decision(turns):
     print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
           move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
+    print(moves)
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
