@@ -432,7 +432,7 @@ def overworld_move():
     if map_name is "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
     if map_name is "Bedroom":
-        list_of_actions = [hold_right, hold_up]
+        list_of_actions = [hold_right, hold_up, hold_a]
     list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
 
