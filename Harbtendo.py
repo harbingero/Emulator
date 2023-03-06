@@ -195,7 +195,7 @@ move_number = ["",  # No Move 0
                "",
                "",  # 50
                "",
-               "",
+               "Ember",
                "",
                "",
                "",
@@ -341,7 +341,7 @@ status_move = ["Growl",
                ""]
 damage_move = ["Scratch",
                "Tackle",
-               "",
+               "Ember",
                "",
                "",
                "",
@@ -589,22 +589,25 @@ def naming(fun_named):
 
 
 def overworld_move():
+    test_move = True
+    parcel_maps = ["Oak's Lab", "Mom's Room", "Gary's House"]
     parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     print(parcel)
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
-    if map_name is "Pallet Town" and not parcel:
+    if map_name == "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
-    if not parcel and map_name is "Oak's Lab" or "Mom's Room" or "Gary's House":
+    if not parcel and map_name in parcel_maps:
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
-    if map_name is "Route 1" and not parcel:
+    if map_name == "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
-    if map_name is "Bedroom":
+    if map_name == "Bedroom":
         list_of_actions = [hold_right, hold_up]
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    if not test_move:
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
 
 
@@ -853,6 +856,8 @@ def battle_values():
 
 
 def battle_decision(turns):
+    test_battle = False
+    lister = []
     list_of_actions = [hold_a, hold_a, hold_a, hold_up, hold_down]
     move1_pp = pyboy.get_memory_value(53293)
     move2_pp = pyboy.get_memory_value(53294)
@@ -872,14 +877,45 @@ def battle_decision(turns):
         decided = 2
     else:
         decided = 3
-    print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
-          move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
+    print(move_number[move1], "PP: ", move1_pp, "\t|", move_number[move2], "PP: ", move2_pp, "\t|",
+          move_number[move3], "PP: ", move3_pp, "\t|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
-    print(moves)
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    if not test_battle:
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    for i in range(29781, 29800):
+        lister.append(pyboy.get_memory_value(i))
+    print("Battle?: ", lister)
+    xi = 100
+    xj = 1
+    xk = 1
+    print(move_pool)
+    pyboy.tick()
+    # if len(move_pool) > 0:
+    #     for i in range(0, xj):
+    #         print("First\n", i)
+    #         press_a()
+    #         tick_pass(xi)
+    #     for i in range(0, decided * xj):
+    #         print("Second\n", i, decided)
+    #         press_down()
+    #         tick_pass(xi)
+    #     for i in range(0, xk):
+    #         print("Third\n", i)
+    #         press_a()
+    #         tick_pass(xi)
+    # else:
+    #     press_a()
+
+
+    # if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
+    #     press_a()
+    # else:
+    #     press_down()
+    # press_a()
+
 
     # move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
     # for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
@@ -921,25 +957,7 @@ def battle_decision(turns):
     #                 moves.append(move_pool[mov])
     #     turns.append(battle_turn)
     #     print("Turns: ", turns, "Decided: ", decided)
-    xi = 100
-    xj = 1
-    xk = 1
-    print(move_pool)
-    if len(move_pool) > 0:
-        for i in range(0, xj):
-            print("First\n", i)
-            press_a()
-            tick_pass(xi)
-        for i in range(0, decided * xj):
-            print("Second\n", i, decided)
-            press_down()
-            tick_pass(xi)
-        for i in range(0, xk):
-            print("Third\n", i)
-            press_a()
-            tick_pass(xi)
-    else:
-        press_a()
+
 
 
 # I can create a function that checks the map number value compared to the previous map number value you leave from
@@ -974,17 +992,9 @@ for i in range(play_time):
         regain_control = True
     if regain_control and not in_battle:
         turns = []
-        # list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
-        # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
         # save_values(controlled_ticks)
         overworld_move()
-        pass
     while in_battle:
-        if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
-            press_a()
-        else:
-            press_down()
-        press_a()
         battle_decision(turn_count)
         in_battle = pyboy.get_memory_value(53335)
     # if regain_control and in_battle:

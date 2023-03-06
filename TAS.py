@@ -57,7 +57,7 @@ move_number = ["",  # No Move 0
                "",
                "",  # 50
                "",
-               "",
+               "Ember",
                "",
                "",
                "",
@@ -388,6 +388,7 @@ def press_select():
 
 
 def battle_decision(turns):
+    lister = []
     list_of_actions = [hold_a, hold_up, hold_down]
     move1_pp = pyboy.get_memory_value(53293)
     move2_pp = pyboy.get_memory_value(53294)
@@ -414,7 +415,10 @@ def battle_decision(turns):
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    for i in range(29781, 29800):
+        lister.append(i)
+    print("Battle?: ", lister)
 
 
 def overworld_move():
