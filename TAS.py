@@ -78,7 +78,7 @@ move_number = ["",  # No Move 0
                "",  # 70
                "",
                "",
-               "",
+               "Leech Seed",
                "",
                "",
                "",
@@ -150,7 +150,7 @@ move_number = ["",  # No Move 0
                "",
                "",
                "",
-               "",
+               "Bubble",
                "",
                "",
                "",
@@ -411,7 +411,7 @@ def battle_decision(turns):
     print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
           move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
-    print(moves)
+    print(move_pool)
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
@@ -422,22 +422,26 @@ def battle_decision(turns):
 
 
 def overworld_move():
-    parcel = pyboy.get_memory_value(54797)
+    test_move = False
+    random_moves = random.randint(0, 8)
+    parcel_maps = ["Oak's Lab", "Mom's Room", "Gary's House"]
+    parcel = pyboy.get_memory_value(54797)  # 0=Don't have 1=In pokemart 2=Have Parcel
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     print(parcel)
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
-    if map_name is "Pallet Town" and not parcel:
+    if map_name == "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
-    if not parcel and map_name is "Oak's Lab" or "Mom's Room" or "Gary's House":
+    if not parcel and map_name in parcel_maps:
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
-    if map_name is "Route 1" and not parcel:
+    if map_name == "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
-    if map_name is "Bedroom":
-        list_of_actions = [hold_right, hold_up, hold_a]
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+    if map_name == "Bedroom":
+        list_of_actions = [hold_right, hold_up, hold_left, hold_right, hold_right, hold_up]
+    if not test_move:
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21 * random_moves)
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')

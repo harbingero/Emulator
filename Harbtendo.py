@@ -216,7 +216,7 @@ move_number = ["",  # No Move 0
                "",  # 70
                "",
                "",
-               "",
+               "Leech Seed",
                "",
                "",
                "",
@@ -288,7 +288,7 @@ move_number = ["",  # No Move 0
                "",
                "",
                "",
-               "",
+               "Bubble",
                "",
                "",
                "",
@@ -316,39 +316,10 @@ move_number = ["",  # No Move 0
                "",  # 170
                ""]
 status_move = ["Growl",
-               "Tail Whip",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               ""]
+               "Tail Whip"]
 damage_move = ["Scratch",
                "Tackle",
-               "Ember",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               ""]
+               "Ember"]
 
 #  0 Pallet Town
 #  1 Viridian City
@@ -589,7 +560,8 @@ def naming(fun_named):
 
 
 def overworld_move():
-    test_move = True
+    test_move = False
+    random_moves = random.randint(0, 8)
     parcel_maps = ["Oak's Lab", "Mom's Room", "Gary's House"]
     parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
@@ -607,7 +579,7 @@ def overworld_move():
     if map_name == "Bedroom":
         list_of_actions = [hold_right, hold_up]
     if not test_move:
-        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21 * random_moves)
 
 
 
@@ -891,7 +863,7 @@ def battle_decision(turns):
     xi = 100
     xj = 1
     xk = 1
-    print(move_pool)
+    print(moves)
     pyboy.tick()
     # if len(move_pool) > 0:
     #     for i in range(0, xj):
