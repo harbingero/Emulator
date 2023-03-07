@@ -430,7 +430,7 @@ def overworld_move():
         list_of_actions.append(hold_down)
     if map_name is "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
-    if map_name is "Bedroom":
+    if map_name is "Bedroom" and pyboy.botsupport_manager().sprite().on_sceen:
         list_of_actions = [hold_right, hold_up, hold_a]
     list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
