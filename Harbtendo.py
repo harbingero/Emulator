@@ -13,6 +13,7 @@ from pyboy import botsupport
 from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
+from time import sleep
 
 turn_counter = []
 appended = ""
@@ -69,7 +70,7 @@ letter_axis = {"a": "00",
                ".": "64",
                ",": "74",
                "&": "84"}  # (*)=x,  (#)=pk, ($)=mn, (^)=♂, (%)=♀, (&)=End
-player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant"]
+player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant", "Robot"]
 rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
 pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
 
@@ -141,174 +142,174 @@ map_number_name = ["Pallet Town",
                    ""]
 map_no_paths = {"Bedroom": ["00", "05", "06", "33", "34", "65", "66"],
                 "Mom's Room": ["00", "01", "30", "33", "34", "43", "44", "53"]}
-map_destinations = {"Bedroom": ["70"],
-                    "Mom's Room": ["27", "37", "70"]}
+map_destinations = {"Bedroom": ["70"]}  # ,
+                    #  "Mom's Room": ["27", "37", "70"]}
 move_number = ["",  # No Move 0
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Pound",
+               "Karate Chop",
+               "Double Slap",
+               "Comet Punch",
+               "Mega Punch",
+               "Pay Day",
+               "Fire Punch",
+               "Ice Punch",
+               "Thunder Punch",
                "Scratch",  # 10
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 20
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 30
-               "",
-               "",
+               "Vicegrip",
+               "Guillotine",
+               "Razor Wind",
+               "Swords Dance",
+               "Cut",
+               "Gust",
+               "Wing Attack",
+               "Whirlwind",
+               "Fly",
+               "Bind",  # 20
+               "Slam",
+               "Vine Whip",
+               "Stomp",
+               "Double Kick",
+               "Mega Kick",
+               "Jump Kick",
+               "Rolling Kick",
+               "Sand-Attack",
+               "Headbutt",
+               "Horn Attack",  # 30
+               "Fury Attack",
+               "Horn Drill",
                "Tackle",
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Body Slam",
+               "Wrap",
+               "Take Down",
+               "Thrash",
+               "Double-Edge",
                "Tail Whip",
-               "",  # 40
-               "",
-               "",
-               "",
-               "",
+               "Poison Sting",  # 40
+               "Twineedle",
+               "Pin Missle",
+               "Leer",
+               "Bite",
                "Growl",  # 45
-               "",
-               "",
-               "",
-               "",
-               "",  # 50
-               "",
+               "Roar",
+               "Sing",
+               "Supersonic",
+               "Sonicboom",
+               "Disable",  # 50
+               "Acid",
                "Ember",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 60
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 70
-               "",
-               "",
+               "Flamethrower",
+               "Mist",
+               "Water Gun",
+               "Hydro Pump",
+               "Surf",
+               "Ice Beam",
+               "Blizzard",
+               "Psybeam",  # 60
+               "Bubblebeam",
+               "Aurora Beam",
+               "Hyper Beam",
+               "Peck",
+               "Drill Peck",
+               "Submission",
+               "Low Kick",
+               "Counter",
+               "Seismic Toss",
+               "Strength",  # 70
+               "Absorb",
+               "Mega Drain",
                "Leech Seed",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 80
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 90
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 100
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 110
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 120
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 130
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 140
-               "",
-               "",
-               "",
-               "",
+               "Growth",
+               "Razor Leaf",
+               "Solarbeam",
+               "Poisonpowder",
+               "Stun Spore",
+               "Sleep Powder",
+               "Petal Dance",  # 80
+               "String Shot",
+               "Dragon Rage",
+               "Fire Spin",
+               "Thundershock",
+               "Thunderbolt",
+               "Thunder Wave",
+               "Thunder",
+               "Rock Throw",
+               "Earthquake",
+               "Fissure",  # 90
+               "Dig",
+               "Toxic",
+               "Confusion",
+               "Psychic",
+               "Hypnosis",
+               "Meditate",
+               "Agility",
+               "Quick Attack",
+               "Rage",
+               "Teleport",  # 100
+               "Night Shade",
+               "Mimic",
+               "Screech",
+               "Double Team",
+               "Recover",
+               "Harden",
+               "Minimize",
+               "Smokescreen",
+               "Confuse Ray",
+               "Withdraw",  # 110
+               "Barrier",
+               "Light Screen",
+               "Haze",
+               "Reflect",
+               "Focus Energy",
+               "Bide",
+               "Metronome",
+               "Mirror Move",
+               "Selfdestruct",
+               "Egg Bomb",  # 120
+               "Lick",
+               "Smog",
+               "Sludge",
+               "Bone Club",
+               "Fire Blast",
+               "Waterfall",
+               "Clamp",
+               "Swift",
+               "Skull Bash",
+               "Spike Cannon",  # 130
+               "Constrict",
+               "Amnesia",
+               "Kenesis",
+               "Softboiled",
+               "Hi Jump Kick",
+               "Glare",
+               "Dream Eater",
+               "Poison Gas",
+               "Barrage",
+               "Leech Life",  # 140
+               "Lovely Kiss",
+               "Sky Attack",
+               "Sky Attack",
+               "Transform",
                "Bubble",
-               "",
-               "",
-               "",
-               "",
-               "",  # 150
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 160
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Dizzy Punch",
+               "Spore",
+               "Flash",
+               "Psywave",
+               "Splash",  # 150
+               "Acid Armor",
+               "Crabhammer",
+               "Explosion",
+               "Fury Swipes",
+               "Bonemerang",
+               "Rest",
+               "Rock Slide",
+               "Hyper Fang",
+               "Sharpen",
+               "Conversion",  # 160
+               "Tri Attack",
+               "Super Fang",
+               "Slash",
+               "Substitue",
+               "Struggle",
                "",
                "",
                "",
@@ -316,10 +317,39 @@ move_number = ["",  # No Move 0
                "",  # 170
                ""]
 status_move = ["Growl",
-               "Tail Whip"]
+               "Tail Whip",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""]
 damage_move = ["Scratch",
                "Tackle",
-               "Ember"]
+               "Ember",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""]
 
 #  0 Pallet Town
 #  1 Viridian City
@@ -560,13 +590,12 @@ def naming(fun_named):
 
 
 def overworld_move():
-    test_move = False
-    random_moves = random.randint(0, 8)
+    test_move = True
     parcel_maps = ["Oak's Lab", "Mom's Room", "Gary's House"]
     parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
-    print(parcel)
+    # print(parcel)
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
     if map_name == "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
@@ -579,54 +608,55 @@ def overworld_move():
     if map_name == "Bedroom":
         list_of_actions = [hold_right, hold_up]
     if not test_move:
-        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21 * random_moves)
+        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
 
+def test_move():
+    walk_speed = 16  # 21
+    transition = 240  # 40
+    x = 3
+    y = 5
+    map_number = pyboy.get_memory_value(54110)
+    map_name = map_number_name[map_number]
+    destinations = map_destinations[map_name]
+    while map_name in map_destinations:
+        map_possition = manager.screen().tilemap_position()[0]
+        map_x = int(map_possition[0])
+        map_y = int(map_possition[1])
+        list_of_moves = [hold_up, hold_down, hold_left, hold_right, hold_a, hold_b]
+        exit_coordinates = random.randint(0, len(destinations) - 1)
+        exit_x = destinations[exit_coordinates][0]
+        exit_y = destinations[exit_coordinates][1]
+        x_odds = random.randint(0, 4)
+        y_odds = random.randint(0, 4)
+        spaces = random.randint(1, 7)
+        if x < int(exit_x):
+            for i in range(x_odds):
+                list_of_moves.append(hold_right)
+        if x > int(exit_x):
+            for i in range(x_odds):
+                list_of_moves.append(hold_left)
+        if y < int(exit_y):
+            for i in range(y_odds):
+                list_of_moves.append(hold_down)
+        if y > int(exit_y):
+            for i in range(y_odds):
+                list_of_moves.append(hold_up)
+        decision = random.randint(0, len(list_of_moves) - 1)
+        action = str(list_of_moves[decision])[10:16]
+        # list_of_moves[decision](walk_speed * spaces)
+        tick_pass(transition)
+        map_possition = manager.screen().tilemap_position()[0]
+        delta_x = int(map_possition[0])
+        delta_y = int(map_possition[1])  # I need to figure out if I moved.
+        # If I did, I need to modify the axis that amount.
+        map_number = pyboy.get_memory_value(54110)
+        map_name = map_number_name[map_number]
+        print("Xit:\t", exit_x, " | X: ", x,
+              "\nYit:\t", exit_y," | Y: ", y,
+              "\nMap Name:\t", map_name, "\n\n")
+        # Left=+ Right=- Up=+ Down=-
 
-#     print(map_number)
-#     map_name = map_number_name[map_number]
-#     no_paths = map_no_paths[map_name]
-#     if len(map_destinations[map_name]) < 2:
-#         random_destination = random.randint(0, len(map_destinations[map_name]) - 1)
-#     else:
-#         random_destination = 0
-#     destination = map_destinations[map_name][random_destination]
-#     print(destination)
-#     print(no_paths)
-#     while x != int(destination[0]) and y != int(destination[1]):
-#         try_left = True
-#         try_right = True
-#         try_up = True
-#         try_down = True
-#         print(destination[0], destination[1])
-#         delta_x = int(destination[0]) - x
-#         delta_y = int(destination[1]) - y
-#         if delta_x > 0:  # Try right
-#             trying = str(int(x+1)) + y
-#             for position in no_paths:
-#                 if trying in position:
-#                     try_right = False
-#         if delta_x < 0:  # Try left
-#             trying = str(int(x-1)) + y
-#             for position in no_paths:
-#                 if trying in position:
-#                     try_left = False
-#         if delta_y > 0:  # Try down
-#             trying = x + str(int(y+1))
-#             for position in no_paths:
-#                 if trying in position:
-#                     try_down = False
-#         if delta_y < 0:  # Try up
-#             trying = x + str(int(y-1))
-#             for position in no_paths:
-#                 if trying in position:
-#                     try_up = False
-#         print("UP: ", try_up, "\nDOWN: ", try_down, "\nLEFT: ", try_left, "\nRIGHT: ", try_right)
-#         vert_or_hori = random.randint(0, 1)   #  0=vertical 1=horizontal
-#         if vert_or_hori == 0
-#         riup_or_ledo = random.randint(0, 4)  # 0,1,2=towards direction 3=opposite direction
-#               #  To continue I need to go left/right and determine if I can go into the next square
-#     return x, y  #  Once this function is done, I need to delete the while loop under where this is being implimented in to_starters and impliment this in Mom's room as well.xi = 55
 
 
 def to_starters(name):
@@ -638,9 +668,7 @@ def to_starters(name):
     y = 5
     tick_pass(250)
     # x, y = overworld_move(pyboy.get_memory_value(54110), x, y)
-    while pyboy.get_memory_value(54110) == 38:
-        hold_right(walk_speed * 1)
-        hold_up(walk_speed * 1)
+    test_move()
     tick_pass(transition)  # Out of room
     hold_down(walk_speed * 5)
     hold_left(walk_speed * 4)
@@ -828,7 +856,7 @@ def battle_values():
 
 
 def battle_decision(turns):
-    test_battle = False
+    test_battle = True
     lister = []
     list_of_actions = [hold_a, hold_a, hold_a, hold_up, hold_down]
     move1_pp = pyboy.get_memory_value(53293)
@@ -849,8 +877,8 @@ def battle_decision(turns):
         decided = 2
     else:
         decided = 3
-    print(move_number[move1], "PP: ", move1_pp, "\t|", move_number[move2], "PP: ", move2_pp, "\t|",
-          move_number[move3], "PP: ", move3_pp, "\t|", move_number[move4], "PP: ", move4_pp)
+    # print(move_number[move1], "PP: ", move1_pp, "\t|", move_number[move2], "PP: ", move2_pp, "\t|",
+    #       move_number[move3], "PP: ", move3_pp, "\t|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
     for move in moves:
         if len(move_number[move]) > 0:
@@ -859,11 +887,11 @@ def battle_decision(turns):
         list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
     for i in range(29781, 29800):
         lister.append(pyboy.get_memory_value(i))
-    print("Battle?: ", lister)
+    # print("Battle?: ", lister)
     xi = 100
     xj = 1
     xk = 1
-    print(moves)
+    print(move_pool)
     pyboy.tick()
     # if len(move_pool) > 0:
     #     for i in range(0, xj):
@@ -881,13 +909,11 @@ def battle_decision(turns):
     # else:
     #     press_a()
 
-
     # if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
     #     press_a()
     # else:
     #     press_down()
     # press_a()
-
 
     # move_type = [0, 0]  # 0=status, 1=damage                      Replace a 0 with a 1
     # for i in range(0, battle_turn):  # Add weighted values for later in battle to not set up as much
@@ -931,13 +957,12 @@ def battle_decision(turns):
     #     print("Turns: ", turns, "Decided: ", decided)
 
 
-
 # I can create a function that checks the map number value compared to the previous map number value you leave from
 # and determine delta x and delta y between entrance x and y to destination x and y.
 # Other finessing potential is checking if there is a direction you can go vs cannot
 
 
-pyboy = PyBoy('Roms/Pokemon Red.gb')
+pyboy = PyBoy('Roms/Pokemon Red.gb')  # , sound=True
 increment = 0
 for i in range(play_time):
     turn_count = []
@@ -1008,5 +1033,10 @@ else:
 # while not pyboy.tick():
 #     pass
 # pyboy.stop(save=False)
+
+
+
 #
+# "Raw Screen Buffer:\t", manager.screen().raw_screen_buffer(),
+# "\nScreen_NDARRAY:\t\t", manager.screen().screen_ndarray(),
 #
