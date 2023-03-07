@@ -17,6 +17,8 @@ from time import sleep
 
 turn_counter = []
 appended = ""
+x = 3
+y = 5
 started = False
 named = False
 pathed_to_starters = False
@@ -140,10 +142,8 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    ""]
-map_no_paths = {"Bedroom": ["00", "05", "06", "33", "34", "65", "66"],
-                "Mom's Room": ["00", "01", "30", "33", "34", "43", "44", "53"]}
-map_destinations = {"Bedroom": ["70"]}  # ,
-                    #  "Mom's Room": ["27", "37", "70"]}
+map_destinations = {"Bedroom": ["70"],
+                    "Mom's Room": ["27", "37", "70"]}
 move_number = ["",  # No Move 0
                "Pound",
                "Karate Chop",
@@ -350,6 +350,7 @@ damage_move = ["Scratch",
                "",
                "",
                ""]
+spaces = [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]  # , 256, 272, 288, 304, 320, 336
 
 #  0 Pallet Town
 #  1 Viridian City
@@ -611,25 +612,24 @@ def overworld_move():
         list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
 
-def test_move():
+def test_move(x, y):
+    test_move = True
     walk_speed = 16  # 21
-    transition = 240  # 40
-    x = 3
-    y = 5
+    transition = 40  # 40
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     destinations = map_destinations[map_name]
-    while map_name in map_destinations:
-        map_possition = manager.screen().tilemap_position()[0]
-        map_x = int(map_possition[0])
-        map_y = int(map_possition[1])
+    while map_name in map_destinations:  # I need a new while loop to include getting to the destination
+        map_position = manager.screen().tilemap_position()[0]
+        map_x = int(map_position[0])
+        map_y = int(map_position[1])
         list_of_moves = [hold_up, hold_down, hold_left, hold_right, hold_a, hold_b]
         exit_coordinates = random.randint(0, len(destinations) - 1)
         exit_x = destinations[exit_coordinates][0]
         exit_y = destinations[exit_coordinates][1]
         x_odds = random.randint(0, 4)
         y_odds = random.randint(0, 4)
-        spaces = random.randint(1, 7)
+        tiles = random.randint(1, 7)
         if x < int(exit_x):
             for i in range(x_odds):
                 list_of_moves.append(hold_right)
@@ -644,36 +644,61 @@ def test_move():
                 list_of_moves.append(hold_up)
         decision = random.randint(0, len(list_of_moves) - 1)
         action = str(list_of_moves[decision])[10:16]
-        # list_of_moves[decision](walk_speed * spaces)
-        tick_pass(transition)
-        map_possition = manager.screen().tilemap_position()[0]
-        delta_x = int(map_possition[0])
-        delta_y = int(map_possition[1])  # I need to figure out if I moved.
+        for space in range(tiles):
+            map_position = manager.screen().tilemap_position()[0]
+            map_x = int(map_position[0])
+            map_y = int(map_position[1])
+            if test_move:
+                list_of_moves[decision](walk_speed)
+                tick_pass(1)
+            else:
+                tick_pass(transition)
+            check_map = map_number_name[pyboy.get_memory_value(54110)]
+            if map_name != check_map:
+                print("I'm Free!!!!", map_name, check_map)
+                tick_pass(transition)
+                return x, y
+            map_position = manager.screen().tilemap_position()[0]
+            delta_x = int(map_position[0])
+            delta_y = int(map_position[1])
+            if delta_x != map_x:
+                print(delta_x, map_x)
+                if action == "hold_r":
+                    x += 1
+                if action == "hold_l":
+                    x -= 1
+            if delta_y != map_y:
+                print(delta_y, map_y)
+                if action == "hold_u":
+                    y -= 1
+                if action == "hold_d":
+                    y += 1
+        # I need to figure out if I moved.
         # If I did, I need to modify the axis that amount.
         map_number = pyboy.get_memory_value(54110)
         map_name = map_number_name[map_number]
         print("Xit:\t", exit_x, " | X: ", x,
               "\nYit:\t", exit_y," | Y: ", y,
               "\nMap Name:\t", map_name, "\n\n")
+        tick_pass(transition)
+        return x, y
         # Left=+ Right=- Up=+ Down=-
 
 
 
-def to_starters(name):
+def to_starters(name, x, y):
     walk_speed = 21
     transition = 40
     oak_walk = 500
     random_starter = random.randint(0, 2)
-    x = 3
-    y = 5
     tick_pass(250)
-    # x, y = overworld_move(pyboy.get_memory_value(54110), x, y)
-    test_move()
-    tick_pass(transition)  # Out of room
-    hold_down(walk_speed * 5)
-    hold_left(walk_speed * 4)
-    hold_down(walk_speed)
-    tick_pass(transition)  # Out of house
+    x, y = test_move(x, y)
+    # tick_pass(transition)  # Out of room
+    # hold_down(walk_speed * 5)
+    # hold_left(walk_speed * 4)
+    # hold_down(walk_speed)
+    # tick_pass(transition)  # Out of house
+    x, y = test_move(x, y)
     hold_right(walk_speed * 5)
     hold_up(walk_speed * 5)
     for i in range(1000):  # 1250 In grass
@@ -694,6 +719,7 @@ def to_starters(name):
     for i in range(280):  # 280
         press_a()
         pyboy.tick()
+    return x, y
 
 
 def to_rival_battle1():
@@ -983,7 +1009,7 @@ for i in range(play_time):
         named = naming(named)
     if named and started and pathed_to_starters is False:
         starter_name = pokemon_name[random.randint(0, len(pokemon_name) - 1)]
-        to_starters(starter_name)
+        x, y =to_starters(starter_name, x, y)
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
@@ -1039,4 +1065,3 @@ else:
 #
 # "Raw Screen Buffer:\t", manager.screen().raw_screen_buffer(),
 # "\nScreen_NDARRAY:\t\t", manager.screen().screen_ndarray(),
-#

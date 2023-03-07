@@ -421,6 +421,7 @@ def overworld_move():
     parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
+    random_spaces = random.randint(1, 5)
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
     if map_name is "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
@@ -431,8 +432,8 @@ def overworld_move():
     if map_name is "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
     if map_name is "Bedroom" and pyboy.botsupport_manager().sprite(0).on_screen:
-        list_of_actions = [hold_right, hold_up, hold_a]
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+        list_of_actions = [hold_right, hold_up, hold_a, hold_left]
+    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21 * random_spaces)
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
