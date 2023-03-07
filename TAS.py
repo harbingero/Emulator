@@ -6,171 +6,171 @@ from pyboy import openai_gym
 import pyboy.plugins
 
 move_number = ["",  # No Move 0
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Pound",
+               "Karate Chop",
+               "Double Slap",
+               "Comet Punch",
+               "Mega Punch",
+               "Pay Day",
+               "Fire Punch",
+               "Ice Punch",
+               "Thunder Punch",
                "Scratch",  # 10
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 20
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 30
-               "",
-               "",
+               "Vicegrip",
+               "Guillotine",
+               "Razor Wind",
+               "Swords Dance",
+               "Cut",
+               "Gust",
+               "Wing Attack",
+               "Whirlwind",
+               "Fly",
+               "Bind",  # 20
+               "Slam",
+               "Vine Whip",
+               "Stomp",
+               "Double Kick",
+               "Mega Kick",
+               "Jump Kick",
+               "Rolling Kick",
+               "Sand-Attack",
+               "Headbutt",
+               "Horn Attack",  # 30
+               "Fury Attack",
+               "Horn Drill",
                "Tackle",
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Body Slam",
+               "Wrap",
+               "Take Down",
+               "Thrash",
+               "Double-Edge",
                "Tail Whip",
-               "",  # 40
-               "",
-               "",
-               "",
-               "",
+               "Poison Sting",  # 40
+               "Twineedle",
+               "Pin Missle",
+               "Leer",
+               "Bite",
                "Growl",  # 45
-               "",
-               "",
-               "",
-               "",
-               "",  # 50
-               "",
+               "Roar",
+               "Sing",
+               "Supersonic",
+               "Sonicboom",
+               "Disable",  # 50
+               "Acid",
                "Ember",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 60
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 70
-               "",
-               "",
+               "Flamethrower",
+               "Mist",
+               "Water Gun",
+               "Hydro Pump",
+               "Surf",
+               "Ice Beam",
+               "Blizzard",
+               "Psybeam",  # 60
+               "Bubblebeam",
+               "Aurora Beam",
+               "Hyper Beam",
+               "Peck",
+               "Drill Peck",
+               "Submission",
+               "Low Kick",
+               "Counter",
+               "Seismic Toss",
+               "Strength",  # 70
+               "Absorb",
+               "Mega Drain",
                "Leech Seed",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 80
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 90
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 100
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 110
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 120
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 130
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 140
-               "",
-               "",
-               "",
-               "",
+               "Growth",
+               "Razor Leaf",
+               "Solarbeam",
+               "Poisonpowder",
+               "Stun Spore",
+               "Sleep Powder",
+               "Petal Dance",  # 80
+               "String Shot",
+               "Dragon Rage",
+               "Fire Spin",
+               "Thundershock",
+               "Thunderbolt",
+               "Thunder Wave",
+               "Thunder",
+               "Rock Throw",
+               "Earthquake",
+               "Fissure",  # 90
+               "Dig",
+               "Toxic",
+               "Confusion",
+               "Psychic",
+               "Hypnosis",
+               "Meditate",
+               "Agility",
+               "Quick Attack",
+               "Rage",
+               "Teleport",  # 100
+               "Night Shade",
+               "Mimic",
+               "Screech",
+               "Double Team",
+               "Recover",
+               "Harden",
+               "Minimize",
+               "Smokescreen",
+               "Confuse Ray",
+               "Withdraw",  # 110
+               "Barrier",
+               "Light Screen",
+               "Haze",
+               "Reflect",
+               "Focus Energy",
+               "Bide",
+               "Metronome",
+               "Mirror Move",
+               "Selfdestruct",
+               "Egg Bomb",  # 120
+               "Lick",
+               "Smog",
+               "Sludge",
+               "Bone Club",
+               "Fire Blast",
+               "Waterfall",
+               "Clamp",
+               "Swift",
+               "Skull Bash",
+               "Spike Cannon",  # 130
+               "Constrict",
+               "Amnesia",
+               "Kenesis",
+               "Softboiled",
+               "Hi Jump Kick",
+               "Glare",
+               "Dream Eater",
+               "Poison Gas",
+               "Barrage",
+               "Leech Life",  # 140
+               "Lovely Kiss",
+               "Sky Attack",
+               "Sky Attack",
+               "Transform",
                "Bubble",
-               "",
-               "",
-               "",
-               "",
-               "",  # 150
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",
-               "",  # 160
-               "",
-               "",
-               "",
-               "",
-               "",
+               "Dizzy Punch",
+               "Spore",
+               "Flash",
+               "Psywave",
+               "Splash",  # 150
+               "Acid Armor",
+               "Crabhammer",
+               "Explosion",
+               "Fury Swipes",
+               "Bonemerang",
+               "Rest",
+               "Rock Slide",
+               "Hyper Fang",
+               "Sharpen",
+               "Conversion",  # 160
+               "Tri Attack",
+               "Super Fang",
+               "Slash",
+               "Substitue",
+               "Struggle",
                "",
                "",
                "",
@@ -408,40 +408,31 @@ def battle_decision(turns):
         decided = 2
     else:
         decided = 3
-    print(move_number[move1], "PP: ", move1_pp, "|", move_number[move2], "PP: ", move2_pp, "|",
-          move_number[move3], "PP: ", move3_pp, "|", move_number[move4], "PP: ", move4_pp)
     moves = [move1, move2, move3, move4]  # List of all moves the pokemon knows 0=blank
-    print(move_pool)
     for move in moves:
         if len(move_number[move]) > 0:
             move_pool.append(move)
     # list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
     for i in range(29781, 29800):
         lister.append(i)
-    print("Battle?: ", lister)
 
 
 def overworld_move():
-    test_move = False
-    random_moves = random.randint(0, 8)
-    parcel_maps = ["Oak's Lab", "Mom's Room", "Gary's House"]
-    parcel = pyboy.get_memory_value(54797)  # 0=Don't have 1=In pokemart 2=Have Parcel
+    parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
-    print(parcel)
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
-    if map_name == "Pallet Town" and not parcel:
+    if map_name is "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
-    if not parcel and map_name in parcel_maps:
+    if not parcel and map_name is "Oak's Lab" or "Mom's Room" or "Gary's House":
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
-    if map_name == "Route 1" and not parcel:
+    if map_name is "Route 1" and not parcel:
         list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
-    if map_name == "Bedroom":
-        list_of_actions = [hold_right, hold_up, hold_left, hold_right, hold_right, hold_up]
-    if not test_move:
-        list_of_actions[random.randint(0, len(list_of_actions) - 1)](21 * random_moves)
+    if map_name is "Bedroom":
+        list_of_actions = [hold_right, hold_up, hold_a]
+    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
@@ -457,7 +448,6 @@ def main(argv):
         turn_count = []
         in_battle = pyboy.get_memory_value(53335)
         while in_battle:
-            print("Moves:  ", move1, move2, move3, move4)
             if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
                 press_a()
             else:
