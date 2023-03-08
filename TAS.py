@@ -243,7 +243,7 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    ""]
-
+counter = 0
 
 def tick_pass(number):
     printer_number = number
@@ -439,9 +439,13 @@ def overworld_move():
 pyboy = PyBoy('Roms/Pokemon Red.gb')
 
 
-def main(argv):
+def main(counter):
     list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
     while not pyboy.tick():
+        counted = False
+        if not counted:
+            counter += 1
+        print(counter)
         move1 = pyboy.get_memory_value(53276)
         move2 = pyboy.get_memory_value(53277)
         move3 = pyboy.get_memory_value(53278)
@@ -452,12 +456,13 @@ def main(argv):
             if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
                 press_a()
             else:
-                press_down()
-            press_a()
+                list_of_actions = [hold_a, hold_up, hold_down, hold_b]
+                list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
             battle_decision(turn_count)
             in_battle = pyboy.get_memory_value(53335)
+        list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
         overworld_move()
     pyboy.stop()
 
 
-main(None)
+main(counter)
