@@ -307,6 +307,102 @@ tmoves_butterfree = ["Razor Wind",
                      "Psywave",
                      "Substitute"]
 hmoves_butterfree = ["Flash"]
+lmoves_weedle = {1: ["Poison Sting", "String Shot"]}
+tmoves_weedle = []
+hmoves_weedle = []
+lmoves_kakuna = {1: ["Harden"]}
+tmoves_kakuna = []
+hmoves_kakuna = []
+lmoves_beedrill = {1: ["Fury Attack"],
+                   12: ["Fury Attack"],
+                   16: ["Focus Energy"],
+                   20: ["Twineedle"],
+                   25: ["Rage"],
+                   30: ["Pin Missile"],
+                   35: ["Agility"]}
+tmoves_beedrill = ["Swords Dance",
+                   "Toxic",
+                   "Take Down",
+                   "Double-Edge",
+                   "Hyper Beam",
+                   "Rage",
+                   "Mega Drain",
+                   "Mimic",
+                   "Double Team",
+                   "Reflect",
+                   "Bide",
+                   "Swift",
+                   "Skull Bash",
+                   "Rest",
+                   "Substitute"]
+hmoves_beedrill = ["Cut"]
+lmoves_pidgey = {1: "Gust",
+                 5: "Sand-Attack",
+                 12: "Quick Attack",
+                 19: "Whirlwind",
+                 28: "Wing Attack",
+                 36: "Agility",
+                 44: "Mirror Move"}
+tmoves_pidgey = ["Razor Wind",
+                 "Whirlwind",
+                 "Toxic",
+                 "Take Down",
+                 "Double-Edge",
+                 "Rage",
+                 "Mimic",
+                 "Double Team",
+                 "Reflect",
+                 "Bide",
+                 "Swift",
+                 "Sky Attack",
+                 "Rest",
+                 "Substitute"]
+hmoves_pidgey = ["Fly"]
+lmoves_pidgeotto = {1: ["Gust", "Sand-Attack"],
+                    5: ["Sand-Attack"],
+                    12: ["Quick Attack"],
+                    21: ["Whirlwind"],
+                    31: ["Wing Attack"],
+                    40: ["Agility"],
+                    49: ["Mirror Move"]}
+tmoves_pidgeotto = ["Razor Wind",
+                    "Whirlwind",
+                    "Toxic",
+                    "Take Down",
+                    "Double-Edge",
+                    "Rage",
+                    "Mimic",
+                    "Double Team",
+                    "Reflect",
+                    "Bide",
+                    "Swift",
+                    "Sky Attack",
+                    "Rest",
+                    "Substitute"]
+hmoves_pidgeotto = ["Fly"]
+lmoves_ = {1: ["Gust", "Sand-Attack", "Quick Attack"],
+           5: ["Sand-Attack"],
+           12: ["Quick Attack"],
+           21: ["Whirlwind"],
+           31: ["Wing Attack"],
+           44: ["Agility"],
+           54: ["Mirror Move"]}
+tmoves_ = ["Razor Wind",
+           "Whirlwind",
+           "Toxic",
+           "Take Down",
+           "Double-Edge",
+           "Hyper Beam",
+           "Rage",
+           "Mimic",
+           "Double Team",
+           "Reflect",
+           "Bide",
+           "Swift",
+           "Sky Attack",
+           "Rest",
+           "Substitute"]
+hmoves_ = []
 lmoves_ = {}
 tmoves_ = []
 hmoves_ = []
