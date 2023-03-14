@@ -1,0 +1,79 @@
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\jgask\\PycharmProjects\\pythonProjects'])
+PyDev console: starting.
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+data = bytes.fromhex('AB CD')
+little = int.from_bytes(data, 'little')
+big = int.from_bytes(data, 'big')
+(little, big)
+(52651, 43981)
+(hex(little), hex(big))
+('0xcdab', '0xabcd')
+int.to_bytes(0xCD, length=1, byteorder='big')
+b'\xcd'
+int.to_bytes(0xCD, length=1, byteorder='little')
+b'\xcd'
+int.to_bytes(0xCD, length=2, byteorder='big')
+b'\x00\xcd'
+int.to_bytes(0xCD, length=2, byteorder='little')
+b'\xcd\x00'
+value = 0xABCD
+hex(((value & 0xFF00) >> 8) | (Value & 0xFF) << 8)
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+NameError: name 'Value' is not defined. Did you mean: 'value'?
+hex(((value & 0xFF00) >> 8) | (value &0xFF) << 8)
+'0xcdab'
+0xC0FFEE.to_bytes(length=3, byteorder='big')
+b'\xc0\xff\xee'
+int.to_bytes(0xC0FFEE, length=3, byteorder='little')
+b'\xee\xff\xc0'
+a = array.array('H', b'\xAB\xCD\x00\x01')
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+NameError: name 'array' is not defined
+a = array.array('H', b'\xAB\xCD\x00\x01')
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+NameError: name 'array' is not defined
+b'Inspired Python'
+b'Inspired Python'
+b'\xf0\x9f\x90\x8d'
+b'\xf0\x9f\x90\x8d'
+b'\xf0\x9f\x90\x8d'.decode('utf-8')
+'🐍'
+struct.unpack_from('I', b'\xf0\x9f\x90\x8d')
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+NameError: name 'struct' is not defined
+struct.unpack_from('I', b'\xf0\x9f\x90\x8d')
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+NameError: name 'struct' is not defined
+value.unpack_from('I', b'\xf0\x9f\x90\x8d')
+Traceback (most recent call last):
+  File "C:\Users\jgask\AppData\Local\Programs\Python\Python311\Lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+AttributeError: 'int' object has no attribute 'unpack_from'
+b'\xf0\x9f\x90\x8d'.decode('utf-8')
+'🐍'
+import struct
+struct.unpack_from('I', b'\xf0\x9f\x90\x8d')
+(2375065584,)
+struct.unpack_from('>BB5sH', b'\x01\x02HELLO\x03\x04')
+(1, 2, b'HELLO', 772)
+struct.unpack_from('<BB5sH', b'\x01\x02HELLO\x03\x04')
+(1, 2, b'HELLO', 1027)
+struct.unpack_from('=BB5sH', b'\x01\x02HELLO\x03\x04')
+(1, 2, b'HELLO', 1027)
