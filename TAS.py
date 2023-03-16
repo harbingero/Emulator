@@ -4,8 +4,9 @@ from pyboy import botsupport
 from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
+from time import sleep
 
-move_number = ["",
+move_number = ["",  # No Move 0
                "Pound",
                "Karate Chop",
                "Double Slap",
@@ -54,7 +55,7 @@ move_number = ["",
                "Roar",
                "Sing",
                "Supersonic",
-               "SonicBoom",
+               "Sonicboom",
                "Disable",  # 50
                "Acid",
                "Ember",
@@ -66,7 +67,7 @@ move_number = ["",
                "Ice Beam",
                "Blizzard",
                "Psybeam",  # 60
-               "BubbleBeam",
+               "Bubblebeam",
                "Aurora Beam",
                "Hyper Beam",
                "Peck",
@@ -81,15 +82,15 @@ move_number = ["",
                "Leech Seed",
                "Growth",
                "Razor Leaf",
-               "SolarBeam",
-               "PoisonPowder",
+               "Solarbeam",
+               "Poisonpowder",
                "Stun Spore",
                "Sleep Powder",
                "Petal Dance",  # 80
                "String Shot",
                "Dragon Rage",
                "Fire Spin",
-               "ThunderShock",
+               "Thundershock",
                "Thunderbolt",
                "Thunder Wave",
                "Thunder",
@@ -113,7 +114,7 @@ move_number = ["",
                "Recover",
                "Harden",
                "Minimize",
-               "SmokeScreen",
+               "Smokescreen",
                "Confuse Ray",
                "Withdraw",  # 110
                "Barrier",
@@ -243,12 +244,8 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    ""]
-map_destinations = {"Bedroom": ["70"],
-                    "Mom's Room": ["27", "37", "70"]}
-transition_coordinates = {"BedroomMom's Room": [7, 0],
-                          "Mom's RoomBedroom": [7, 0],
-                          "Pallet TownMom's Room": [0, 0],
-                          "Mom's RoomPallet Town": [2, 6]}
+counter = 0
+
 
 def tick_pass(number):
     printer_number = number
@@ -423,29 +420,63 @@ def battle_decision(turns):
 
 
 def overworld_move():
+    reduced_move = None
+    reduced_amount = None
+    manager = pyboy.botsupport_manager()
     parcel = pyboy.get_memory_value(54797)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
-    list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
-    if map_name is "Pallet Town" and not parcel:
+    random_spaces = random.randint(1, 7)
+    list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
+    if map_name == "Pallet Town" and not parcel:
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
-    if not parcel and map_name is "Oak's Lab" or "Mom's Room" or "Gary's House":
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_b)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_left)
+        list_of_actions.append(hold_right)
+    if not parcel and map_name == "Oak's Lab" or "Mom's Room" or "Gary's House":
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
-    if map_name is "Route 1" and not parcel:
-        list_of_actions = [hold_a, hold_up, hold_left, hold_right, hold_b]
-    if map_name is "Bedroom" and pyboy.botsupport_manager().sprite(0).on_sceen:
-        list_of_actions = [hold_right, hold_up, hold_a]
-    list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_b)
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_left)
+        list_of_actions.append(hold_right)
+    if map_name == "Route 1" and not parcel:
+        reduced_move = hold_down
+        reduced_amount = 1
+        list_of_actions = [hold_a, hold_b, hold_up, hold_left, hold_right, hold_up,
+                           hold_down, hold_left, hold_right, hold_up, hold_up]
+    if map_name == "Bedroom" and pyboy.botsupport_manager().sprite(0).on_screen:
+        list_of_actions = [hold_right, hold_up, hold_a, hold_left]
+    decision = random.randint(0, len(list_of_actions) - 1)
+    if list_of_actions[decision] == hold_a or list_of_actions[decision] == hold_b:  # hold a or b only one frame
+        list_of_actions[decision](21)
+    else:  # Not hold a or b
+        if reduced_move is not None:
+            if reduced_move == list_of_actions[decision]:
+                random_spaces = reduced_amount
+        for space in range(random_spaces):
+            map_position = manager.screen().tilemap_position()[0]
+            list_of_actions[decision](21)
+            check_map = pyboy.get_memory_value(54110)
+            if check_map != map_number:
+                break
+            check_move = manager.screen().tilemap_position()[0]
+            if map_position == check_move:
+                break
 
 
 pyboy = PyBoy('Roms/Pokemon Red.gb')
 
 
-def main(argv):
-    list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_b]
+def main(counter):
     while not pyboy.tick():
+        list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
+        manager = pyboy.botsupport_manager()
+        counted = False
         move1 = pyboy.get_memory_value(53276)
         move2 = pyboy.get_memory_value(53277)
         move3 = pyboy.get_memory_value(53278)
@@ -453,15 +484,24 @@ def main(argv):
         turn_count = []
         in_battle = pyboy.get_memory_value(53335)
         while in_battle:
+            list_in_battle = [hold_a, hold_down, hold_up]
             if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
-                press_a()
+                for i in range(0, 5):
+                    list_in_battle.append(hold_a)
+                list_in_battle[random.randint(0, len(list_in_battle) - 1)](21)
             else:
-                press_down()
-            press_a()
+                list_of_actions = [hold_a, hold_up, hold_down, hold_a, hold_a]
+                list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
             battle_decision(turn_count)
             in_battle = pyboy.get_memory_value(53335)
+            counter += 1
+        if not counted:
+            counter += 1
+        print(counter)
         overworld_move()
+        list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
     pyboy.stop()
 
 
-main(None)
+
+main(counter)

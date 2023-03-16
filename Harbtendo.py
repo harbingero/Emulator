@@ -14,6 +14,7 @@ from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
 from time import sleep
+import Pokemon_Classes
 
 turn_counter = []
 appended = ""
@@ -75,7 +76,6 @@ letter_axis = {"a": "00",
 player_name = ["Jesse", "Josh", "Sam", "Dakota", "Ash", "Smant", "Robot"]
 rival_name = ["Blue", "Gio", "Trash", "Oak", "Gary", "Logan"]
 pokemon_name = ["Good Boy", "Puppy", "Slave", "Legend"]
-
 map_number_name = ["Pallet Town",
                    "Viridian City",
                    "",
@@ -142,14 +142,9 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    ""]
-map_destinations = {"Bedroom": [[7, 0]],
-                    "Mom's Room": [[2, 7], [3, 7], [7, 0]],
-                    "Pallet Town": [[9, 0], [10, 0], [4, 5], [12, 5], [11, 11]]}
-transition_coordinates = {"BedroomMom's Room": [7, 0],
-                          "Mom's RoomBedroom": [7, 0],
-                          "Pallet TownMom's Room": [4, 5],
-                          "Mom's RoomPallet Town": [2, 6]}
-move_number = ["",
+map_destinations = {"Bedroom": ["70"],
+                    "Mom's Room": ["27", "37", "70"]}
+move_number = ["",  # No Move 0
                "Pound",
                "Karate Chop",
                "Double Slap",
@@ -198,7 +193,7 @@ move_number = ["",
                "Roar",
                "Sing",
                "Supersonic",
-               "SonicBoom",
+               "Sonicboom",
                "Disable",  # 50
                "Acid",
                "Ember",
@@ -210,7 +205,7 @@ move_number = ["",
                "Ice Beam",
                "Blizzard",
                "Psybeam",  # 60
-               "BubbleBeam",
+               "Bubblebeam",
                "Aurora Beam",
                "Hyper Beam",
                "Peck",
@@ -225,15 +220,15 @@ move_number = ["",
                "Leech Seed",
                "Growth",
                "Razor Leaf",
-               "SolarBeam",
-               "PoisonPowder",
+               "Solarbeam",
+               "Poisonpowder",
                "Stun Spore",
                "Sleep Powder",
                "Petal Dance",  # 80
                "String Shot",
                "Dragon Rage",
                "Fire Spin",
-               "ThunderShock",
+               "Thundershock",
                "Thunderbolt",
                "Thunder Wave",
                "Thunder",
@@ -257,7 +252,7 @@ move_number = ["",
                "Recover",
                "Harden",
                "Minimize",
-               "SmokeScreen",
+               "Smokescreen",
                "Confuse Ray",
                "Withdraw",  # 110
                "Barrier",
@@ -357,18 +352,6 @@ damage_move = ["Scratch",
                ""]
 spaces = [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]  # , 256, 272, 288, 304, 320, 336
 
-#  0 Pallet Town
-#  1 Viridian City
-#  12 Route 1
-#  33 Left of Viridian City
-#  37 Downstairs home
-#  38 Bedroom
-#  39 Gary's house
-#  40 Oak's lab
-#  41 Viridian City Pokemon Center
-#  42 Viridian City Pokemart
-#  43 Viridian City House
-#  44 Viridian City House
 
 if overwrite:
     with open("debug.txt", "w") as f1:
@@ -618,20 +601,18 @@ def overworld_move():
 
 
 def test_move(x, y):
-    test_move = False
+    test_move = True
     walk_speed = 16  # 21
     transition = 40  # 40
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
-    map_check = map_name
-    if map_name in map_destinations:
-        destinations = map_destinations[map_name]
-        exit_coordinates = random.randint(0, len(destinations) - 1)
-    while map_name in map_destinations and map_check == map_name:
+    destinations = map_destinations[map_name]
+    while map_name in map_destinations:  # I need a new while loop to include getting to the destination
         map_position = manager.screen().tilemap_position()[0]
         map_x = int(map_position[0])
         map_y = int(map_position[1])
         list_of_moves = [hold_up, hold_down, hold_left, hold_right, hold_a, hold_b]
+        exit_coordinates = random.randint(0, len(destinations) - 1)
         exit_x = destinations[exit_coordinates][0]
         exit_y = destinations[exit_coordinates][1]
         x_odds = random.randint(0, 4)
@@ -657,31 +638,29 @@ def test_move(x, y):
             map_y = int(map_position[1])
             if test_move:
                 list_of_moves[decision](walk_speed)
-                tick_pass(5)
+                tick_pass(1)
             else:
                 tick_pass(transition)
             check_map = map_number_name[pyboy.get_memory_value(54110)]
             if map_name != check_map:
-                transitional = check_map + map_name
-                print(transitional)
-                print("I'm Free!!!!", transition_coordinates[transitional][0], transition_coordinates[transitional][1])
+                print("I'm Free!!!!", map_name, check_map)
                 tick_pass(transition)
-                return transition_coordinates[transitional][0], transition_coordinates[transitional][1]
+                return x, y
             map_position = manager.screen().tilemap_position()[0]
             delta_x = int(map_position[0])
             delta_y = int(map_position[1])
             if delta_x != map_x:
+                print(delta_x, map_x)
                 if action == "hold_r":
                     x += 1
                 if action == "hold_l":
                     x -= 1
             if delta_y != map_y:
+                print(delta_y, map_y)
                 if action == "hold_u":
                     y -= 1
                 if action == "hold_d":
                     y += 1
-            if delta_x == map_x and delta_y == map_y:
-                break
         # I need to figure out if I moved.
         # If I did, I need to modify the axis that amount.
         map_number = pyboy.get_memory_value(54110)
@@ -690,31 +669,26 @@ def test_move(x, y):
               "\nYit:\t", exit_y," | Y: ", y,
               "\nMap Name:\t", map_name, "\n\n")
         tick_pass(transition)
-    return x, y
+        return x, y
         # Left=+ Right=- Up=+ Down=-
 
 
 
 def to_starters(name, x, y):
-    map_number = pyboy.get_memory_value(54110)
-    map_name = map_number_name[map_number]
     walk_speed = 21
     transition = 40
     oak_walk = 500
     random_starter = random.randint(0, 2)
     tick_pass(250)
-    while map_name in map_destinations:
-        x, y = test_move(x, y)
-        map_number = pyboy.get_memory_value(54110)
-        map_name = map_number_name[map_number]
+    x, y = test_move(x, y)
     # tick_pass(transition)  # Out of room
     # hold_down(walk_speed * 5)
     # hold_left(walk_speed * 4)
     # hold_down(walk_speed)
     # tick_pass(transition)  # Out of house
-    # hold_right(walk_speed * 4)
-    # hold_up(walk_speed * 5)
-    tick_pass(1500)
+    x, y = test_move(x, y)
+    hold_right(walk_speed * 5)
+    hold_up(walk_speed * 5)
     for i in range(1000):  # 1250 In grass
         press_b()
         pyboy.tick()
@@ -734,6 +708,10 @@ def to_starters(name, x, y):
         press_a()
         pyboy.tick()
     return x, y
+
+
+def to_rival_battle1():
+    pass  # Finish the path from starter to challenge the rival
 
 
 def save_values(tick_number):
@@ -1019,7 +997,7 @@ for i in range(play_time):
         named = naming(named)
     if named and started and pathed_to_starters is False:
         starter_name = pokemon_name[random.randint(0, len(pokemon_name) - 1)]
-        x, y = to_starters(starter_name, x, y)
+        x, y =to_starters(starter_name, x, y)
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
@@ -1030,11 +1008,37 @@ for i in range(play_time):
     while in_battle:
         battle_decision(turn_count)
         in_battle = pyboy.get_memory_value(53335)
+    # if regain_control and in_battle:
+    #     # battle_decision(turn_counter)
+    #     if pyboy.get_memory_value(53293) > 0:
+    #         print("Moves:  ", move1, move2, move3, move4)
+    #         battle_values()
+    #         press_a()
+    #     else:
+    #         battle_decision(turn_counter)
     pyboy.tick()
     check = appended
     appended = ""
     if regain_control:
         controlled_ticks += 1
+    # for j in range(42392, 42402):
+    #     appended += str(pyboy.get_memory_value(j)) + ": "
+    # if check != appended:
+    #     print(check, "\n" + Fore.GREEN + appended + Fore.RESET)
+    # else:
+    #     print("Same")
+    # appended = str(pyboy.get_memory_value(42392))  This section was used to find different
+    # memory values at the beginning of the game.
+    # for j in range(16384, 17000):
+    #     appended += str(pyboy.get_memory_value(j)) + ": "
+    # if i % 50 == 0:
+    #     increment += 1
+    #     pil_image = pyboy.screen_image()
+    #     pil_image.save('screenshot' + str(increment) + '.png')
+    # print(str(i) + "\n", manager.tilemap_window())
+    # print(manager.tilemap_background())
+    # for j in range(24):
+    #     print(manager.sprite(j), "\n", manager.sprite(j).tiles)
 else:
     pyboy.stop(save=False)
     # pyboy.send_input(WindowEvent.PRESS_BUTTON_START)
@@ -1046,32 +1050,6 @@ else:
 
 
 
-# if regain_control and in_battle:
-#     # battle_decision(turn_counter)
-#     if pyboy.get_memory_value(53293) > 0:
-#         print("Moves:  ", move1, move2, move3, move4)
-#         battle_values()
-#         press_a()
-#     else:
-#         battle_decision(turn_counter)
-# for j in range(42392, 42402):
-#     appended += str(pyboy.get_memory_value(j)) + ": "
-# if check != appended:
-#     print(check, "\n" + Fore.GREEN + appended + Fore.RESET)
-# else:
-#     print("Same")
-# appended = str(pyboy.get_memory_value(42392))  This section was used to find different
-# memory values at the beginning of the game.
-# for j in range(16384, 17000):
-#     appended += str(pyboy.get_memory_value(j)) + ": "
-# if i % 50 == 0:
-#     increment += 1
-#     pil_image = pyboy.screen_image()
-#     pil_image.save('screenshot' + str(increment) + '.png')
-# print(str(i) + "\n", manager.tilemap_window())
-# print(manager.tilemap_background())
-# for j in range(24):
-#     print(manager.sprite(j), "\n", manager.sprite(j).tiles)
 #
 # "Raw Screen Buffer:\t", manager.screen().raw_screen_buffer(),
 # "\nScreen_NDARRAY:\t\t", manager.screen().screen_ndarray(),
