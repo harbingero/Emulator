@@ -4,7 +4,7 @@ from pyboy import botsupport
 from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
-from time import sleep
+from time import sleep, time, strftime, gmtime
 
 move_number = ["",  # No Move 0
                "Pound",
@@ -178,7 +178,7 @@ move_number = ["",  # No Move 0
                "",
                "",  # 170
                ""]
-map_number_name = ["Pallet Town",
+map_number_name = ["Pallet Town",  # 0
                    "Viridian City",
                    "",
                    "",
@@ -188,7 +188,7 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    "",
-                   "",
+                   "",  # 10
                    "",
                    "Route 1",
                    "",
@@ -198,6 +198,7 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    "",
+                   "",  # 20
                    "",
                    "",
                    "",
@@ -207,11 +208,10 @@ map_number_name = ["Pallet Town",
                    "",
                    "",
                    "",
+                   "",  # 30
                    "",
                    "",
-                   "",
-                   "",
-                   "",
+                   "Route 22",
                    "",
                    "",
                    "",
@@ -422,8 +422,10 @@ def battle_decision(turns):
 def overworld_move():
     reduced_move = None
     reduced_amount = None
+    parcel_item_slot_1 = 70
     manager = pyboy.botsupport_manager()
     parcel = pyboy.get_memory_value(54797)
+    item_1 = pyboy.get_memory_value(54046)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     random_spaces = random.randint(1, 7)
@@ -436,6 +438,10 @@ def overworld_move():
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_left)
         list_of_actions.append(hold_right)
+    if map_name == "Pallet Town" and parcel and item_1 == 70:
+        list_of_actions = [hold_up, hold_down, hold_left, hold_right]
+        reduced_move = [hold_up]
+        reduced_amount = 5
     if not parcel and map_name == "Oak's Lab" or "Mom's Room" or "Gary's House":
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
@@ -444,20 +450,38 @@ def overworld_move():
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_left)
         list_of_actions.append(hold_right)
+    if parcel and map_name == "Oak's Lab" and item_1 == parcel_item_slot_1:
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_a)
     if map_name == "Route 1" and not parcel:
-        reduced_move = hold_down
+        reduced_move = [hold_down]
         reduced_amount = 1
         list_of_actions = [hold_a, hold_b, hold_up, hold_left, hold_right, hold_up,
                            hold_down, hold_left, hold_right, hold_up, hold_up]
     if map_name == "Bedroom" and pyboy.botsupport_manager().sprite(0).on_screen:
-        list_of_actions = [hold_right, hold_up, hold_a, hold_left]
+        reduced_move = [hold_down, hold_left]
+        reduced_amount = 1
+    if map_name == "Route 22" and not parcel:
+        reduced_move = [hold_left]
+        reduced_amount = 1
+        list_of_actions = [hold_a, hold_b, hold_up, hold_right, hold_right, hold_right,
+                           hold_down, hold_left, hold_right, hold_right]
+    if map_name == "Viridian City" and not parcel:
+        reduced_move = [hold_down]
+        reduced_amount = 3
+        list_of_actions.append(hold_right)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_right)
+        list_of_actions.append(hold_up)
     decision = random.randint(0, len(list_of_actions) - 1)
     if list_of_actions[decision] == hold_a or list_of_actions[decision] == hold_b:  # hold a or b only one frame
         list_of_actions[decision](21)
     else:  # Not hold a or b
         if reduced_move is not None:
-            if reduced_move == list_of_actions[decision]:
-                random_spaces = reduced_amount
+            if list_of_actions[decision] in reduced_move:
+                random_spaces = random.randint(1, reduced_amount)
         for space in range(random_spaces):
             map_position = manager.screen().tilemap_position()[0]
             list_of_actions[decision](21)
@@ -473,6 +497,8 @@ pyboy = PyBoy('Roms/Pokemon Red.gb')
 
 
 def main(counter):
+    parcel_get = False
+    start_time = time()
     while not pyboy.tick():
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
         manager = pyboy.botsupport_manager()
@@ -483,6 +509,9 @@ def main(counter):
         move4 = pyboy.get_memory_value(53279)
         turn_count = []
         in_battle = pyboy.get_memory_value(53335)
+        while not manager.sprite(0).on_screen and not in_battle:
+            list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
+            list_of_actions[random.randint(0, len(list_of_actions) - 1)](16)
         while in_battle:
             list_in_battle = [hold_a, hold_down, hold_up]
             if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
@@ -498,6 +527,11 @@ def main(counter):
         if not counted:
             counter += 1
         print(counter)
+        if pyboy.get_memory_value(54797) and not parcel_get:
+            parcel_get = True
+            total_time = counter
+        if pyboy.get_memory_value(54797):
+            print("Ticks to Parcel: ", total_time)
         overworld_move()
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
     pyboy.stop()

@@ -147,7 +147,7 @@ map_destinations = {"Bedroom": ["70"],
 move_number = ["",  # No Move 0
                "Pound",
                "Karate Chop",
-               "Double Slap",
+               "DoubleSlap",
                "Comet Punch",
                "Mega Punch",
                "Pay Day",
