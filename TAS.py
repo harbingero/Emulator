@@ -527,6 +527,12 @@ def main(counter):
         if not counted:
             counter += 1
         print(counter)
+        while pyboy.get_memory_value(54110) == 40 and not manager.sprite(0).on_screen and not in_battle:
+            tick_pass(40)
+            press_start()
+            tick_pass(40)
+            press_b()
+            tick_pass(40)
         if pyboy.get_memory_value(54797) and not parcel_get:
             parcel_get = True
             total_time = counter
