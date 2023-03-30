@@ -163,14 +163,14 @@ pokedex = ["Bulbasaur",
            "Mewtwo",
            "Mew"]
 
-lmoves_bulbasaur = {'01': ['Tackle', 'Growl'],
-                    '07': ['Leech Seed'],
-                    '13': ['Vine Whip'],
-                    '20': ['PoisonPowder'],
-                    '27': ['Razor Leaf'],
-                    '34': ['Growth'],
-                    '41': ['Sleep Powder'],
-                    '48': ['SolarBeam']}
+lmoves_bulbasaur = {1: ['Tackle', 'Growl'],
+                    7: ['Leech Seed'],
+                    13: ['Vine Whip'],
+                    20: ['PoisonPowder'],
+                    27: ['Razor Leaf'],
+                    34: ['Growth'],
+                    41: ['Sleep Powder'],
+                    48: ['SolarBeam']}
 tmoves_bulbasaur = ["Swords Dance",
                     "Toxic",
                     "Body Slam",
@@ -186,14 +186,14 @@ tmoves_bulbasaur = ["Swords Dance",
                     "Rest",
                     "Substitute"]
 hmoves_bulbasaur = ["Cut"]
-lmoves_ivysaur = {'01': ['Tackle', 'Growl', 'Leech Seed'],
-                  '07': ['Leech Seed'],
-                  '13': ['Vine Whip'],
-                  '22': ['PoisonPowder'],
-                  '30': ['Razor Leaf'],
-                  '38': ['Growth'],
-                  '46': ['Sleep Powder'],
-                  '54': ['SolarBeam']}
+lmoves_ivysaur = {1: ['Tackle', 'Growl', 'Leech Seed'],
+                  7: ['Leech Seed'],
+                  13: ['Vine Whip'],
+                  22: ['PoisonPowder'],
+                  30: ['Razor Leaf'],
+                  38: ['Growth'],
+                  46: ['Sleep Powder'],
+                  54: ['SolarBeam']}
 tmoves_ivysaur = ["Swords Dance",
                   "Toxic",
                   "Body Slam",
@@ -209,14 +209,14 @@ tmoves_ivysaur = ["Swords Dance",
                   "Rest",
                   "Substitute"]
 hmoves_ivysaur = ["Cut"]
-lmoves_venusaur = {'01': ['Tackle', 'Growl', 'Leech Seed', 'Vine Whip'],
-                   '07': ['Leech Seed'],
-                   '13': ['Vine Whip'],
-                   '22': ['PoisonPowder'],
-                   '30': ['Razor Leaf'],
-                   '43': ['Growth'],
-                   '55': ['Sleep Powder'],
-                   '65': ['SolarBeam']}
+lmoves_venusaur = {1: ['Tackle', 'Growl', 'Leech Seed', 'Vine Whip'],
+                   7: ['Leech Seed'],
+                   13: ['Vine Whip'],
+                   22: ['PoisonPowder'],
+                   30: ['Razor Leaf'],
+                   43: ['Growth'],
+                   55: ['Sleep Powder'],
+                   65: ['SolarBeam']}
 tmoves_venusaur = ["Swords Dance",
                    "Toxic",
                    "Body Slam",
@@ -233,13 +233,13 @@ tmoves_venusaur = ["Swords Dance",
                    "Rest",
                    "Substitute"]
 hmoves_venusaur = ["Cut"]
-lmoves_charmander = {'01': ['Scratch', 'Growl'],
-                     '09': ['Ember'],
-                     '15': ['Leer'],
-                     '22': ['Rage'],
-                     '30': ['Slash'],
-                     '38': ['Flamethrower'],
-                     '46': ['Fire Spin']}
+lmoves_charmander = {1: ['Scratch', 'Growl'],
+                     9: ['Ember'],
+                     15: ['Leer'],
+                     22: ['Rage'],
+                     30: ['Slash'],
+                     38: ['Flamethrower'],
+                     46: ['Fire Spin']}
 tmoves_charmander = ["Mega Punch",
                      "Swords Dance",
                      "Mega Kick",
@@ -264,13 +264,13 @@ tmoves_charmander = ["Mega Punch",
                      "Substitute"]
 hmoves_charmander = ["Cut",
                      "Strength"]
-lmoves_charmeleon = {'01': ['Scratch', 'Growl', 'Ember'],
-                     '09': ['Ember'],
-                     '15': ['Leer'],
-                     '24': ['Rage'],
-                     '33': ['Slash'],
-                     '42': ['Flamethrower'],
-                     '56': ['Fire Spin']}
+lmoves_charmeleon = {1: ['Scratch', 'Growl', 'Ember'],
+                     9: ['Ember'],
+                     15: ['Leer'],
+                     24: ['Rage'],
+                     33: ['Slash'],
+                     42: ['Flamethrower'],
+                     56: ['Fire Spin']}
 tmoves_charmeleon = ["Mega Punch",
                      "Swords Dance",
                      "Mega Kick",
@@ -295,13 +295,13 @@ tmoves_charmeleon = ["Mega Punch",
                      "Substitute"]
 hmoves_charmeleon = ["Cut",
                      "Strength"]
-lmoves_charizard = {'01': ['Scratch', 'Growl', 'Ember', 'Leer'],
-                    '09': ['Ember'],
-                    '15': ['Leer'],
-                    '24': ['Rage'],
-                    '36': ['Slash'],
-                    '46': ['Flamethrower'],
-                    '55': ['Fire Spin']}
+lmoves_charizard = {1: ['Scratch', 'Growl', 'Ember', 'Leer'],
+                    9: ['Ember'],
+                    15: ['Leer'],
+                    24: ['Rage'],
+                    36: ['Slash'],
+                    46: ['Flamethrower'],
+                    55: ['Fire Spin']}
 tmoves_charizard = ["Mega Punch",
                     "Swords Dance",
                     "Mega Kick",
@@ -330,13 +330,13 @@ tmoves_charizard = ["Mega Punch",
 hmoves_charizard = ["Cut",
                     "Fly",
                     "Strength"]
-lmoves_squirtle = {'01': ['Tackle', 'Tail Whip'],
-                   '08': ['Bubble'],
-                   '15': ['Water Gun'],
-                   '22': ['Bite'],
-                   '28': ['Withdraw'],
-                   '35': ['Skull Bash'],
-                   '42': ['Hydro Pump']}
+lmoves_squirtle = {1: ['Tackle', 'Tail Whip'],
+                   8: ['Bubble'],
+                   15: ['Water Gun'],
+                   22: ['Bite'],
+                   28: ['Withdraw'],
+                   35: ['Skull Bash'],
+                   42: ['Hydro Pump']}
 tmoves_squirtle = ["Mega Punch",
                    "Mega Kick",
                    "Toxic",
@@ -361,13 +361,13 @@ tmoves_squirtle = ["Mega Punch",
                    "Substitute"]
 hmoves_squirtle = ["Surf",
                    "Strength"]
-lmoves_wartortle = {'01': ['Tackle', 'Tail Whip', 'Bubble'],
-                    '08': ['Bubble'],
-                    '15': ['Water Gun'],
-                    '24': ['Bite'],
-                    '31': ['Withdraw'],
-                    '39': ['Skull Bash'],
-                    '47': ['Hydro Pump']}
+lmoves_wartortle = {1: ['Tackle', 'Tail Whip', 'Bubble'],
+                    8: ['Bubble'],
+                    15: ['Water Gun'],
+                    24: ['Bite'],
+                    31: ['Withdraw'],
+                    39: ['Skull Bash'],
+                    47: ['Hydro Pump']}
 tmoves_wartortle = ["Mega Punch",
                     "Mega Kick",
                     "Toxic",
@@ -392,13 +392,13 @@ tmoves_wartortle = ["Mega Punch",
                     "Substitute"]
 hmoves_wartortle = ["Surf",
                     "Strength"]
-lmoves_blastoise = {'01': ['Tackle', 'Tail Whip', 'Bubble', 'Water Gun'],
-                    '08': ['Bubble'],
-                    '15': ['Water Gun'],
-                    '24': ['Bite'],
-                    '31': ['Withdraw'],
-                    '42': ['Skull Bash'],
-                    '52': ['Hydro Pump']}
+lmoves_blastoise = {1: ['Tackle', 'Tail Whip', 'Bubble', 'Water Gun'],
+                    8: ['Bubble'],
+                    15: ['Water Gun'],
+                    24: ['Bite'],
+                    31: ['Withdraw'],
+                    42: ['Skull Bash'],
+                    52: ['Hydro Pump']}
 tmoves_blastoise = ["Mega Punch",
                     "Mega Kick",
                     "Toxic",
@@ -426,7 +426,7 @@ tmoves_blastoise = ["Mega Punch",
                     "Substitute"]
 hmoves_blastoise = ["Surf",
                     "Strength"]
-lmoves_caterpie = {'01': ['Tackle', 'String Shot']}
+lmoves_caterpie = {1: ['Tackle', 'String Shot']}
 tmoves_caterpie = []
 hmoves_caterpie = []
 lmoves_metapod = {1: ["Harden"]}
@@ -460,11 +460,11 @@ tmoves_butterfree = ["Razor Wind",
                      "Psywave",
                      "Substitute"]
 hmoves_butterfree = ["Flash"]
-lmoves_weedle = {'01': ['Poison Sting', 'String Shot'],
-                 '9': ["Bug Bite"]}
+lmoves_weedle = {1: ['Poison Sting', 'String Shot'],
+                 9: ["Bug Bite"]}
 tmoves_weedle = []
 hmoves_weedle = []
-lmoves_kakuna = {'01': ['Harden']}
+lmoves_kakuna = {1: ['Harden']}
 tmoves_kakuna = []
 hmoves_kakuna = []
 lmoves_beedrill = {1: ["Fury Attack"],
@@ -490,13 +490,13 @@ tmoves_beedrill = ["Swords Dance",
                    "Rest",
                    "Substitute"]
 hmoves_beedrill = ["Cut"]
-lmoves_pidgey = {'01': ['Gust'],
-                 '05': ['Sand-Attack'],
-                 '12': ['Quick Attack'],
-                 '19': ['Whirlwind'],
-                 '28': ['Wing Attack'],
-                 '36': ['Agility'],
-                 '44': ['Mirror Move']}
+lmoves_pidgey = {1: ['Gust'],
+                 5: ['Sand-Attack'],
+                 12: ['Quick Attack'],
+                 19: ['Whirlwind'],
+                 28: ['Wing Attack'],
+                 36: ['Agility'],
+                 44: ['Mirror Move']}
 tmoves_pidgey = ["Razor Wind",
                  "Whirlwind",
                  "Toxic",
@@ -512,13 +512,13 @@ tmoves_pidgey = ["Razor Wind",
                  "Rest",
                  "Substitute"]
 hmoves_pidgey = ["Fly"]
-lmoves_pidgeotto = {'01': ['Gust', 'Sand-Attack'],
-                    '05': ['Sand-Attack'],
-                    '12': ['Quick Attack'],
-                    '21': ['Whirlwind'],
-                    '31': ['Wing Attack'],
-                    '40': ['Agility'],
-                    '49': ['Mirror Move']}
+lmoves_pidgeotto = {1: ['Gust', 'Sand-Attack'],
+                    5: ['Sand-Attack'],
+                    12: ['Quick Attack'],
+                    21: ['Whirlwind'],
+                    31: ['Wing Attack'],
+                    40: ['Agility'],
+                    49: ['Mirror Move']}
 tmoves_pidgeotto = ["Razor Wind",
                     "Whirlwind",
                     "Toxic",
@@ -534,13 +534,13 @@ tmoves_pidgeotto = ["Razor Wind",
                     "Rest",
                     "Substitute"]
 hmoves_pidgeotto = ["Fly"]
-lmoves_pidgeot = {'01': ['Gust', 'Sand-Attack', 'Quick Attack'],
-                  '05': ['Sand-Attack'],
-                  '12': ['Quick Attack'],
-                  '21': ['Whirlwind'],
-                  '31': ['Wing Attack'],
-                  '44': ['Agility'],
-                  '54': ['Mirror Move']}
+lmoves_pidgeot = {1: ['Gust', 'Sand-Attack', 'Quick Attack'],
+                  5: ['Sand-Attack'],
+                  12: ['Quick Attack'],
+                  21: ['Whirlwind'],
+                  31: ['Wing Attack'],
+                  44: ['Agility'],
+                  54: ['Mirror Move']}
 tmoves_pidgeot = ["Razor Wind",
                   "Whirlwind",
                   "Toxic",
@@ -557,11 +557,11 @@ tmoves_pidgeot = ["Razor Wind",
                   "Rest",
                   "Substitute"]
 hmoves_pidgeot = ["Fly"]
-lmoves_rattata = {'01': ['Tackle', 'Tail Whip'],
-                  '07': ['Quick Attack'],
-                  '14': ['Hyper Fang'],
-                  '23': ['Focus Energy'],
-                  '34': ['Super Fang']}
+lmoves_rattata = {1: ['Tackle', 'Tail Whip'],
+                  7: ['Quick Attack'],
+                  14: ['Hyper Fang'],
+                  23: ['Focus Energy'],
+                  34: ['Super Fang']}
 tmoves_rattata = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -581,11 +581,11 @@ tmoves_rattata = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_rattata = []
-lmoves_raticate = {'01': ['Tackle', 'Tail Whip', 'Quick Attack'],
-                   '07': ['Quick Attack'],
-                   '14': ['Hyper Fang'],
-                   '27': ['Focus Energy'],
-                   '41': ['Super Fang']}
+lmoves_raticate = {1: ['Tackle', 'Tail Whip', 'Quick Attack'],
+                   7: ['Quick Attack'],
+                   14: ['Hyper Fang'],
+                   27: ['Focus Energy'],
+                   41: ['Super Fang']}
 tmoves_raticate = ["Toxic",
                    "Body Slam",
                    "Take Down",
@@ -607,12 +607,12 @@ tmoves_raticate = ["Toxic",
                    "Rest",
                    "Substitute"]
 hmoves_raticate = []
-lmoves_spearow = {'01': ['Peck', 'Growl'],
-                  '09': ['Leer'],
-                  '15': ['Fury Attack'],
-                  '22': ['Mirror Move'],
-                  '29': ['Drill Peck'],
-                  '36': ['Agility']}
+lmoves_spearow = {1: ['Peck', 'Growl'],
+                  9: ['Leer'],
+                  15: ['Fury Attack'],
+                  22: ['Mirror Move'],
+                  29: ['Drill Peck'],
+                  36: ['Agility']}
 tmoves_spearow = ["Razor Wind",
                   "Whirlwind",
                   "Toxic",
@@ -627,12 +627,12 @@ tmoves_spearow = ["Razor Wind",
                   "Rest",
                   "Substitute"]
 hmoves_spearow = ["Fly"]
-lmoves_fearow = {'01': ['Peck', 'Growl', 'Leer'],
-                 '09': ['Leer'],
-                 '15': ['Fury Attack'],
-                 '25': ['Mirror Move'],
-                 '34': ['Drill Peck'],
-                 '43': ['Agility']}
+lmoves_fearow = {1: ['Peck', 'Growl', 'Leer'],
+                 9: ['Leer'],
+                 15: ['Fury Attack'],
+                 25: ['Mirror Move'],
+                 34: ['Drill Peck'],
+                 43: ['Agility']}
 tmoves_fearow = ["Razor Wind",
                  "Whirlwind",
                  "Toxic",
@@ -648,12 +648,12 @@ tmoves_fearow = ["Razor Wind",
                  "Rest",
                  "Substitute"]
 hmoves_fearow = ["Fly"]
-lmoves_ekans = {'01': ['Wrap', 'Leer'],
-                '10': ['Poison Sting'],
-                '17': ['Bite'],
-                '24': ['Glare'],
-                '31': ['Screech'],
-                '38': ['Acid']}
+lmoves_ekans = {1: ['Wrap', 'Leer'],
+                10: ['Poison Sting'],
+                17: ['Bite'],
+                24: ['Glare'],
+                31: ['Screech'],
+                38: ['Acid']}
 tmoves_ekans = ["Toxic",
                 "Body Slam",
                 "Take Down",
@@ -671,12 +671,12 @@ tmoves_ekans = ["Toxic",
                 "Rock Slide",
                 "Substitute"]
 hmoves_ekans = ["Strength"]
-lmoves_arbok = {'01': ['Wrap', 'Leer', 'Poison Sting'],
-                '10': ['Poison Sting'],
-                '17': ['Bite'],
-                '27': ['Glare'],
-                '36': ['Screech'],
-                '47': ['Acid']}
+lmoves_arbok = {1: ['Wrap', 'Leer', 'Poison Sting'],
+                10: ['Poison Sting'],
+                17: ['Bite'],
+                27: ['Glare'],
+                36: ['Screech'],
+                47: ['Acid']}
 tmoves_arbok = ["Toxic",
                 "Body Slam",
                 "Take Down",
@@ -774,12 +774,12 @@ tmoves_sandshrew = ["Swords Dance",
                     "Substitute"]
 hmoves_sandshrew = ["Cut",
                     "Strength"]
-lmoves_sandslash = {'01': ['Scratch', 'Sand-Attack'],
-                    '10': ['Sand-Attack'],
-                    '17': ['Slash'],
-                    '27': ['Poison Sting'],
-                    '36': ['Swift'],
-                    '47': ['Fury Swipes']}
+lmoves_sandslash = {1: ['Scratch', 'Sand-Attack'],
+                    10: ['Sand-Attack'],
+                    17: ['Slash'],
+                    27: ['Poison Sting'],
+                    36: ['Swift'],
+                    47: ['Fury Swipes']}
 tmoves_sandslash = ["Swords Dance",
                     "Toxic",
                     "Body Slam",
@@ -1049,12 +1049,12 @@ tmoves_clefable = ["Mega Punch",
                    "Substitute"]
 hmoves_clefable = ["Strength",
                    "Flash"]
-lmoves_vulpix = {'01': ['Ember', 'Tail Whip'],
-                 '16': ['Quick Attack'],
-                 '21': ['Roar'],
-                 '28': ['Confuse Ray'],
-                 '35': ['Flamethrower'],
-                 '42': ['Fire Spin']}
+lmoves_vulpix = {1: ['Ember', 'Tail Whip'],
+                 16: ['Quick Attack'],
+                 21: ['Roar'],
+                 28: ['Confuse Ray'],
+                 35: ['Flamethrower'],
+                 42: ['Fire Spin']}
 tmoves_vulpix = ["Toxic",
                  "Body Slam",
                  "Take Down",
@@ -1071,7 +1071,7 @@ tmoves_vulpix = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_vulpix = []
-lmoves_ninetales = {'01': ['Ember', 'Tail Whip', 'Quick Attack', 'Roar']}
+lmoves_ninetales = {1: ['Ember', 'Tail Whip', 'Quick Attack', 'Roar']}
 tmoves_ninetales = ["Toxic",
                     "Body Slam",
                     "Take Down",
@@ -1163,12 +1163,12 @@ tmoves_wigglytuff = ["Mega Punch",
                      "Substitute"]
 hmoves_wigglytuff = ["Strength",
                      "Flash"]
-lmoves_zubat = {'01': ['Leech Life'],
-                '10': ['Supersonic'],
-                '15': ['Bite'],
-                '21': ['Confuse Ray'],
-                '28': ['Wing Attack'],
-                '36': ['Haze']}
+lmoves_zubat = {1: ['Leech Life'],
+                10: ['Supersonic'],
+                15: ['Bite'],
+                21: ['Confuse Ray'],
+                28: ['Wing Attack'],
+                36: ['Haze']}
 tmoves_zubat = ["Razor Wind",
                 "Whirlwind",
                 "Toxic",
@@ -1183,12 +1183,12 @@ tmoves_zubat = ["Razor Wind",
                 "Rest",
                 "Substitute"]
 hmoves_zubat = []
-lmoves_golbat = {'01': ['Leech Life', 'Screech', 'Bite'],
-                 '10': ['Supersonic'],
-                 '15': ['Bite'],
-                 '21': ['Confuse Ray'],
-                 '32': ['Wing Attack'],
-                 '43': ['Haze']}
+lmoves_golbat = {1: ['Leech Life', 'Screech', 'Bite'],
+                 10: ['Supersonic'],
+                 15: ['Bite'],
+                 21: ['Confuse Ray'],
+                 32: ['Wing Attack'],
+                 43: ['Haze']}
 tmoves_golbat = ["Razor Wind",
                  "Whirlwind",
                  "Toxic",
@@ -1204,13 +1204,13 @@ tmoves_golbat = ["Razor Wind",
                  "Rest",
                  "Substitute"]
 hmoves_golbat = []
-lmoves_oddish = {'01': ['Absorb'],
-                 '15': ['PoisonPowder'],
-                 '17': ['Stun Spore'],
-                 '19': ['Sleep Powder'],
-                 '24': ['Acid'],
-                 '33': ['Petal Dance'],
-                 '46': ['SolarBeam']}
+lmoves_oddish = {1: ['Absorb'],
+                 15: ['PoisonPowder'],
+                 17: ['Stun Spore'],
+                 19: ['Sleep Powder'],
+                 24: ['Acid'],
+                 33: ['Petal Dance'],
+                 46: ['SolarBeam']}
 tmoves_oddish = ["Swords Dance",
                  "Toxic",
                  "Take Down",
@@ -1225,13 +1225,13 @@ tmoves_oddish = ["Swords Dance",
                  "Rest",
                  "Substitute"]
 hmoves_oddish = ["Cut"]
-lmoves_gloom = {'01': ['Absorb', 'PoisonPowder', 'Stun Spore'],
-                '15': ['PoisonPowder'],
-                '17': ['Stun Spore'],
-                '19': ['Sleep Powder'],
-                '28': ['Acid'],
-                '38': ['Petal Dance'],
-                '52': ['SolarBeam']}
+lmoves_gloom = {1: ['Absorb', 'PoisonPowder', 'Stun Spore'],
+                15: ['PoisonPowder'],
+                17: ['Stun Spore'],
+                19: ['Sleep Powder'],
+                28: ['Acid'],
+                38: ['Petal Dance'],
+                52: ['SolarBeam']}
 tmoves_gloom = ["Swords Dance",
                 "Toxic",
                 "Take Down",
@@ -1246,10 +1246,10 @@ tmoves_gloom = ["Swords Dance",
                 "Rest",
                 "Substitute"]
 hmoves_gloom = ["Cut"]
-lmoves_vileplume = {'01': ['Stun Spore', 'Sleep Powder', 'Acid', 'Petal Dance'],
-                    '15': ['PoisonPowder'],
-                    '17': ['Stun Spore'],
-                    '19': ['Sleep Powder']}
+lmoves_vileplume = {1: ['Stun Spore', 'Sleep Powder', 'Acid', 'Petal Dance'],
+                    15: ['PoisonPowder'],
+                    17: ['Stun Spore'],
+                    19: ['Sleep Powder']}
 tmoves_vileplume = ["Swords Dance",
                     "Toxic",
                     "Body Slam",
@@ -1266,12 +1266,12 @@ tmoves_vileplume = ["Swords Dance",
                     "Rest",
                     "Substitute"]
 hmoves_vileplume = ["Cut"]
-lmoves_paras = {'01': ['Scratch'],
-                '13': ['Stun Spore'],
-                '20': ['Leech Life'],
-                '27': ['Spore'],
-                '34': ['Slash'],
-                '41': ['Growth']}
+lmoves_paras = {1: ['Scratch'],
+                13: ['Stun Spore'],
+                20: ['Leech Life'],
+                27: ['Spore'],
+                34: ['Slash'],
+                41: ['Growth']}
 tmoves_paras = ["Swords Dance",
                 "Toxic",
                 "Body Slam",
@@ -1289,12 +1289,12 @@ tmoves_paras = ["Swords Dance",
                 "Rest",
                 "Substitute"]
 hmoves_paras = ["Cut"]
-lmoves_parasect = {'01': ['Scratch', 'Stun Spore', 'Leech Life'],
-                   '13': ['Stun Spore'],
-                   '20': ['Leech Life'],
-                   '30': ['Spore'],
-                   '39': ['Slash'],
-                   '48': ['Growth']}
+lmoves_parasect = {1: ['Scratch', 'Stun Spore', 'Leech Life'],
+                   13: ['Stun Spore'],
+                   20: ['Leech Life'],
+                   30: ['Spore'],
+                   39: ['Slash'],
+                   48: ['Growth']}
 tmoves_parasect = ["Swords Dance",
                    "Toxic",
                    "Body Slam",
@@ -1362,12 +1362,12 @@ tmoves_venomoth = ["Razor Wind",
                    "Psywave",
                    "Substitute"]
 hmoves_venomoth = ["Flash"]
-lmoves_diglett = {'01': ['Scratch'],
-                  '15': ['Growl'],
-                  '19': ['Dig'],
-                  '24': ['Sand-Attack'],
-                  '31': ['Slash'],
-                  '40': ['Earthquake']}
+lmoves_diglett = {1: ['Scratch'],
+                  15: ['Growl'],
+                  19: ['Dig'],
+                  24: ['Sand-Attack'],
+                  31: ['Slash'],
+                  40: ['Earthquake']}
 tmoves_diglett = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -1383,12 +1383,12 @@ tmoves_diglett = ["Toxic",
                   "Rock Slide",
                   "Substitute"]
 hmoves_diglett = ["Cut"]
-lmoves_dugtrio = {'01': ['Scratch', 'Growl', 'Dig'],
-                  '15': ['Growl'],
-                  '19': ['Dig'],
-                  '24': ['Sand-Attack'],
-                  '35': ['Slash'],
-                  '47': ['Earthquake']}
+lmoves_dugtrio = {1: ['Scratch', 'Growl', 'Dig'],
+                  15: ['Growl'],
+                  19: ['Dig'],
+                  24: ['Sand-Attack'],
+                  35: ['Slash'],
+                  47: ['Earthquake']}
 tmoves_dugtrio = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -1405,12 +1405,12 @@ tmoves_dugtrio = ["Toxic",
                   "Rock Slide",
                   "Substitute"]
 hmoves_dugtrio = ["Cut"]
-lmoves_meowth = {'01': ['Scratch', 'Growl'],
-                 '12': ['Bite'],
-                 '17': ['Pay Day'],
-                 '24': ['Screech'],
-                 '33': ['Fury Swipes'],
-                 '44': ['Slash']}
+lmoves_meowth = {1: ['Scratch', 'Growl'],
+                 12: ['Bite'],
+                 17: ['Pay Day'],
+                 24: ['Screech'],
+                 33: ['Fury Swipes'],
+                 44: ['Slash']}
 tmoves_meowth = ["Toxic",
                  "Body Slam",
                  "Take Down",
@@ -1429,12 +1429,12 @@ tmoves_meowth = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_meowth = []
-lmoves_persian = {'01': ['Scratch', 'Growl', 'Bite', 'Screech'],
-                  '12': ['Bite'],
-                  '17': ['Pay Day'],
-                  '24': ['Screech'],
-                  '37': ['Fury Swipes'],
-                  '51': ['Slash']}
+lmoves_persian = {1: ['Scratch', 'Growl', 'Bite', 'Screech'],
+                  12: ['Bite'],
+                  17: ['Pay Day'],
+                  24: ['Screech'],
+                  37: ['Fury Swipes'],
+                  51: ['Slash']}
 tmoves_persian = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -1454,12 +1454,12 @@ tmoves_persian = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_persian = []
-lmoves_psyduck = {'01': ['Scratch'],
-                  '28': ['Tail Whip'],
-                  '31': ['Disable'],
-                  '36': ['Confusion'],
-                  '43': ['Fury Swipes'],
-                  '52': ['Hydro Pump']}
+lmoves_psyduck = {1: ['Scratch'],
+                  28: ['Tail Whip'],
+                  31: ['Disable'],
+                  36: ['Confusion'],
+                  43: ['Fury Swipes'],
+                  52: ['Hydro Pump']}
 tmoves_psyduck = ["Mega Punch",
                   "Mega Kick",
                   "Toxic",
@@ -1485,12 +1485,12 @@ tmoves_psyduck = ["Mega Punch",
                   "Substitute"]
 hmoves_psyduck = ["Surf",
                   "Strength"]
-lmoves_golduck = {'01': ['Scratch', 'Tail Whip', 'Disable'],
-                  '28': ['Tail Whip'],
-                  '31': ['Disable'],
-                  '39': ['Confusion'],
-                  '48': ['Fury Swipes'],
-                  '59': ['Hydro Pump']}
+lmoves_golduck = {1: ['Scratch', 'Tail Whip', 'Disable'],
+                  28: ['Tail Whip'],
+                  31: ['Disable'],
+                  39: ['Confusion'],
+                  48: ['Fury Swipes'],
+                  59: ['Hydro Pump']}
 tmoves_golduck = ["Mega Punch",
                   "Mega Kick",
                   "Toxic",
@@ -1578,12 +1578,12 @@ tmoves_primeape = ["Mega Punch",
                    "Rock Slide",
                    "Substitute"]
 hmoves_primeape = ["Strength"]
-lmoves_growlithe = {'01': ['Bite', 'Roar'],
-                    '18': ['Ember'],
-                    '23': ['Leer'],
-                    '30': ['Take Down'],
-                    '39': ['Agility'],
-                    '50': ['Flamethrower']}
+lmoves_growlithe = {1: ['Bite', 'Roar'],
+                    18: ['Ember'],
+                    23: ['Leer'],
+                    30: ['Take Down'],
+                    39: ['Agility'],
+                    50: ['Flamethrower']}
 tmoves_growlithe = ["Toxic",
                     "Body Slam",
                     "Take Down",
@@ -1601,7 +1601,7 @@ tmoves_growlithe = ["Toxic",
                     "Rest",
                     "Substitute"]
 hmoves_growlithe = []
-lmoves_arcanine = {'01': ['Roar', 'Ember', 'Leer', 'Take Down']}
+lmoves_arcanine = {1: ['Roar', 'Ember', 'Leer', 'Take Down']}
 tmoves_arcanine = ["Toxic",
                    "Body Slam",
                    "Take Down",
@@ -1711,7 +1711,7 @@ tmoves_poliwrath = ["Mega Punch",
                     "Substitute"]
 hmoves_poliwrath = ["Surf",
                     "Strength"]
-lmoves_abra = {'01': ['Teleport']}
+lmoves_abra = {1: ['Teleport']}
 tmoves_abra = ["Mega Punch",
                "Mega Kick",
                "Toxic",
@@ -1801,12 +1801,12 @@ tmoves_alakazam = ["Mega Punch",
                    "Tri Attack",
                    "Substitute"]
 hmoves_alakazam = ["Flash"]
-lmoves_machop = {'01': ['Karate Chop'],
-                 '20': ['Low Kick'],
-                 '25': ['Leer'],
-                 '32': ['Focus Energy'],
-                 '39': ['Seismic Toss'],
-                 '46': ['Submission']}
+lmoves_machop = {1: ['Karate Chop'],
+                 20: ['Low Kick'],
+                 25: ['Leer'],
+                 32: ['Focus Energy'],
+                 39: ['Seismic Toss'],
+                 46: ['Submission']}
 tmoves_machop = ["Mega Punch",
                  "Mega Kick",
                  "Toxic",
@@ -1830,12 +1830,12 @@ tmoves_machop = ["Mega Punch",
                  "Rock Slide",
                  "Substitute"]
 hmoves_machop = ["Strength"]
-lmoves_machoke = {'01': ['Karate Chop', 'Low Kick', 'Leer'],
-                  '20': ['Low Kick'],
-                  '25': ['Leer'],
-                  '36': ['Focus Energy'],
-                  '44': ['Seismic Toss'],
-                  '52': ['Submission']}
+lmoves_machoke = {1: ['Karate Chop', 'Low Kick', 'Leer'],
+                  20: ['Low Kick'],
+                  25: ['Leer'],
+                  36: ['Focus Energy'],
+                  44: ['Seismic Toss'],
+                  52: ['Submission']}
 tmoves_machoke = ["Mega Punch",
                   "Mega Kick",
                   "Toxic",
@@ -1859,12 +1859,12 @@ tmoves_machoke = ["Mega Punch",
                   "Rock Slide",
                   "Substitute"]
 hmoves_machoke = ["Strength"]
-lmoves_machamp = {'01': ['Karate Chop', 'Low Kick', 'Leer'],
-                  '20': ['Low Kick'],
-                  '25': ['Leer'],
-                  '36': ['Focus Energy'],
-                  '44': ['Seismic Toss'],
-                  '52': ['Submission']}
+lmoves_machamp = {1: ['Karate Chop', 'Low Kick', 'Leer'],
+                  20: ['Low Kick'],
+                  25: ['Leer'],
+                  36: ['Focus Energy'],
+                  44: ['Seismic Toss'],
+                  52: ['Submission']}
 tmoves_machamp = ["Mega Punch",
                   "Mega Kick",
                   "Toxic",
@@ -1889,14 +1889,14 @@ tmoves_machamp = ["Mega Punch",
                   "Rock Slide",
                   "Substitute"]
 hmoves_machamp = ["Strength"]
-lmoves_bellsprout = {'01': ['Vine Whip', 'Growth'],
-                     '13': ['Wrap'],
-                     '15': ['PoisonPowder'],
-                     '18': ['Sleep Powder'],
-                     '21': ['Stun Spore'],
-                     '26': ['Acid'],
-                     '33': ['Razor Leaf'],
-                     '42': ['Slam']}
+lmoves_bellsprout = {1: ['Vine Whip', 'Growth'],
+                     13: ['Wrap'],
+                     15: ['PoisonPowder'],
+                     18: ['Sleep Powder'],
+                     21: ['Stun Spore'],
+                     26: ['Acid'],
+                     33: ['Razor Leaf'],
+                     42: ['Slam']}
 tmoves_bellsprout = ["Swords Dance",
                      "Toxic",
                      "Take Down",
@@ -1911,14 +1911,14 @@ tmoves_bellsprout = ["Swords Dance",
                      "Rest",
                      "Substitute"]
 hmoves_bellsprout = ["Cut"]
-lmoves_weepinbell = {'01': ['Vine Whip', 'Growth', 'Wrap'],
-                     '13': ['Wrap'],
-                     '15': ['PoisonPowder'],
-                     '18': ['Sleep Powder'],
-                     '23': ['Stun Spore'],
-                     '29': ['Acid'],
-                     '38': ['Razor Leaf'],
-                     '49': ['Slam']}
+lmoves_weepinbell = {1: ['Vine Whip', 'Growth', 'Wrap'],
+                     13: ['Wrap'],
+                     15: ['PoisonPowder'],
+                     18: ['Sleep Powder'],
+                     23: ['Stun Spore'],
+                     29: ['Acid'],
+                     38: ['Razor Leaf'],
+                     49: ['Slam']}
 tmoves_weepinbell = ["Swords Dance",
                      "Toxic",
                      "Take Down",
@@ -1933,10 +1933,10 @@ tmoves_weepinbell = ["Swords Dance",
                      "Rest",
                      "Substitute"]
 hmoves_weepinbell = ["Cut"]
-lmoves_victreebel = {'01': ['Sleep Powder', 'Stun Spore', 'Acid', 'Razor Leaf'],
-                     '13': ['Wrap'],
-                     '15': ['PoisonPowder'],
-                     '18': ['Sleep Powder']}
+lmoves_victreebel = {1: ['Sleep Powder', 'Stun Spore', 'Acid', 'Razor Leaf'],
+                     13: ['Wrap'],
+                     15: ['PoisonPowder'],
+                     18: ['Sleep Powder']}
 tmoves_victreebel = ["Swords Dance",
                      "Toxic",
                      "Body Slam",
@@ -1953,15 +1953,15 @@ tmoves_victreebel = ["Swords Dance",
                      "Rest",
                      "Substitute"]
 hmoves_victreebel = ["Cut"]
-lmoves_tentacool = {'01': ['Acid'],
-                    '07': ['Supersonic'],
-                    '13': ['Wrap'],
-                    '18': ['Poison Sting'],
-                    '22': ['Water Gun'],
-                    '27': ['Constrict'],
-                    '33': ['Barrier'],
-                    '40': ['Screech'],
-                    '48': ['Hydro Pump']}
+lmoves_tentacool = {1: ['Acid'],
+                    7: ['Supersonic'],
+                    13: ['Wrap'],
+                    18: ['Poison Sting'],
+                    22: ['Water Gun'],
+                    27: ['Constrict'],
+                    33: ['Barrier'],
+                    40: ['Screech'],
+                    48: ['Hydro Pump']}
 tmoves_tentacool = ["Swords Dance",
                     "Toxic",
                     "Take Down",
@@ -1981,15 +1981,15 @@ tmoves_tentacool = ["Swords Dance",
                     "Substitute"]
 hmoves_tentacool = ["Cut",
                     "Surf"]
-lmoves_tentacruel = {'01': ['Acid', 'Supersonic', 'Wrap'],
-                     '07': ['Supersonic'],
-                     '13': ['Wrap'],
-                     '18': ['Poison Sting'],
-                     '22': ['Water Gun'],
-                     '27': ['Constrict'],
-                     '35': ['Barrier'],
-                     '43': ['Screech'],
-                     '50': ['Hydro Pump']}
+lmoves_tentacruel = {1: ['Acid', 'Supersonic', 'Wrap'],
+                     7: ['Supersonic'],
+                     13: ['Wrap'],
+                     18: ['Poison Sting'],
+                     22: ['Water Gun'],
+                     27: ['Constrict'],
+                     35: ['Barrier'],
+                     43: ['Screech'],
+                     50: ['Hydro Pump']}
 tmoves_tentacruel = ["Swords Dance",
                      "Toxic",
                      "Take Down",
@@ -2099,13 +2099,13 @@ tmoves_golem = ["Mega Punch",
                 "Explosion",
                 "Substitute"]
 hmoves_golem = ["Strength"]
-lmoves_ponyta = {'01': ['Ember'],
-                 '30': ['Tail Whip'],
-                 '32': ['Stomp'],
-                 '35': ['Growl'],
-                 '39': ['Fire Spin'],
-                 '43': ['Take Down'],
-                 '48': ['Agility']}
+lmoves_ponyta = {1: ['Ember'],
+                 30: ['Tail Whip'],
+                 32: ['Stomp'],
+                 35: ['Growl'],
+                 39: ['Fire Spin'],
+                 43: ['Take Down'],
+                 48: ['Agility']}
 tmoves_ponyta = ["Toxic",
                  "Horn Drill",
                  "Body Slam",
@@ -2122,13 +2122,13 @@ tmoves_ponyta = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_ponyta = []
-lmoves_rapidash = {'01': ['Ember', 'Tail Whip', 'Stomp', 'Growl'],
-                   '30': ['Tail Whip'],
-                   '32': ['Stomp'],
-                   '35': ['Growl'],
-                   '39': ['Fire Spin'],
-                   '47': ['Take Down'],
-                   '55': ['Agility']}
+lmoves_rapidash = {1: ['Ember', 'Tail Whip', 'Stomp', 'Growl'],
+                   30: ['Tail Whip'],
+                   32: ['Stomp'],
+                   35: ['Growl'],
+                   39: ['Fire Spin'],
+                   47: ['Take Down'],
+                   55: ['Agility']}
 tmoves_rapidash = ["Toxic",
                    "Horn Drill",
                    "Body Slam",
@@ -2227,13 +2227,13 @@ tmoves_slowbro = ["Mega Punch",
 hmoves_slowbro = ["Surf",
                   "Strength",
                   "Flash"]
-lmoves_magnemite = {'01': ['Tackle'],
-                    '21': ['SonicBoom'],
-                    '25': ['ThunderShock'],
-                    '29': ['Supersonic'],
-                    '35': ['Thunder Wave'],
-                    '41': ['Swift'],
-                    '47': ['Screech']}
+lmoves_magnemite = {1: ['Tackle'],
+                    21: ['SonicBoom'],
+                    25: ['ThunderShock'],
+                    29: ['Supersonic'],
+                    35: ['Thunder Wave'],
+                    41: ['Swift'],
+                    47: ['Screech']}
 tmoves_magnemite = ["Toxic",
                     "Take Down",
                     "Double-Edge",
@@ -2250,13 +2250,13 @@ tmoves_magnemite = ["Toxic",
                     "Thunder Wave",
                     "Substitute"]
 hmoves_magnemite = ["Flash"]
-lmoves_magneton = {'01': ['Tackle', 'SonicBoom', 'ThunderShock'],
-                   '21': ['SonicBoom'],
-                   '25': ['ThunderShock'],
-                   '29': ['Supersonic'],
-                   '38': ['Thunder Wave'],
-                   '46': ['Swift'],
-                   '54': ['Screech']}
+lmoves_magneton = {1: ['Tackle', 'SonicBoom', 'ThunderShock'],
+                   21: ['SonicBoom'],
+                   25: ['ThunderShock'],
+                   29: ['Supersonic'],
+                   38: ['Thunder Wave'],
+                   46: ['Swift'],
+                   54: ['Screech']}
 tmoves_magneton = ["Toxic",
                    "Take Down",
                    "Double-Edge",
@@ -2274,12 +2274,12 @@ tmoves_magneton = ["Toxic",
                    "Thunder Wave",
                    "Substitute"]
 hmoves_magneton = ["Flash"]
-lmoves_farfetchd = {'01': ['Peck', 'Sand-Attack'],
-                    '07': ['Leer'],
-                    '15': ['Fury Attack'],
-                    '23': ['Swords Dance'],
-                    '31': ['Agility'],
-                    '39': ['Slash']}
+lmoves_farfetchd = {1: ['Peck', 'Sand-Attack'],
+                    7: ['Leer'],
+                    15: ['Fury Attack'],
+                    23: ['Swords Dance'],
+                    31: ['Agility'],
+                    39: ['Slash']}
 tmoves_farfetchd = ["Razor Wind",
                     "Swords Dance",
                     "Whirlwind",
@@ -2298,13 +2298,13 @@ tmoves_farfetchd = ["Razor Wind",
                     "Substitute"]
 hmoves_farfetchd = ["Cut",
                     "Fly"]
-lmoves_doduo = {'01': ['Peck'],
-                '20': ['Growl'],
-                '24': ['Fury Attack'],
-                '30': ['Drill Peck'],
-                '36': ['Rage'],
-                '40': ['Tri Attack'],
-                '44': ['Agility']}
+lmoves_doduo = {1: ['Peck'],
+                20: ['Growl'],
+                24: ['Fury Attack'],
+                30: ['Drill Peck'],
+                36: ['Rage'],
+                40: ['Tri Attack'],
+                44: ['Agility']}
 tmoves_doduo = ["Whirlwind",
                 "Toxic",
                 "Body Slam",
@@ -2321,13 +2321,13 @@ tmoves_doduo = ["Whirlwind",
                 "Tri Attack",
                 "Substitute"]
 hmoves_doduo = ["Fly"]
-lmoves_dodrio = {'01': ['Peck', 'Growl', 'Fury Attack'],
-                 '20': ['Growl'],
-                 '24': ['Fury Attack'],
-                 '30': ['Drill Peck'],
-                 '39': ['Rage'],
-                 '45': ['Tri Attack'],
-                 '51': ['Agility']}
+lmoves_dodrio = {1: ['Peck', 'Growl', 'Fury Attack'],
+                 20: ['Growl'],
+                 24: ['Fury Attack'],
+                 30: ['Drill Peck'],
+                 39: ['Rage'],
+                 45: ['Tri Attack'],
+                 51: ['Agility']}
 tmoves_dodrio = ["Whirlwind",
                  "Toxic",
                  "Body Slam",
@@ -2345,12 +2345,12 @@ tmoves_dodrio = ["Whirlwind",
                  "Tri Attack",
                  "Substitute"]
 hmoves_dodrio = ["Fly"]
-lmoves_seel = {'01': ['Headbutt'],
-               '30': ['Growl'],
-               '35': ['Aurora Beam'],
-               '40': ['Rest'],
-               '45': ['Take Down'],
-               '50': ['Ice Beam']}
+lmoves_seel = {1: ['Headbutt'],
+               30: ['Growl'],
+               35: ['Aurora Beam'],
+               40: ['Rest'],
+               45: ['Take Down'],
+               50: ['Ice Beam']}
 tmoves_seel = ["Toxic",
                "Horn Drill",
                "Body Slam",
@@ -2370,12 +2370,12 @@ tmoves_seel = ["Toxic",
                "Substitute"]
 hmoves_seel = ["Surf",
                "Strength"]
-lmoves_dewgong = {'01': ['Headbutt', 'Growl', 'Aurora Beam'],
-                  '30': ['Growl'],
-                  '35': ['Aurora Beam'],
-                  '44': ['Rest'],
-                  '50': ['Take Down'],
-                  '56': ['Ice Beam']}
+lmoves_dewgong = {1: ['Headbutt', 'Growl', 'Aurora Beam'],
+                  30: ['Growl'],
+                  35: ['Aurora Beam'],
+                  44: ['Rest'],
+                  50: ['Take Down'],
+                  56: ['Ice Beam']}
 tmoves_dewgong = ["Toxic",
                   "Horn Drill",
                   "Body Slam",
@@ -2396,13 +2396,13 @@ tmoves_dewgong = ["Toxic",
                   "Substitute"]
 hmoves_dewgong = ["Surf",
                   "Strength"]
-lmoves_grimer = {'01': ['Pound', 'Disable'],
-                 '30': ['Poison Gas'],
-                 '33': ['Minimize'],
-                 '37': ['Sludge'],
-                 '42': ['Harden'],
-                 '48': ['Screech'],
-                 '55': ['Acid Armor']}
+lmoves_grimer = {1: ['Pound', 'Disable'],
+                 30: ['Poison Gas'],
+                 33: ['Minimize'],
+                 37: ['Sludge'],
+                 42: ['Harden'],
+                 48: ['Screech'],
+                 55: ['Acid Armor']}
 tmoves_grimer = ["Toxic",
                  "Body Slam",
                  "Rage",
@@ -2418,13 +2418,13 @@ tmoves_grimer = ["Toxic",
                  "Explosion",
                  "Substitute"]
 hmoves_grimer = []
-lmoves_muk = {'01': ['Pound', 'Disable', 'Poison Gas'],
-              '30': ['Poison Gas'],
-              '33': ['Minimize'],
-              '37': ['Sludge'],
-              '45': ['Harden'],
-              '53': ['Screech'],
-              '60': ['Acid Armor']}
+lmoves_muk = {1: ['Pound', 'Disable', 'Poison Gas'],
+              30: ['Poison Gas'],
+              33: ['Minimize'],
+              37: ['Sludge'],
+              45: ['Harden'],
+              53: ['Screech'],
+              60: ['Acid Armor']}
 tmoves_muk = ["Toxic",
               "Body Slam",
               "Hyper Beam",
@@ -2441,12 +2441,12 @@ tmoves_muk = ["Toxic",
               "Explosion",
               "Substitute"]
 hmoves_muk = []
-lmoves_shellder = {'01': ['Tackle', 'Withdraw'],
-                   '18': ['Supersonic'],
-                   '23': ['Clamp'],
-                   '30': ['Aurora Beam'],
-                   '39': ['Leer'],
-                   '50': ['Ice Beam']}
+lmoves_shellder = {1: ['Tackle', 'Withdraw'],
+                   18: ['Supersonic'],
+                   23: ['Clamp'],
+                   30: ['Aurora Beam'],
+                   39: ['Leer'],
+                   50: ['Ice Beam']}
 tmoves_shellder = ["Toxic",
                    "Take Down",
                    "Double-Edge",
@@ -2467,8 +2467,8 @@ tmoves_shellder = ["Toxic",
                    "Tri Attack",
                    "Substitute"]
 hmoves_shellder = ["Surf"]
-lmoves_cloyster = {'01': ['Withdraw', 'Supersonic', 'Clamp', 'Aurora Beam'],
-                   '50': ['Spike Cannon']}
+lmoves_cloyster = {1: ['Withdraw', 'Supersonic', 'Clamp', 'Aurora Beam'],
+                   50: ['Spike Cannon']}
 tmoves_cloyster = ["Toxic",
                    "Take Down",
                    "Double-Edge",
@@ -2490,9 +2490,9 @@ tmoves_cloyster = ["Toxic",
                    "Tri Attack",
                    "Substitute"]
 hmoves_cloyster = ["Surf"]
-lmoves_gastly = {'01': ['Lick', 'Confuse Ray', 'Night Shade'],
-                 '27': ['Hypnosis'],
-                 '35': ['Dream Eater']}
+lmoves_gastly = {1: ['Lick', 'Confuse Ray', 'Night Shade'],
+                 27: ['Hypnosis'],
+                 35: ['Dream Eater']}
 tmoves_gastly = ["Toxic",
                  "Rage",
                  "Mega Drain",
@@ -2509,9 +2509,9 @@ tmoves_gastly = ["Toxic",
                  "Explosion",
                  "Substitute"]
 hmoves_gastly = []
-lmoves_haunter = {'01': ['Lick', 'Confuse Ray', 'Night Shade'],
-                  '29': ['Hypnosis'],
-                  '38': ['Dream Eater']}
+lmoves_haunter = {1: ['Lick', 'Confuse Ray', 'Night Shade'],
+                  29: ['Hypnosis'],
+                  38: ['Dream Eater']}
 tmoves_haunter = ["Toxic",
                   "Rage",
                   "Mega Drain",
@@ -2528,9 +2528,9 @@ tmoves_haunter = ["Toxic",
                   "Explosion",
                   "Substitute"]
 hmoves_haunter = []
-lmoves_gengar = {'01': ['Lick', 'Confuse Ray', 'Night Shade'],
-                 '29': ['Hypnosis'],
-                 '38': ['Dream Eater']}
+lmoves_gengar = {1: ['Lick', 'Confuse Ray', 'Night Shade'],
+                 29: ['Hypnosis'],
+                 38: ['Dream Eater']}
 tmoves_gengar = ["Mega Punch",
                  "Mega Kick",
                  "Toxic",
@@ -2558,12 +2558,12 @@ tmoves_gengar = ["Mega Punch",
                  "Explosion",
                  "Substitute"]
 hmoves_gengar = ["Strength"]
-lmoves_onix = {'01': ['Tackle', 'Screech'],
-               '15': ['Bind'],
-               '19': ['Rock Throw'],
-               '25': ['Rage'],
-               '33': ['Slam'],
-               '43': ['Harden']}
+lmoves_onix = {1: ['Tackle', 'Screech'],
+               15: ['Bind'],
+               19: ['Rock Throw'],
+               25: ['Rage'],
+               33: ['Slam'],
+               43: ['Harden']}
 tmoves_onix = ["Toxic",
                "Body Slam",
                "Take Down",
@@ -2696,12 +2696,12 @@ tmoves_kingler = ["Swords Dance",
 hmoves_kingler = ["Cut",
                   "Surf",
                   "Strength"]
-lmoves_voltorb = {'01': ['Tackle', 'Screech'],
-                  '17': ['SonicBoom'],
-                  '22': ['Selfdestruct'],
-                  '29': ['Light Screen'],
-                  '36': ['Swift'],
-                  '43': ['Explosion']}
+lmoves_voltorb = {1: ['Tackle', 'Screech'],
+                  17: ['SonicBoom'],
+                  22: ['Selfdestruct'],
+                  29: ['Light Screen'],
+                  36: ['Swift'],
+                  43: ['Explosion']}
 tmoves_voltorb = ["Toxic",
                   "Take Down",
                   "Rage",
@@ -2719,12 +2719,12 @@ tmoves_voltorb = ["Toxic",
                   "Explosion",
                   "Substitute"]
 hmoves_voltorb = ["Flash"]
-lmoves_electrode = {'01': ['Tackle', 'Screech', 'SonicBoom'],
-                    '17': ['SonicBoom'],
-                    '22': ['Selfdestruct'],
-                    '29': ['Light Screen'],
-                    '40': ['Swift'],
-                    '50': ['Explosion']}
+lmoves_electrode = {1: ['Tackle', 'Screech', 'SonicBoom'],
+                    17: ['SonicBoom'],
+                    22: ['Selfdestruct'],
+                    29: ['Light Screen'],
+                    40: ['Swift'],
+                    50: ['Explosion']}
 tmoves_electrode = ["Toxic",
                     "Take Down",
                     "Hyper Beam",
@@ -2744,13 +2744,13 @@ tmoves_electrode = ["Toxic",
                     "Explosion",
                     "Substitute"]
 hmoves_electrode = ["Flash"]
-lmoves_exeggcute = {'01': ['Barrage', 'Hypnosis'],
-                    '25': ['Reflect'],
-                    '28': ['Leech Seed'],
-                    '32': ['Stun Spore'],
-                    '37': ['PoisonPowder'],
-                    '42': ['SolarBeam'],
-                    '48': ['Sleep Powder']}
+lmoves_exeggcute = {1: ['Barrage', 'Hypnosis'],
+                    25: ['Reflect'],
+                    28: ['Leech Seed'],
+                    32: ['Stun Spore'],
+                    37: ['PoisonPowder'],
+                    42: ['SolarBeam'],
+                    48: ['Sleep Powder']}
 tmoves_exeggcute = ["Toxic",
                     "Take Down",
                     "Double-Edge",
@@ -2768,8 +2768,8 @@ tmoves_exeggcute = ["Toxic",
                     "Explosion",
                     "Substitute"]
 hmoves_exeggcute = []
-lmoves_exeggutor = {'01': ['Barrage', 'Hypnosis'],
-                    '28': ['Stomp']}
+lmoves_exeggutor = {1: ['Barrage', 'Hypnosis'],
+                    28: ['Stomp']}
 tmoves_exeggutor = ["Toxic",
                     "Take Down",
                     "Double-Edge",
@@ -2853,12 +2853,12 @@ tmoves_marowak = ["Mega Punch",
                   "Rest",
                   "Substitute"]
 hmoves_marowak = ["Strength"]
-lmoves_hitmonlee = {'01': ['Double Kick', 'Meditate'],
-                    '33': ['Rolling Kick'],
-                    '38': ['Jump Kick'],
-                    '43': ['Focus Energy'],
-                    '48': ['Hi Jump Kick'],
-                    '53': ['Mega Kick']}
+lmoves_hitmonlee = {1: ['Double Kick', 'Meditate'],
+                    33: ['Rolling Kick'],
+                    38: ['Jump Kick'],
+                    43: ['Focus Energy'],
+                    48: ['Hi Jump Kick'],
+                    53: ['Mega Kick']}
 tmoves_hitmonlee = ["Mega Punch",
                     "Mega Kick",
                     "Toxic",
@@ -2939,12 +2939,12 @@ tmoves_lickitung = ["Mega Punch",
 hmoves_lickitung = ["Cut",
                     "Surf",
                     "Strength"]
-lmoves_koffing = {'01': ['Tackle', 'Smog'],
-                  '32': ['Sludge'],
-                  '37': ['SmokeScreen'],
-                  '40': ['Selfdestruct'],
-                  '45': ['Haze'],
-                  '48': ['Explosion']}
+lmoves_koffing = {1: ['Tackle', 'Smog'],
+                  32: ['Sludge'],
+                  37: ['SmokeScreen'],
+                  40: ['Selfdestruct'],
+                  45: ['Haze'],
+                  48: ['Explosion']}
 tmoves_koffing = ["Toxic",
                   "Rage",
                   "Thunderbolt",
@@ -2958,12 +2958,12 @@ tmoves_koffing = ["Toxic",
                   "Explosion",
                   "Substitute"]
 hmoves_koffing = []
-lmoves_weezing = {'01': ['Tackle', 'Smog', 'Sludge'],
-                  '32': ['Sludge'],
-                  '39': ['SmokeScreen'],
-                  '43': ['Selfdestruct'],
-                  '49': ['Haze'],
-                  '53': ['Explosion']}
+lmoves_weezing = {1: ['Tackle', 'Smog', 'Sludge'],
+                  32: ['Sludge'],
+                  39: ['SmokeScreen'],
+                  43: ['Selfdestruct'],
+                  49: ['Haze'],
+                  53: ['Explosion']}
 tmoves_weezing = ["Toxic",
                   "Hyper Beam",
                   "Rage",
@@ -2978,13 +2978,13 @@ tmoves_weezing = ["Toxic",
                   "Explosion",
                   "Substitute"]
 hmoves_weezing = []
-lmoves_rhyhorn = {'01': ['Horn Attack'],
-                  '30': ['Stomp'],
-                  '35': ['Tail Whip'],
-                  '40': ['Fury Attack'],
-                  '45': ['Horn Drill'],
-                  '50': ['Leer'],
-                  '55': ['Take Down']}
+lmoves_rhyhorn = {1: ['Horn Attack'],
+                  30: ['Stomp'],
+                  35: ['Tail Whip'],
+                  40: ['Fury Attack'],
+                  45: ['Horn Drill'],
+                  50: ['Leer'],
+                  55: ['Take Down']}
 tmoves_rhyhorn = ["Toxic",
                   "Horn Drill",
                   "Body Slam",
@@ -3005,13 +3005,13 @@ tmoves_rhyhorn = ["Toxic",
                   "Rock Slide",
                   "Substitute"]
 hmoves_rhyhorn = ["Strength"]
-lmoves_rhydon = {'01': ['Horn Attack', 'Stomp', 'Tail Whip', 'Fury Attack'],
-                 '30': ['Stomp'],
-                 '35': ['Tail Whip'],
-                 '40': ['Fury Attack'],
-                 '48': ['Horn Drill'],
-                 '55': ['Leer'],
-                 '64': ['Take Down']}
+lmoves_rhydon = {1: ['Horn Attack', 'Stomp', 'Tail Whip', 'Fury Attack'],
+                 30: ['Stomp'],
+                 35: ['Tail Whip'],
+                 40: ['Fury Attack'],
+                 48: ['Horn Drill'],
+                 55: ['Leer'],
+                 64: ['Take Down']}
 tmoves_rhydon = ["Mega Punch",
                  "Mega Kick",
                  "Toxic",
@@ -3110,12 +3110,12 @@ tmoves_tangela = ["Swords Dance",
                   "Rest",
                   "Substitute"]
 hmoves_tangela = ["Cut"]
-lmoves_kangaskhan = {'01': ['Comet Punch', 'Rage'],
-                     '26': ['Bite'],
-                     '31': ['Tail Whip'],
-                     '36': ['Mega Punch'],
-                     '41': ['Leer'],
-                     '46': ['Dizzy Punch']}
+lmoves_kangaskhan = {1: ['Comet Punch', 'Rage'],
+                     26: ['Bite'],
+                     31: ['Tail Whip'],
+                     36: ['Mega Punch'],
+                     41: ['Leer'],
+                     46: ['Dizzy Punch']}
 tmoves_kangaskhan = ["Mega Punch",
                      "Mega Kick",
                      "Toxic",
@@ -3145,12 +3145,12 @@ tmoves_kangaskhan = ["Mega Punch",
                      "Substitute"]
 hmoves_kangaskhan = ["Surf",
                      "Strength"]
-lmoves_horsea = {'01': ['Bubble'],
-                 '19': ['SmokeScreen'],
-                 '24': ['Leer'],
-                 '30': ['Water Gun'],
-                 '37': ['Agility'],
-                 '45': ['Hydro Pump']}
+lmoves_horsea = {1: ['Bubble'],
+                 19: ['SmokeScreen'],
+                 24: ['Leer'],
+                 30: ['Water Gun'],
+                 37: ['Agility'],
+                 45: ['Hydro Pump']}
 tmoves_horsea = ["Toxic",
                  "Take Down",
                  "Double-Edge",
@@ -3167,12 +3167,12 @@ tmoves_horsea = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_horsea = ["Surf"]
-lmoves_seadra = {'01': ['Bubble', 'SmokeScreen'],
-                 '19': ['SmokeScreen'],
-                 '24': ['Leer'],
-                 '30': ['Water Gun'],
-                 '41': ['Agility'],
-                 '52': ['Hydro Pump']}
+lmoves_seadra = {1: ['Bubble', 'SmokeScreen'],
+                 19: ['SmokeScreen'],
+                 24: ['Leer'],
+                 30: ['Water Gun'],
+                 41: ['Agility'],
+                 52: ['Hydro Pump']}
 tmoves_seadra = ["Toxic",
                  "Take Down",
                  "Double-Edge",
@@ -3190,13 +3190,13 @@ tmoves_seadra = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_seadra = ["Surf"]
-lmoves_goldeen = {'01': ['Peck', 'Tail Whip'],
-                  '19': ['Supersonic'],
-                  '24': ['Horn Attack'],
-                  '30': ['Fury Attack'],
-                  '37': ['Waterfall'],
-                  '45': ['Horn Drill'],
-                  '54': ['Agility']}
+lmoves_goldeen = {1: ['Peck', 'Tail Whip'],
+                  19: ['Supersonic'],
+                  24: ['Horn Attack'],
+                  30: ['Fury Attack'],
+                  37: ['Waterfall'],
+                  45: ['Horn Drill'],
+                  54: ['Agility']}
 tmoves_goldeen = ["Toxic",
                   "Horn Drill",
                   "Take Down",
@@ -3214,13 +3214,13 @@ tmoves_goldeen = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_goldeen = ["Surf"]
-lmoves_seaking = {'01': ['Peck', 'Tail Whip', 'Supersonic'],
-                  '19': ['Supersonic'],
-                  '24': ['Horn Attack'],
-                  '30': ['Fury Attack'],
-                  '39': ['Waterfall'],
-                  '48': ['Horn Drill'],
-                  '54': ['Agility']}
+lmoves_seaking = {1: ['Peck', 'Tail Whip', 'Supersonic'],
+                  19: ['Supersonic'],
+                  24: ['Horn Attack'],
+                  30: ['Fury Attack'],
+                  39: ['Waterfall'],
+                  48: ['Horn Drill'],
+                  54: ['Agility']}
 tmoves_seaking = ["Toxic",
                   "Horn Drill",
                   "Take Down",
@@ -3239,14 +3239,14 @@ tmoves_seaking = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_seaking = ["Surf"]
-lmoves_staryu = {'01': ['Tackle'],
-                 '17': ['Water Gun'],
-                 '22': ['Harden'],
-                 '27': ['Recover'],
-                 '32': ['Swift'],
-                 '37': ['Minimize'],
-                 '42': ['Light Screen'],
-                 '47': ['Hydro Pump']}
+lmoves_staryu = {1: ['Tackle'],
+                 17: ['Water Gun'],
+                 22: ['Harden'],
+                 27: ['Recover'],
+                 32: ['Swift'],
+                 37: ['Minimize'],
+                 42: ['Light Screen'],
+                 47: ['Hydro Pump']}
 tmoves_staryu = ["Toxic",
                  "Take Down",
                  "Double-Edge",
@@ -3272,7 +3272,7 @@ tmoves_staryu = ["Toxic",
                  "Substitute"]
 hmoves_staryu = ["Surf",
                  "Flash"]
-lmoves_starmie = {'01': ['Tackle', 'Water Gun', 'Harden']}
+lmoves_starmie = {1: ['Tackle', 'Water Gun', 'Harden']}
 tmoves_starmie = ["Toxic",
                   "Take Down",
                   "Double-Edge",
@@ -3421,13 +3421,13 @@ tmoves_electabuzz = ["Mega Punch",
                      "Substitute"]
 hmoves_electabuzz = ["Strength",
                      "Flash"]
-lmoves_magmar = {'01': ['Ember'],
-                 '36': ['Leer'],
-                 '39': ['Confuse Ray'],
-                 '43': ['Fire Punch'],
-                 '48': ['SmokeScreen'],
-                 '52': ['Smog'],
-                 '55': ['Flamethrower']}
+lmoves_magmar = {1: ['Ember'],
+                 36: ['Leer'],
+                 39: ['Confuse Ray'],
+                 43: ['Fire Punch'],
+                 48: ['SmokeScreen'],
+                 52: ['Smog'],
+                 55: ['Flamethrower']}
 tmoves_magmar = ["Mega Punch",
                  "Mega Kick",
                  "Toxic",
@@ -3474,12 +3474,12 @@ tmoves_pinsir = ["Swords Dance",
                  "Substitute"]
 hmoves_pinsir = ["Cut",
                  "Strength"]
-lmoves_tauros = {'01': ['Tackle'],
-                 '21': ['Stomp'],
-                 '28': ['Tail Whip'],
-                 '35': ['Leer'],
-                 '44': ['Rage'],
-                 '51': ['Take Down']}
+lmoves_tauros = {1: ['Tackle'],
+                 21: ['Stomp'],
+                 28: ['Tail Whip'],
+                 35: ['Leer'],
+                 44: ['Rage'],
+                 51: ['Take Down']}
 tmoves_tauros = ["Toxic",
                  "Horn Drill",
                  "Body Slam",
@@ -3501,8 +3501,8 @@ tmoves_tauros = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_tauros = ["Strength"]
-lmoves_magikarp = {'01': ['Splash'],
-                   '15': ['Tackle']}
+lmoves_magikarp = {1: ['Splash'],
+                   15: ['Tackle']}
 tmoves_magikarp = []
 hmoves_magikarp = []
 lmoves_gyarados = {1: ["Bite", "Dragon Rage", "Leer", "Hydro Pump"],
@@ -3534,13 +3534,13 @@ tmoves_gyarados = ["Toxic",
                    "Substitute"]
 hmoves_gyarados = ["Surf",
                    "Strength"]
-lmoves_lapras = {'01': ['Water Gun', 'Growl'],
-                 '16': ['Sing'],
-                 '20': ['Mist'],
-                 '25': ['Body Slam'],
-                 '31': ['Confuse Ray'],
-                 '38': ['Ice Beam'],
-                 '46': ['Hydro Pump']}
+lmoves_lapras = {1: ['Water Gun', 'Growl'],
+                 16: ['Sing'],
+                 20: ['Mist'],
+                 25: ['Body Slam'],
+                 31: ['Confuse Ray'],
+                 38: ['Ice Beam'],
+                 46: ['Hydro Pump']}
 tmoves_lapras = ["Toxic",
                  "Horn Drill",
                  "Body Slam",
@@ -3566,7 +3566,7 @@ tmoves_lapras = ["Toxic",
                  "Substitute"]
 hmoves_lapras = ["Surf",
                  "Strength"]
-lmoves_ditto = {'01': ['Transform']}
+lmoves_ditto = {1: ['Transform']}
 tmoves_ditto = []
 hmoves_ditto = []
 lmoves_eevee = {1: ["Tackle", "Sand-Attack"],
@@ -3668,11 +3668,11 @@ tmoves_flareon = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_flareon = []
-lmoves_porygon = {'01': ['Tackle', 'Sharpen', 'Conversion'],
-                  '23': ['Psybeam'],
-                  '28': ['Recover'],
-                  '35': ['Agility'],
-                  '42': ['Tri Attack']}
+lmoves_porygon = {1: ['Tackle', 'Sharpen', 'Conversion'],
+                  22: ['Psybeam'],
+                  28: ['Recover'],
+                  35: ['Agility'],
+                  42: ['Tri Attack']}
 tmoves_porygon = ["Toxic",
                   "Take Down",
                   "Double-Edge",
@@ -3696,11 +3696,11 @@ tmoves_porygon = ["Toxic",
                   "Tri Attack",
                   "Substitute"]
 hmoves_porygon = ["Flash"]
-lmoves_omanyte = {'01': ['Water Gun', 'Withdraw'],
-                  '34': ['Horn Attack'],
-                  '39': ['Leer'],
-                  '46': ['Spike Cannon'],
-                  '53': ['Hydro Pump']}
+lmoves_omanyte = {1: ['Water Gun', 'Withdraw'],
+                  34: ['Horn Attack'],
+                  39: ['Leer'],
+                  46: ['Spike Cannon'],
+                  53: ['Hydro Pump']}
 tmoves_omanyte = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -3717,11 +3717,11 @@ tmoves_omanyte = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_omanyte = ["Surf"]
-lmoves_omastar = {'01': ['Water Gun', 'Withdraw', 'Horn Attack'],
-                  '34': ['Horn Attack'],
-                  '39': ['Leer'],
-                  '44': ['Spike Cannon'],
-                  '49': ['Hydro Pump']}
+lmoves_omastar = {1: ['Water Gun', 'Withdraw', 'Horn Attack'],
+                  34: ['Horn Attack'],
+                  39: ['Leer'],
+                  44: ['Spike Cannon'],
+                  49: ['Hydro Pump']}
 tmoves_omastar = ["Toxic",
                   "Horn Drill",
                   "Body Slam",
@@ -3743,11 +3743,11 @@ tmoves_omastar = ["Toxic",
                   "Rest",
                   "Substitute"]
 hmoves_omastar = ["Surf"]
-lmoves_kabuto = {'01': ['Scratch', 'Harden'],
-                 '34': ['Absorb'],
-                 '39': ['Slash'],
-                 '44': ['Leer'],
-                 '49': ['Hydro Pump']}
+lmoves_kabuto = {1: ['Scratch', 'Harden'],
+                 34: ['Absorb'],
+                 39: ['Slash'],
+                 44: ['Leer'],
+                 49: ['Hydro Pump']}
 tmoves_kabuto = ["Toxic",
                  "Body Slam",
                  "Take Down",
@@ -3764,11 +3764,11 @@ tmoves_kabuto = ["Toxic",
                  "Rest",
                  "Substitute"]
 hmoves_kabuto = ["Surf"]
-lmoves_kabutops = {'01': ['Scratch', 'Harden', 'Absorb'],
-                   '34': ['Absorb'],
-                   '39': ['Slash'],
-                   '46': ['Leer'],
-                   '53': ['Hydro Pump']}
+lmoves_kabutops = {1: ['Scratch', 'Harden', 'Absorb'],
+                   34: ['Absorb'],
+                   39: ['Slash'],
+                   46: ['Leer'],
+                   53: ['Hydro Pump']}
 tmoves_kabutops = ["Razor Wind",
                    "Swords Dance",
                    "Mega Kick",
@@ -3793,11 +3793,11 @@ tmoves_kabutops = ["Razor Wind",
                    "Substitute"]
 hmoves_kabutops = ["Cut",
                    "Surf"]
-lmoves_aerodactyl = {'01': ['Wing Attack', 'Agility'],
-                     '33': ['Supersonic'],
-                     '38': ['Bite'],
-                     '45': ['Take Down'],
-                     '54': ['Hyper Beam']}
+lmoves_aerodactyl = {1: ['Wing Attack', 'Agility'],
+                     33: ['Supersonic'],
+                     38: ['Bite'],
+                     45: ['Take Down'],
+                     54: ['Hyper Beam']}
 tmoves_aerodactyl = ["Razor Wind",
                      "Whirlwind",
                      "Toxic",
@@ -3816,11 +3816,11 @@ tmoves_aerodactyl = ["Razor Wind",
                      "Rest",
                      "Substitute"]
 hmoves_aerodactyl = ["Fly"]
-lmoves_snorlax = {'01': ['Headbutt', 'Amnesia', 'Rest'],
-                  '35': ['Body Slam'],
-                  '41': ['Harden'],
-                  '48': ['Double-Edge'],
-                  '56': ['Hyper Beam']}
+lmoves_snorlax = {1: ['Headbutt', 'Amnesia', 'Rest'],
+                  35: ['Body Slam'],
+                  41: ['Harden'],
+                  48: ['Double-Edge'],
+                  56: ['Hyper Beam']}
 tmoves_snorlax = ["Mega Punch",
                   "Mega Kick",
                   "Toxic",
@@ -3856,10 +3856,10 @@ tmoves_snorlax = ["Mega Punch",
                   "Substitute"]
 hmoves_snorlax = ["Surf",
                   "Strength"]
-lmoves_articuno = {'01': ['Peck', 'Ice Beam'],
-                   '51': ['Blizzard'],
-                   '55': ['Agility'],
-                   '60': ['Mist']}
+lmoves_articuno = {1: ['Peck', 'Ice Beam'],
+                   51: ['Blizzard'],
+                   55: ['Agility'],
+                   60: ['Mist']}
 tmoves_articuno = ["Razor Wind",
                    "Whirlwind",
                    "Toxic",
@@ -3880,10 +3880,10 @@ tmoves_articuno = ["Razor Wind",
                    "Rest",
                    "Substitute"]
 hmoves_articuno = ["Fly"]
-lmoves_zapdos = {'01': ['ThunderShock', 'Drill Peck'],
-                 '51': ['Thunder'],
-                 '55': ['Agility'],
-                 '60': ['Light Screen']}
+lmoves_zapdos = {1: ['ThunderShock', 'Drill Peck'],
+                 51: ['Thunder'],
+                 55: ['Agility'],
+                 60: ['Light Screen']}
 tmoves_zapdos = ["Razor Wind",
                  "Whirlwind",
                  "Toxic",
@@ -3904,10 +3904,10 @@ tmoves_zapdos = ["Razor Wind",
                  "Substitute"]
 hmoves_zapdos = ["Fly",
                  "Flash"]
-lmoves_moltres = {'01': ['Peck', 'Fire Spin'],
-                  '51': ['Leer'],
-                  '55': ['Agility'],
-                  '60': ['Sky Attack']}
+lmoves_moltres = {1: ['Peck', 'Fire Spin'],
+                  51: ['Leer'],
+                  55: ['Agility'],
+                  60: ['Sky Attack']}
 tmoves_moltres = ["Razor Wind",
                   "Whirlwind",
                   "Toxic",
@@ -3925,12 +3925,12 @@ tmoves_moltres = ["Razor Wind",
                   "Rest",
                   "Substitute"]
 hmoves_moltres = ["Fly"]
-lmoves_dratini = {'01': ['Wrap', 'Leer'],
-                  '10': ['Thunder Wave'],
-                  '20': ['Agility'],
-                  '30': ['Slam'],
-                  '40': ['Dragon Rage'],
-                  '50': ['Hyper Beam']}
+lmoves_dratini = {1: ['Wrap', 'Leer'],
+                  10: ['Thunder Wave'],
+                  20: ['Agility'],
+                  30: ['Slam'],
+                  40: ['Dragon Rage'],
+                  50: ['Hyper Beam']}
 tmoves_dratini = ["Toxic",
                   "Body Slam",
                   "Take Down",
@@ -3954,12 +3954,12 @@ tmoves_dratini = ["Toxic",
                   "Thunder Wave",
                   "Substitute"]
 hmoves_dratini = ["Surf"]
-lmoves_dragonair = {'01': ['Wrap', 'Leer', 'Thunder Wave'],
-                    '10': ['Thunder Wave'],
-                    '20': ['Agility'],
-                    '35': ['Slam'],
-                    '45': ['Dragon Rage'],
-                    '55': ['Hyper Beam']}
+lmoves_dragonair = {1: ['Wrap', 'Leer', 'Thunder Wave'],
+                    10: ['Thunder Wave'],
+                    20: ['Agility'],
+                    35: ['Slam'],
+                    45: ['Dragon Rage'],
+                    55: ['Hyper Beam']}
 tmoves_dragonair = ["Toxic",
                     "Horn Drill",
                     "Body Slam",
@@ -3984,12 +3984,12 @@ tmoves_dragonair = ["Toxic",
                     "Thunder Wave",
                     "Substitute"]
 hmoves_dragonair = ["Surf"]
-lmoves_dragonite = {'01': ['Wrap', 'Leer', 'Thunder Wave', 'Agility'],
-                    '10': ['Thunder Wave'],
-                    '20': ['Agility'],
-                    '35': ['Slam'],
-                    '45': ['Dragon Rage'],
-                    '60': ['Hyper Beam']}
+lmoves_dragonite = {1: ['Wrap', 'Leer', 'Thunder Wave', 'Agility'],
+                    10: ['Thunder Wave'],
+                    20: ['Agility'],
+                    35: ['Slam'],
+                    45: ['Dragon Rage'],
+                    60: ['Hyper Beam']}
 tmoves_dragonite = ["Razor Wind",
                     "Toxic",
                     "Horn Drill",
