@@ -420,17 +420,23 @@ def battle_decision(turns):
 
 
 def overworld_move():
+    printer = False
+    item_values = [54046, 54058, 54060, 54062]
     reduced_move = None
     reduced_amount = None
     parcel_item_slot_1 = 70
     manager = pyboy.botsupport_manager()
     parcel = pyboy.get_memory_value(54797)
-    item_1 = pyboy.get_memory_value(54046)
+    item_1 = []
+    for item in item_values:
+        item_1.append(pyboy.get_memory_value(item))
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     random_spaces = random.randint(1, 7)
     list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
-    if map_name == "Pallet Town" and not parcel:
+    if "Pallet Town" == map_name and not parcel:
+        if printer:
+            print("Pallet Town: without parcel.")
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_a)
@@ -438,37 +444,94 @@ def overworld_move():
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_left)
         list_of_actions.append(hold_right)
-    if map_name == "Pallet Town" and parcel and item_1 == 70:
+    if "Pallet Town" == map_name and parcel and parcel_item_slot_1 in item_1:
+        if printer:
+            print("Pallet Town: with parcel but no pokedex.")
         list_of_actions = [hold_up, hold_down, hold_left, hold_right]
         reduced_move = [hold_up]
         reduced_amount = 5
-    if not parcel and map_name == "Oak's Lab" or "Mom's Room" or "Gary's House":
+    if "Pallet Town" == map_name and parcel and parcel_item_slot_1 not in item_1:
+        if printer:
+            print("Pallet Town: with parcel and pokedex.")
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_b)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_left)
+        list_of_actions.append(hold_right)
+    if "Mom's Room" == map_name and not parcel or "Gary's House" == map_name:
+        if printer:
+            print(map_name + ": without parcel.")
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_a)
-        list_of_actions.append(hold_b)
+        list_of_actions.append(hold_a)
         list_of_actions.append(hold_down)
         list_of_actions.append(hold_left)
         list_of_actions.append(hold_right)
-    if parcel and map_name == "Oak's Lab" and item_1 == parcel_item_slot_1:
+    if "Oak's Lab" == map_name and not parcel:
+        if printer:
+            print("Oak's Lab: without parcel.")
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_a)
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_left)
+        list_of_actions.append(hold_right)
+        reduced_move = [hold_down]
+        reduced_amount = 2
+    if "Oak's Lab" == map_name and parcel and parcel_item_slot_1 in item_1:
+        if printer:
+            print("Oak's Lab: with parcel but no pokedex.")
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_a)
         list_of_actions.append(hold_a)
-    if map_name == "Route 1" and not parcel:
+    if "Oak's Lab" == map_name and parcel and parcel_item_slot_1 not in item_1:
+        if printer:
+            print("Oak's Lab:  with parcel and pokedex.")
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_down)
+    if "Route 1" == map_name and not parcel:
+        if printer:
+            print("Route 1: without parcel.")
         reduced_move = [hold_down]
         reduced_amount = 1
         list_of_actions = [hold_a, hold_b, hold_up, hold_left, hold_right, hold_up,
                            hold_down, hold_left, hold_right, hold_up, hold_up]
-    if map_name == "Bedroom" and pyboy.botsupport_manager().sprite(0).on_screen:
+    if "Route 1" == map_name and parcel and parcel_item_slot_1 not in item_1:
+        if printer:
+            print("Route 1: with parcel but no pokedex.")
+        reduced_move = [hold_down]
+        reduced_amount = 1
+        list_of_actions = [hold_a, hold_b, hold_up, hold_left, hold_right, hold_up,
+                           hold_down, hold_left, hold_right, hold_up, hold_up]
+    if "Bedroom" == map_name and pyboy.botsupport_manager().sprite(0).on_screen:
+        if printer:
+            print("Bedroom.")
         reduced_move = [hold_down, hold_left]
         reduced_amount = 1
-    if map_name == "Route 22" and not parcel:
+    if "Route 22" == map_name:
+        if printer:
+            print("Route 22.")
         reduced_move = [hold_left]
         reduced_amount = 1
         list_of_actions = [hold_a, hold_b, hold_up, hold_right, hold_right, hold_right,
                            hold_down, hold_left, hold_right, hold_right]
-    if map_name == "Viridian City" and not parcel:
+    if "Viridian City" == map_name and not parcel:
+        if printer:
+            print("Viridian City: without parcel.")
+        reduced_move = [hold_down]
+        reduced_amount = 3
+        list_of_actions.append(hold_right)
+        list_of_actions.append(hold_up)
+        list_of_actions.append(hold_right)
+        list_of_actions.append(hold_up)
+    if "Viridian City" == map_name and parcel and parcel_item_slot_1 in item_1:
+        if printer:
+            print("Viridian City: with parcel with no pokedex")
         reduced_move = [hold_down]
         reduced_amount = 3
         list_of_actions.append(hold_right)
@@ -477,14 +540,14 @@ def overworld_move():
         list_of_actions.append(hold_up)
     decision = random.randint(0, len(list_of_actions) - 1)
     if list_of_actions[decision] == hold_a or list_of_actions[decision] == hold_b:  # hold a or b only one frame
-        list_of_actions[decision](21)
+        list_of_actions[decision](16)
     else:  # Not hold a or b
         if reduced_move is not None:
             if list_of_actions[decision] in reduced_move:
                 random_spaces = random.randint(1, reduced_amount)
         for space in range(random_spaces):
             map_position = manager.screen().tilemap_position()[0]
-            list_of_actions[decision](21)
+            list_of_actions[decision](16)
             check_map = pyboy.get_memory_value(54110)
             if check_map != map_number:
                 break
@@ -498,8 +561,15 @@ pyboy = PyBoy('Roms/Pokemon Red.gb')
 
 def main(counter):
     parcel_get = False
+    pokedex_get = False
+    parcel_time = 0
+    pokedex_time = 0
+    item_values = [54046, 54058, 54060, 54062]
     start_time = time()
     while not pyboy.tick():
+        item_1 = []
+        for item in item_values:
+            item_1.append(pyboy.get_memory_value(item))
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
         manager = pyboy.botsupport_manager()
         counted = False
@@ -535,9 +605,16 @@ def main(counter):
             tick_pass(40)
         if pyboy.get_memory_value(54797) and not parcel_get:
             parcel_get = True
-            total_time = counter
+            parcel_time = counter
+        if parcel_get and not pokedex_get and 70 not in item_1 and (parcel_time + 500) < counter:
+            print(item_1)
+            pokedex_get = True
+            pokedex_time = counter
         if pyboy.get_memory_value(54797):
-            print("Ticks to Parcel: ", total_time)
+            print("Ticks to Parcel: ", parcel_time)
+        if pokedex_get:
+            print(item_1)
+            print("Ticks to Pokedex: ", pokedex_time)
         overworld_move()
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
     pyboy.stop()
