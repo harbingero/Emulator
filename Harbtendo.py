@@ -147,7 +147,7 @@ map_destinations = {"Bedroom": ["70"],
 move_number = ["",  # No Move 0
                "Pound",
                "Karate Chop",
-               "DoubleSlap",
+               "Double Slap",
                "Comet Punch",
                "Mega Punch",
                "Pay Day",
@@ -155,7 +155,7 @@ move_number = ["",  # No Move 0
                "Ice Punch",
                "Thunder Punch",
                "Scratch",  # 10
-               "Vicegrip",
+               "ViceGrip",
                "Guillotine",
                "Razor Wind",
                "Swords Dance",
@@ -186,14 +186,14 @@ move_number = ["",  # No Move 0
                "Tail Whip",
                "Poison Sting",  # 40
                "Twineedle",
-               "Pin Missle",
+               "Pin Missile",
                "Leer",
                "Bite",
                "Growl",  # 45
                "Roar",
                "Sing",
                "Supersonic",
-               "Sonicboom",
+               "SonicBoom",
                "Disable",  # 50
                "Acid",
                "Ember",
@@ -205,7 +205,7 @@ move_number = ["",  # No Move 0
                "Ice Beam",
                "Blizzard",
                "Psybeam",  # 60
-               "Bubblebeam",
+               "BubbleBeam",
                "Aurora Beam",
                "Hyper Beam",
                "Peck",
@@ -220,15 +220,15 @@ move_number = ["",  # No Move 0
                "Leech Seed",
                "Growth",
                "Razor Leaf",
-               "Solarbeam",
-               "Poisonpowder",
+               "SolarBeam",
+               "PoisonPowder",
                "Stun Spore",
                "Sleep Powder",
                "Petal Dance",  # 80
                "String Shot",
                "Dragon Rage",
                "Fire Spin",
-               "Thundershock",
+               "ThunderShock",
                "Thunderbolt",
                "Thunder Wave",
                "Thunder",
@@ -255,6 +255,7 @@ move_number = ["",  # No Move 0
                "Smokescreen",
                "Confuse Ray",
                "Withdraw",  # 110
+               "Defense Curl",
                "Barrier",
                "Light Screen",
                "Haze",
@@ -263,8 +264,8 @@ move_number = ["",  # No Move 0
                "Bide",
                "Metronome",
                "Mirror Move",
-               "Selfdestruct",
-               "Egg Bomb",  # 120
+               "Selfdestruct",  # 120
+               "Egg Bomb",
                "Lick",
                "Smog",
                "Sludge",
@@ -273,20 +274,19 @@ move_number = ["",  # No Move 0
                "Waterfall",
                "Clamp",
                "Swift",
-               "Skull Bash",
-               "Spike Cannon",  # 130
+               "Skull Bash",  # 130
+               "Spike Cannon",
                "Constrict",
                "Amnesia",
-               "Kenesis",
+               "Kinesis",
                "Softboiled",
                "Hi Jump Kick",
                "Glare",
                "Dream Eater",
                "Poison Gas",
-               "Barrage",
-               "Leech Life",  # 140
+               "Barrage",  # 140
+               "Leech Life",
                "Lovely Kiss",
-               "Sky Attack",
                "Sky Attack",
                "Transform",
                "Bubble",
@@ -308,14 +308,8 @@ move_number = ["",  # No Move 0
                "Tri Attack",
                "Super Fang",
                "Slash",
-               "Substitue",
-               "Struggle",
-               "",
-               "",
-               "",
-               "",
-               "",  # 170
-               ""]
+               "Substitute",
+               "Struggle"]
 status_move = ["Growl",
                "Tail Whip",
                "",
@@ -351,7 +345,6 @@ damage_move = ["Scratch",
                "",
                ""]
 spaces = [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]  # , 256, 272, 288, 304, 320, 336
-
 
 if overwrite:
     with open("debug.txt", "w") as f1:
@@ -666,12 +659,11 @@ def test_move(x, y):
         map_number = pyboy.get_memory_value(54110)
         map_name = map_number_name[map_number]
         print("Xit:\t", exit_x, " | X: ", x,
-              "\nYit:\t", exit_y," | Y: ", y,
+              "\nYit:\t", exit_y, " | Y: ", y,
               "\nMap Name:\t", map_name, "\n\n")
         tick_pass(transition)
         return x, y
         # Left=+ Right=- Up=+ Down=-
-
 
 
 def to_starters(name, x, y):
@@ -997,7 +989,7 @@ for i in range(play_time):
         named = naming(named)
     if named and started and pathed_to_starters is False:
         starter_name = pokemon_name[random.randint(0, len(pokemon_name) - 1)]
-        x, y =to_starters(starter_name, x, y)
+        x, y = to_starters(starter_name, x, y)
         pathed_to_starters = True
     if named and started and pathed_to_starters:
         regain_control = True
@@ -1047,7 +1039,6 @@ else:
 # while not pyboy.tick():
 #     pass
 # pyboy.stop(save=False)
-
 
 
 #
