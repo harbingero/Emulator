@@ -17,7 +17,7 @@ move_number = ["",  # No Move 0
                "Ice Punch",
                "Thunder Punch",
                "Scratch",  # 10
-               "Vicegrip",
+               "ViceGrip",
                "Guillotine",
                "Razor Wind",
                "Swords Dance",
@@ -48,14 +48,14 @@ move_number = ["",  # No Move 0
                "Tail Whip",
                "Poison Sting",  # 40
                "Twineedle",
-               "Pin Missle",
+               "Pin Missile",
                "Leer",
                "Bite",
                "Growl",  # 45
                "Roar",
                "Sing",
                "Supersonic",
-               "Sonicboom",
+               "SonicBoom",
                "Disable",  # 50
                "Acid",
                "Ember",
@@ -67,7 +67,7 @@ move_number = ["",  # No Move 0
                "Ice Beam",
                "Blizzard",
                "Psybeam",  # 60
-               "Bubblebeam",
+               "BubbleBeam",
                "Aurora Beam",
                "Hyper Beam",
                "Peck",
@@ -82,15 +82,15 @@ move_number = ["",  # No Move 0
                "Leech Seed",
                "Growth",
                "Razor Leaf",
-               "Solarbeam",
-               "Poisonpowder",
+               "SolarBeam",
+               "PoisonPowder",
                "Stun Spore",
                "Sleep Powder",
                "Petal Dance",  # 80
                "String Shot",
                "Dragon Rage",
                "Fire Spin",
-               "Thundershock",
+               "ThunderShock",
                "Thunderbolt",
                "Thunder Wave",
                "Thunder",
@@ -117,6 +117,7 @@ move_number = ["",  # No Move 0
                "Smokescreen",
                "Confuse Ray",
                "Withdraw",  # 110
+               "Defense Curl",
                "Barrier",
                "Light Screen",
                "Haze",
@@ -125,8 +126,8 @@ move_number = ["",  # No Move 0
                "Bide",
                "Metronome",
                "Mirror Move",
-               "Selfdestruct",
-               "Egg Bomb",  # 120
+               "Selfdestruct",  # 120
+               "Egg Bomb",
                "Lick",
                "Smog",
                "Sludge",
@@ -135,20 +136,19 @@ move_number = ["",  # No Move 0
                "Waterfall",
                "Clamp",
                "Swift",
-               "Skull Bash",
-               "Spike Cannon",  # 130
+               "Skull Bash",  # 130
+               "Spike Cannon",
                "Constrict",
                "Amnesia",
-               "Kenesis",
+               "Kinesis",
                "Softboiled",
                "Hi Jump Kick",
                "Glare",
                "Dream Eater",
                "Poison Gas",
-               "Barrage",
-               "Leech Life",  # 140
+               "Barrage",  # 140
+               "Leech Life",
                "Lovely Kiss",
-               "Sky Attack",
                "Sky Attack",
                "Transform",
                "Bubble",
@@ -170,17 +170,11 @@ move_number = ["",  # No Move 0
                "Tri Attack",
                "Super Fang",
                "Slash",
-               "Substitue",
-               "Struggle",
-               "",
-               "",
-               "",
-               "",
-               "",  # 170
-               ""]
+               "Substitute",
+               "Struggle"]
 map_number_name = ["Pallet Town",  # 0
                    "Viridian City",
-                   "",
+                   "Pewter City",
                    "",
                    "",
                    "",
@@ -191,7 +185,7 @@ map_number_name = ["Pallet Town",  # 0
                    "",  # 10
                    "",
                    "Route 1",
-                   "",
+                   "Route 2",
                    "",
                    "",
                    "",
@@ -218,25 +212,25 @@ map_number_name = ["Pallet Town",  # 0
                    "Mom's Room",
                    "Bedroom",
                    "Gary's House",
-                   "Oak's Lab",
+                   "Oak's Lab",  # 40
                    "Viridian City Pokecenter",
                    "Viridian City Pokemart",
                    "Viridian City South House",
                    "Viridian City North House",
                    "",
                    "",
+                   "Forest Post-house",
                    "",
                    "",
+                   "Forest Pre-house",  # 50
+                   "Viridian Forest",
                    "",
                    "",
+                   "Brock's Gym",
                    "",
+                   "Pewter City Pokemart",
                    "",
-                   "",
-                   "",
-                   "",
-                   "",
-                   "",
-                   "",
+                   "Pewter City Pokecenter",
                    "",
                    "",
                    "",
@@ -245,6 +239,35 @@ map_number_name = ["Pallet Town",  # 0
                    "",
                    ""]
 counter = 0
+bits = 65529
+battle_selector = [52444,  # Your move used
+                   53202,  # Player's Move ID
+                   53429,  # Undocumented
+                   53534,  # Undocumented
+                   60636,  # Undocumented
+                   61394,  # Undocumented
+                   61621,  # Undocumented
+                   61726]  # Undocumented
+item_memory_values = [54046,
+                      54048,  # 2
+                      54050,
+                      54052,  # 4
+                      54054,
+                      54056,  # 6
+                      54058,
+                      54060,  # 8
+                      54062,
+                      54064,  # 10
+                      54066,
+                      54068,  # 12
+                      54070,
+                      54072,  # 14
+                      54074,
+                      54076,  # 16
+                      54078,
+                      54080,  # 18
+                      54082,
+                      54084]
 
 
 def tick_pass(number):
@@ -421,14 +444,13 @@ def battle_decision(turns):
 
 def overworld_move():
     printer = False
-    item_values = [54046, 54058, 54060, 54062]
     reduced_move = None
     reduced_amount = None
     parcel_item_slot_1 = 70
     manager = pyboy.botsupport_manager()
     parcel = pyboy.get_memory_value(54797)
     item_1 = []
-    for item in item_values:
+    for item in item_memory_values:
         item_1.append(pyboy.get_memory_value(item))
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
@@ -529,15 +551,18 @@ def overworld_move():
         list_of_actions.append(hold_up)
         list_of_actions.append(hold_right)
         list_of_actions.append(hold_up)
-    if "Viridian City" == map_name and parcel and parcel_item_slot_1 in item_1:
+    if "Viridian City" == map_name and parcel and parcel_item_slot_1 not in item_1:
         if printer:
-            print("Viridian City: with parcel with no pokedex")
+            print("Viridian City: with parcel and pokedex")
         reduced_move = [hold_down]
         reduced_amount = 3
-        list_of_actions.append(hold_right)
-        list_of_actions.append(hold_up)
-        list_of_actions.append(hold_right)
-        list_of_actions.append(hold_up)
+    if "Viridian City" == map_name and parcel and parcel_item_slot_1 in item_1:
+        if printer:
+            print("Viridian City: with parcel no pokedex")
+        reduced_move = [hold_up]
+        reduced_amount = 3
+        list_of_actions.append(hold_down)
+        list_of_actions.append(hold_down)
     decision = random.randint(0, len(list_of_actions) - 1)
     if list_of_actions[decision] == hold_a or list_of_actions[decision] == hold_b:  # hold a or b only one frame
         list_of_actions[decision](16)
@@ -564,11 +589,11 @@ def main(counter):
     pokedex_get = False
     parcel_time = 0
     pokedex_time = 0
-    item_values = [54046, 54058, 54060, 54062]
+    item_memory_values = [54046, 54058, 54060, 54062]
     start_time = time()
     while not pyboy.tick():
         item_1 = []
-        for item in item_values:
+        for item in item_memory_values:
             item_1.append(pyboy.get_memory_value(item))
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
         manager = pyboy.botsupport_manager()
@@ -580,9 +605,11 @@ def main(counter):
         turn_count = []
         in_battle = pyboy.get_memory_value(53335)
         while not manager.sprite(0).on_screen and not in_battle:
-            list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
+            list_of_actions = [hold_a, hold_up, hold_down, hold_left, hold_right, hold_a, hold_b, hold_up, hold_down,
+                               hold_left, hold_right]
             list_of_actions[random.randint(0, len(list_of_actions) - 1)](16)
         while in_battle:
+            scratch_appender = []  # scratch is move 10.  tackle is 33. growl is 45
             list_in_battle = [hold_a, hold_down, hold_up]
             if pyboy.get_memory_value(53293) > 0 and pyboy.get_memory_value(53276) != 0:
                 for i in range(0, 5):
@@ -592,12 +619,15 @@ def main(counter):
                 list_of_actions = [hold_a, hold_up, hold_down, hold_a, hold_a]
                 list_of_actions[random.randint(0, len(list_of_actions) - 1)](21)
             battle_decision(turn_count)
+            pyboy.tick()
+            tester = pyboy.get_memory_value(bits)
             in_battle = pyboy.get_memory_value(53335)
             counter += 1
         if not counted:
             counter += 1
         print(counter)
-        while pyboy.get_memory_value(54110) == 40 and not manager.sprite(0).on_screen and not in_battle:
+        while pyboy.get_memory_value(54110) == 40 and not manager.sprite(
+                0).on_screen and not in_battle:  # This fixes a bug where if you attempt to leave Oak's lab without a pokemon too much, your sprite is no longer on the screen for some reason.  And pressing start and backing out fixes this.
             tick_pass(40)
             press_start()
             tick_pass(40)
@@ -613,12 +643,10 @@ def main(counter):
         if pyboy.get_memory_value(54797):
             print("Ticks to Parcel: ", parcel_time)
         if pokedex_get:
-            print(item_1)
             print("Ticks to Pokedex: ", pokedex_time)
         overworld_move()
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
     pyboy.stop()
-
 
 
 main(counter)
