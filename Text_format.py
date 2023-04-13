@@ -81,29 +81,47 @@ def combine_inputs(file):
     limiter = 0
     file_line = ""
     existing_map = []
-    ending = {}
+    ending = {"No Parcel": {},
+              "Got Parcel": {},
+              "Got Pokedex": {},
+              "Beat Brock": {}}
     pressed = ["Press_LEFT", "Press_RIGHT", "Press_UP", "Press_DOWN", "Press_A", "Press_B"]
-    released = ["Release_LEFT", "Release_RIGHT", "Release_UP", "Release_DOWN", "Release_A", "Release_B"]
     for line in file:
-        file_line += line
-    for map_name in map_number_name:
-        if len(map_name) > 3:
-            existing_map.append(map_name)
-    for maping in existing_map:
-        for i in range(0, 6):
-            printed = ""
-            pressing = maping + "_" + pressed[i] + "[A-Z,a-z,_]+"
-            releasing = maping + "_" + released[i] + "[A-Z,a-z,_]+"
-            pressing_num = pressing + " = [0-9]+"
-            releasing_num = releasing + " = [0-9]+"
-            pressed_re = re.findall(pressing_num, file_line)
-            released_re = re.findall(releasing_num, file_line)
-            for item in pressed_re:
-                print(item)
-                printed += str(item)
-            for item in released_re:
-                print(item)
-                printed += str(item)  # We now have the ability to check between number and string
+        line = re.sub("_No_Parcel", " No Parcel", line)
+        line = re.sub("_Parcel", " Got Parcel", line)
+        line = re.sub("_Pokedex", " Got Pokedex", line)
+        line = re.sub("_Brock", " Beat Brock", line)
+        line = line.rstrip()
+        for flag in ending:
+            if flag in line:
+                re_map = "^[A-Z,a-z,0-9,\', ]+"
+                maped = re.sub("Post-house", "Post house", line)
+                maped = re.search(re_map, line)
+                re_number = "= [0-9]+"
+                numbered = re.search(re_number, line)
+                if maped is not None:
+                    maped_first = maped.span()[0]
+                    maped_second = maped.span()[1]
+                if numbered is not None:
+                    numbered_first = numbered.span()[0]
+                    numbered_second = numbered.span()[1]
+                # print(maped_first, maped_second)
+                # print(numbered_first, numbered_second)
+                if maped is not None and numbered is not None:
+                    maped_difference = maped_second - maped_first
+                    numbered_difference = numbered_second - numbered_first
+                    if maped_difference > 3 and numbered_difference > 3:
+                        line_map = line[maped_first:maped_second]
+                        line_number = line[numbered_first:numbered_second]
+                        line_number = re.sub("= ", "", line_number)
+                        action = re.sub(line_map + "_", "", line)
+                        action = re.sub(" = " + str(line_number), "", action)
+                        action = str(re.sub(flag, "", action))
+                        action = re.sub("Release_[A-Z]+", "", action)
+                        if len(action.strip()) > 0:
+                            print(action, "\t\tIt's in there.")
+                if maped is not None and numbered is not None and maped_difference > 3 and numbered_difference > 3 and len(action.strip()) > 0:
+                    ending[flag][line_map + " " + action] = str(line_number)
     return ending
 
 
@@ -824,6 +842,16 @@ tms = ["Mega Punch",
 with open(file, "r") as f1:
     combined_inputs = combine_inputs(f1)
     # defluffed = remove_fluff(f1)
+print(combined_inputs)
+for flag in combined_inputs:
+    increment = 0
+    print(flag, end="")
+    for town in combined_inputs[flag]:
+        if increment > 0:
+            print("\t\t", end="")
+        print("\t", town, combined_inputs[flag][town])
+        increment += 1
+    print("_____________________________________________\n")
 this_equals = ""
 split = True
 the_type = ""
@@ -838,8 +866,6 @@ tm = False
 #         print("\"" + str(i) + "\",  #" + str(i))
 #     else:
 #         print("\"" + str(i) + "\",")
-for i in combined_inputs:
-    print(i)
 
 # for line in defluffed:
 #     spaced = re.sub("_", " ", line)

@@ -48,10 +48,10 @@ map_number_name = ["Pallet Town",  # 0
                    "Viridian City North House",
                    "45",
                    "46",
-                   "Forest Post-house",
+                   "Forest Post house",
                    "48",
                    "49",
-                   "Forest Pre-house",  # 50
+                   "Forest Pre house",  # 50
                    "Viridian Forest",
                    "Pewter City Museum Lower",
                    "Pewter City Museum Upper",
@@ -69,7 +69,7 @@ map_number_name = ["Pallet Town",  # 0
                    "Cerulean City Gym",
                    "Bike Shop",
                    "Cerulean City Pokemart",
-                   "68",
+                   "Mt Moon Pokecenter",
                    "69",
                    "70",  # 70
                    "71",
@@ -542,6 +542,7 @@ item_name_list = ["0",
                   "254",
                   "Empty Slot"]
 Rock_badge = 1
+game_over = ["RELEASE_ARROW_RIGHT", "RELEASE_ARROW_DOWN", ]
 
 while not pyboy.tick():
     parcel_bit = pyboy.get_memory_value(54797)
@@ -555,6 +556,8 @@ while not pyboy.tick():
     print(back_pack_names)
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
+    if pyboy.get_memory_value(53335):
+        map_name = "In Battle"
     sprite0 = manager.sprite(0).on_screen
     parcel = pyboy.get_memory_value(54797)
     badges = pyboy.get_memory_value(54102)
@@ -564,7 +567,7 @@ while not pyboy.tick():
         game_flag = "Pokedex"
     if game_flag == "No_Parcel" and parcel:
         game_flag = "Parcel"
-    print(map_number, badges)
+    print(map_name, badges)
     if map_number > 0 and sprite0:
         overworld = True
     if len(pyboy.get_input()) > 0 and overworld and sprite0:
@@ -586,9 +589,17 @@ while not pyboy.tick():
                 actions[stringer] += 1
     print("len: ", len(pyboy.get_input()))
     if len(pyboy.get_input()) > 3:
-        pyboy.stop()
-        for action in actions:
-            print(action, "=", actions[action])
+        # noinspection PyStatementEffect
+        WindowEvent.PAUSE
+        quitting = input("Quit?")
+        if len(quitting) > 0:
+            pyboy.stop()
+            for action in actions:
+                print(action, "=", actions[action])
+        if len(quitting) == 0:
+            # noinspection PyStatementEffect
+            WindowEvent.UNPAUSE
+            pyboy.tick()
         print(game_flag)
     pass
 pyboy.stop()
