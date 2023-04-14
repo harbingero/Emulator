@@ -118,13 +118,33 @@ def combine_inputs(file):
                         action = re.sub(" = " + str(line_number), "", action)
                         action = str(re.sub(flag, "", action))
                         action = re.sub("Release_[A-Z]+", "", action)
-                        if len(action.strip()) > 0:
-                            print(action, "\t\tIt's in there.")
                 if maped is not None and numbered is not None and maped_difference > 3 and numbered_difference > 3 and len(action.strip()) > 0:
                     ending[flag][line_map + " " + action] = str(line_number)
     return ending
 
 
+def determine_ratios(file):
+    mapped = []
+    maps = {}
+    for map_name in map_number_name:
+        if len(map_name) > 3:
+            mapped.append(map_name + "_")
+    for line in file:
+        for flag in flags:
+            if flag in line:
+                if flag not in maps:
+                    maps[flag] = []
+                maps[flag].append(line)
+    for mapper in maps:
+        for things in maps[mapper]:
+            for the_map in mapped:
+                print(the_map)
+                if the_map in line:
+                    print(mapper, things)
+
+
+presses = ["Press_UP", "Press_DOWN", "Press_LEFT", "Press_RIGHT", "Press_A", "Press_B"]
+flags = ["No Parcel", "Parcel", "Pokedex", "Brock"]
 map_number_name = ["Pallet Town",  # 0
                    "Viridian City",
                    "Pewter City",
@@ -840,18 +860,27 @@ tms = ["Mega Punch",
        "Substitute"]
 
 with open(file, "r") as f1:
-    combined_inputs = combine_inputs(f1)
-    # defluffed = remove_fluff(f1)
-print(combined_inputs)
-for flag in combined_inputs:
-    increment = 0
-    print(flag, end="")
-    for town in combined_inputs[flag]:
-        if increment > 0:
-            print("\t\t", end="")
-        print("\t", town, combined_inputs[flag][town])
-        increment += 1
-    print("_____________________________________________\n")
+    file_list = []
+    for line in f1:
+        if len(line) > 0:
+            file_list.append(line.rstrip())
+    determine_ratios(file_list)
+
+# with open(file, "r") as f1:
+#     combined_inputs = combine_inputs(f1)
+#     # defluffed = remove_fluff(f1)
+# print(combined_inputs)
+# for flag in combined_inputs:
+#     increment = 0
+#     print(flag, end="")
+#     for town in combined_inputs[flag]:
+#         if increment > 0:
+#             print("\t\t", end="")
+#         print("\t", town, combined_inputs[flag][town])
+#         increment += 1
+#     print("_____________________________________________\n")
+
+
 this_equals = ""
 split = True
 the_type = ""
