@@ -5,6 +5,7 @@ from pyboy import WindowEvent
 from pyboy import openai_gym
 import pyboy.plugins
 from time import sleep, time, strftime, gmtime
+from colorama import Fore
 
 move_number = ["",  # No Move 0
                "Pound",
@@ -1036,7 +1037,7 @@ def overworld_move():
                 list_of_actions.append(hold_a)
             for b in range(0, bb):
                 list_of_actions.append(hold_b)
-        if map_name == "Mt Moon Fassil":
+        if map_name == "Mt Moon Fossil":
             print(map_name, "Brock")
             list_of_actions = []
             ab = 12
@@ -1625,6 +1626,7 @@ def overworld_move():
             for b in range(0, bb):
                 list_of_actions.append(hold_b)
     if parcel and "Oak's_Parcel" not in back_pack_names:
+        print(map_name)
         if map_name == "Bedroom":
             print(map_name, "Pokedex")
             list_of_actions = []
@@ -1688,15 +1690,15 @@ def overworld_move():
                 list_of_actions.append(hold_a)
             for b in range(0, bb):
                 list_of_actions.append(hold_b)
-        if map_name == "Forest Pre House":
+        if map_name == "Forest Pre house":
             print(map_name, "Pokedex")
             list_of_actions = []
             ab = 1
             bb = 1
-            down = 7
+            down = 4
             left = 17
             right = 23
-            up = 51
+            up = 54
             for u in range(0, up):
                 list_of_actions.append(hold_up)
             for r in range(0, right):
@@ -1966,10 +1968,10 @@ def overworld_move():
             list_of_actions = []
             ab = 6
             bb = 1
-            down = 10
+            down = 5
             left = 22
-            right = 18
-            up = 43
+            right = 22
+            up = 44
             for u in range(0, up):
                 list_of_actions.append(hold_up)
             for r in range(0, right):
@@ -2092,9 +2094,9 @@ def overworld_move():
             list_of_actions = []
             ab = 1
             bb = 1
-            down = 5
-            left = 15
-            right = 37
+            down = 13
+            left = 22
+            right = 22
             up = 42
             for u in range(0, up):
                 list_of_actions.append(hold_up)
@@ -2621,6 +2623,7 @@ def overworld_move():
             for b in range(0, bb):
                 list_of_actions.append(hold_b)
             reduced_move = [hold_left]
+            reduced_amount = 1
         if map_name == "Viridian City North House":
             print(map_name, "parcelless")
             list_of_actions = []
@@ -2705,8 +2708,6 @@ def overworld_move():
                 list_of_actions.append(hold_a)
             for b in range(0, bb):
                 list_of_actions.append(hold_b)
-            reduced_move = [hold_down]
-            reduced_amount = 4
     decision = random.randint(0, len(list_of_actions) - 1)
     print("List of actions: ", len(list_of_actions))
     if list_of_actions[decision] == hold_a or list_of_actions[decision] == hold_b:  # hold a or b only one frame
@@ -2770,7 +2771,8 @@ def main(counter):
             counter += 1
         if not counted:
             counter += 1
-        print(counter)
+        if counter % 50 == 0:
+            print(Fore.RED + str(counter) + Fore.RESET)
         while pyboy.get_memory_value(54110) == 40 and not manager.sprite(
                 0).on_screen and not in_battle:  # This fixes a bug where if you attempt to leave Oak's lab without a pokemon too much, your sprite is no longer on the screen for some reason.  And pressing start and backing out fixes this.
             tick_pass(40)
@@ -2782,13 +2784,16 @@ def main(counter):
             parcel_get = True
             parcel_time = counter
         if parcel_get and not pokedex_get and 70 not in back_pack_numbers and (parcel_time + 500) < counter:
-            print(back_pack_numbers)
+            if counter % 50 == 0:
+                print(Fore.RED + str(back_pack_numbers) + Fore.RESET)
             pokedex_get = True
             pokedex_time = counter
         if pyboy.get_memory_value(54797):
-            print("Ticks to Parcel: ", parcel_time)
+            if counter % 50 == 0:
+                print(Fore.RED + "Ticks to Parcel: ", str(parcel_time) + Fore.RESET)
         if pokedex_get:
-            print("Ticks to Pokedex: ", pokedex_time)
+            if counter % 50 == 0:
+                print(Fore.RED + "Ticks to Pokedex: ", str(pokedex_time) + Fore.RESET)
         overworld_move()
         list_of_actions = [hold_a, hold_b, hold_up, hold_down, hold_left, hold_right]
     pyboy.stop()

@@ -1,6 +1,8 @@
 from pyboy import PyBoy, WindowEvent
+import random
 import re
 
+memory_end = 65529
 map_number_name = ["Pallet Town",  # 0
                    "Viridian City",
                    "Pewter City",
@@ -855,8 +857,9 @@ with open(file, "w") as f1:
 
 
 def battle_decisions(turns):
-    counter = 0
-    decision = None
+    print("Turns at beginning of function: ", turns)
+    moves = []
+    list_of_actions = [hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_a]
     move1 = pyboy.get_memory_value(53276)
     move2 = pyboy.get_memory_value(53277)
     move3 = pyboy.get_memory_value(53278)
@@ -865,28 +868,53 @@ def battle_decisions(turns):
     move2_pp = pyboy.get_memory_value(53294)
     move3_pp = pyboy.get_memory_value(53295)
     move4_pp = pyboy.get_memory_value(53296)
+    pp_sum = move1_pp + move2_pp + move3_pp + move4_pp
     battle_turn = pyboy.get_memory_value(52437)
-    move_list = [move1, move2, move3, move4]
-    pp_list = [move1_pp, move2_pp, move3_pp, move4_pp]
-    move_selector = pyboy.get_memory_value(53202)
-    while decision == None:
-        if battle_turn not in turns:
-            decision = input("Move?")
-            pyboy.tick()
-            while decision not in move_number:
-                decision = input("Move?")
-                pyboy.tick()
-        if move_number[move_selector] == decision:
-            print(move_number[move_selector], decision)
-            press_a()
-        if battle_turn not in turns:
-            turns.append(battle_turn)
-        pyboy.tick()
-    return(turns)
+    move_list = [move_number[move1], move_number[move2], move_number[move3], move_number[move4]]
+    pyboy.tick()
+    move1_pp = pyboy.get_memory_value(53293)
+    move2_pp = pyboy.get_memory_value(53294)
+    move3_pp = pyboy.get_memory_value(53295)
+    move4_pp = pyboy.get_memory_value(53296)
+    pp_check = move1_pp + move2_pp + move3_pp + move4_pp
+    while len(move_list[0]) < 1:  # Bypassing to selector screen
+        move_list = [move_number[move1], move_number[move2], move_number[move3], move_number[move4]]
+        move1 = pyboy.get_memory_value(53276)
+        move2 = pyboy.get_memory_value(53277)
+        move3 = pyboy.get_memory_value(53278)
+        move4 = pyboy.get_memory_value(53279)
+        press_a()
+    for move in move_list:  # Removing moves that don't exist
+        if len(move) > 0:
+            moves.append(move)
+    decision = random.randint(0, len(moves) - 1)
+    # pyboy.get_memory_value(40393) == 237:       THIS VALUE AND MEMORY NUMBER SAYS ATTACK HIGHLIGHTED/SELECTED
+    # while pp_sum == pp_check and pyboy.get_memory_value(53335) and battle_turn not in turns:  #
+    #     move_selector = pyboy.get_memory_value(53202)
+    #     print("Turn: ", turns)
+    #     print(pp_sum, pp_check)
+    #     print(moves[decision])
+    #     pyboy.tick()
+    #     move1_pp = pyboy.get_memory_value(53293)
+    #     move2_pp = pyboy.get_memory_value(53294)
+    #     move3_pp = pyboy.get_memory_value(53295)
+    #     move4_pp = pyboy.get_memory_value(53296)
+    #     pp_check = move1_pp + move2_pp + move3_pp + move4_pp
+    #     if moves[decision] == move_number[move_selector]:
+    #         if battle_turn not in turns:
+    #             list_of_actions[random.randint(0, len(list_of_actions) - 1)](16)
+    #         else:
+    #             press_a()
+    #         pass
+    # if battle_turn not in turns:
+    #     turns.append(battle_turn)
+    return turns
 
 
 while not pyboy.tick():
     turns = []
+    bits = []
+    values = []
     parcel_bit = pyboy.get_memory_value(54797)
     back_pack_numbers = []
     back_pack_names = []
@@ -899,9 +927,25 @@ while not pyboy.tick():
     map_number = pyboy.get_memory_value(54110)
     map_name = map_number_name[map_number]
     while pyboy.get_memory_value(53335):
+        values = []
+        bits = []
+        count_up = 0
+        print(pyboy.get_memory_value(49159))
+        # print("start")
+        # for i in range(0, memory_end):
+        #     if count_up not in bits:
+        #         bits.append(count_up)
+        #         values.append(pyboy.get_memory_value(count_up))
+        #     count_up += 1
         turns = battle_decisions(turns)
-        map_name = "In Battle"
+        # print("move")
+        # map_name = "In Battle"
+        # tick_pass(100)
+        # print("end")
         pyboy.tick()
+        # for i in bits:
+        #     if values[i] != pyboy.get_memory_value(i):
+        #         print(i, ": ", pyboy.get_memory_value(i))
     sprite0 = manager.sprite(0).on_screen
     parcel = pyboy.get_memory_value(54797)
     badges = pyboy.get_memory_value(54102)
@@ -911,27 +955,9 @@ while not pyboy.tick():
         game_flag = "Pokedex"
     if game_flag == "No_Parcel" and parcel:
         game_flag = "Parcel"
-    print(map_name, badges)
-    if map_number > 0 and sprite0:
-        overworld = True
-    if len(pyboy.get_input()) > 0 and overworld and sprite0:
-        for i in pyboy.get_input():
-            i = re.sub("RELEASE_BUTTON", "Release", str(i))
-            i = re.sub("PRESS_BUTTON", "Press", str(i))
-            i = re.sub("PRESS_ARROW", "Press", str(i))
-            i = re.sub("RELEASE_ARROW", "Release", str(i))
-            i = re.sub("WINDOW_UNFOCUS", "", str(i))
-            i = re.sub("WINDOW_FOCUS", "", str(i))
-            i = re.sub("PRESS_SPEED_UP", "", str(i))
-            i = re.sub("RELEASE_SPEED_UP", "", str(i))
-            stringer = map_number_name[map_number] + "_" + str(i) + "_" + game_flag
-            if len(i) == 0:
-                break
-            if stringer not in actions:
-                actions[stringer] = 1
-            else:
-                actions[stringer] += 1
-    print("len: ", len(pyboy.get_input()))
+    if map_name == "Forest Pre house":
+        print("Name matches")
+    print(map_name, map_number, "Forest Pre House is 50")
     with open(file, "r") as f1:
         file_len = ""
         for line in f1:
