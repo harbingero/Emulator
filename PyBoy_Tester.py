@@ -857,7 +857,6 @@ with open(file, "w") as f1:
 
 
 def battle_decisions(turns):
-    print("Turns at beginning of function: ", turns)
     moves = []
     list_of_actions = [hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_up, hold_down, hold_a]
     move1 = pyboy.get_memory_value(53276)
@@ -930,7 +929,9 @@ while not pyboy.tick():
         values = []
         bits = []
         count_up = 0
-        print(pyboy.get_memory_value(49159))
+        print("\n\n")
+        for i in range(40420, 40440):  # Checking memory values for menu selection
+            print(pyboy.get_memory_value(i))
         # print("start")
         # for i in range(0, memory_end):
         #     if count_up not in bits:
